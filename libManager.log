@@ -38,3 +38,10 @@
 \a nrSetCurrentWindow(cdsLibManager)
 \a nrSetCurrentWindow(cdsLibManager)
 \a nrResizeWindow(cdsLibManager list(963 36 941 488))
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libLineEdit->value = ""
+\w Warning: The directory: '/home/cadence/IC_PROJECT/IC_PROJECT/Gain_Boosted_Cascode' does not exist
+\w 	but was defined in libFile '/home/cadence/IC_PROJECT/cds.lib' for Lib 'Gain_Boosted_Cascode'.
+\o DB was auto refreshed.
