@@ -1,0 +1,77 @@
+
+
+
+	Library      = Gain_Boosted_Cascode
+	Cell         = test_bench
+	View         = schematic
+	Simulator    = spectre
+	State Path   = $AXL_SETUPDB_DIR/test_states
+	State Name   = Gain_Boosted_Cascode:test_bench:1_none_Interactive.66
+	Results DB   = /home/cadence/IC_PROJECT/Gain_Boosted_Cascode/test_bench/adexl/results/data/Interactive.66.rdb
+	Results Dir  = /home/cadence/simulation/Gain_Boosted_Cascode/test_bench/adexl/results/data/Interactive.66/1/Gain_Boosted_Cascode:test_bench:1
+	Results Loc  = /home/cadence/simulation/Gain_Boosted_Cascode/test_bench/adexl/results/data
+	Project Dir  = /home/cadence/simulation
+	Setup DB loc = /home/cadence/IC_PROJECT/Gain_Boosted_Cascode/test_bench/adexl
+	File Encoding = 0
+
+
+
+
+
+
+
+
+Resetting statistical vars
+
+
+Setting var LN = "100n"
+Setting var LP = "600n"
+Setting var MN = "16.6666666666667"
+Setting var MP = "16.6666666666667"
+Setting var VDS = "0.15"
+Setting var VGS = "450m"
+Setting var VSB = "0"
+Setting temp(T) = 27
+
+
+
+
+
+
+generate netlist...
+Begin Incremental Netlisting Nov 28 08:10:54 2024
+End netlisting Nov 28 08:10:54 2024
+
+Netlisting Statistics:
+	Number of components:    7
+
+	Elapsed time:          0.0s
+Errors: 0	Warnings: 0
+      ...successful.
+compose simulator input file...
+      ...successful.
+
+
+Delete psf data in /home/cadence/simulation/Gain_Boosted_Cascode/test_bench/adexl/results/data/Interactive.66/1/Gain_Boosted_Cascode:test_bench:1/psf.
+compose simulator input file...
+      ...successful.
+start simulator if needed...
+      ...successful.
+simulate...
+To view the simulator output, right-click on the test name, result 
+name, or any value in the "Results" tab of the Outputs section and 
+choose "Output Log" menu option.
+INFO (ADE-3071): Simulation completed successfully.
+reading simulation data...
+      ...successful.
+Only symbol and string results name are supported in this function!
+*Info*    Run complete for Point ID (23 1) on testbench [
+          Gain_Boosted_Cascode:test_bench:1 ].
+
+
+
+
+
+Simulation design variables differ from those on the cellView,
+they have been saved in the file "/tmp/saved-design-variables".
+To save future changes, copy variables to cellView before exiting.
