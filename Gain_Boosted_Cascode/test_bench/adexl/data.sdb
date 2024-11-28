@@ -50,17 +50,31 @@
 						<value>schematic</value>
 					</option>
 				</origoptions>
+				<outputs>
+					<output>cgg/id_N
+						<evalType>point</evalType>
+					</output>
+					<output>gds/id_N
+						<evalType>point</evalType>
+					</output>
+					<output>css/id_N
+						<evalType>point</evalType>
+					</output>
+					<output>cdd/id_N
+						<evalType>point</evalType>
+					</output>
+				</outputs>
 			</test>
 		</tests>
 		<vars>
 			<var>LN
-				<value>200n</value>
+				<value>100n</value>
 				<dependentTests>
 					<dependentTest omitted="0">Gain_Boosted_Cascode:test_bench:1</dependentTest>
 				</dependentTests>
 			</var>
 			<var>LP
-				<value>60n</value>
+				<value>600n</value>
 				<dependentTests>
 					<dependentTest omitted="0">Gain_Boosted_Cascode:test_bench:1</dependentTest>
 				</dependentTests>
@@ -78,13 +92,13 @@
 				</dependentTests>
 			</var>
 			<var>VDS
-				<value>0.2</value>
+				<value>0.15</value>
 				<dependentTests>
 					<dependentTest omitted="0">Gain_Boosted_Cascode:test_bench:1</dependentTest>
 				</dependentTests>
 			</var>
 			<var>VGS
-				<value>0.5</value>
+				<value>450m</value>
 				<dependentTests>
 					<dependentTest omitted="0">Gain_Boosted_Cascode:test_bench:1</dependentTest>
 				</dependentTests>
@@ -110,7 +124,7 @@
 		</plottingoptions>
 	</active>
 	<history>History
-		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.0
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.57
 			<checkpoint>
 				<corners>
 					<corner enabled="1">_default</corner>
@@ -144,7 +158,7 @@
 								<value>$AXL_SETUPDB_DIR/test_states</value>
 							</option>
 							<option>state
-								<value>Gain_Boosted_Cascode:test_bench:1_none_Interactive.0</value>
+								<value>Gain_Boosted_Cascode:test_bench:1_none_Interactive.57</value>
 							</option>
 						</tooloptions>
 						<origoptions>
@@ -161,17 +175,31 @@
 								<value>schematic</value>
 							</option>
 						</origoptions>
+						<outputs>
+							<output>cgg/id_N
+								<evalType>point</evalType>
+							</output>
+							<output>gds/id_N
+								<evalType>point</evalType>
+							</output>
+							<output>css/id_N
+								<evalType>point</evalType>
+							</output>
+							<output>cdd/id_N
+								<evalType>point</evalType>
+							</output>
+						</outputs>
 					</test>
 				</tests>
 				<vars>
 					<var>LN
-						<value>60n</value>
+						<value>180n</value>
 						<dependentTests>
 							<dependentTest omitted="0">Gain_Boosted_Cascode:test_bench:1</dependentTest>
 						</dependentTests>
 					</var>
 					<var>LP
-						<value>60n</value>
+						<value>300n:100n:700n</value>
 						<dependentTests>
 							<dependentTest omitted="0">Gain_Boosted_Cascode:test_bench:1</dependentTest>
 						</dependentTests>
@@ -189,13 +217,13 @@
 						</dependentTests>
 					</var>
 					<var>VDS
-						<value>0.2</value>
+						<value>0.4</value>
 						<dependentTests>
 							<dependentTest omitted="0">Gain_Boosted_Cascode:test_bench:1</dependentTest>
 						</dependentTests>
 					</var>
 					<var>VGS
-						<value>0.5</value>
+						<value>400m</value>
 						<dependentTests>
 							<dependentTest omitted="0">Gain_Boosted_Cascode:test_bench:1</dependentTest>
 						</dependentTests>
@@ -221,275 +249,29 @@
 				</plottingoptions>
 				<sortVariableValues>0</sortVariableValues>
 			</checkpoint>
-			<timestamp>Wed Nov 27 09:51:35 2024</timestamp>
-			<resultsname>/home/cadence/IC_PROJECT/Gain_Boosted_Cascode/test_bench/adexl/results/data/Interactive.0.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.0.rdb</simresults>
-			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
-			<netlistdelstrategy>SaveAll</netlistdelstrategy>
-			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/berkeley_cadence_095135218</localpsfdir>
-			<psfdir>/home/cadence/simulation/Gain_Boosted_Cascode/test_bench/adexl/results/data/Interactive.0</psfdir>
-			<simdir>$AXL_PROJECT_DIR/Gain_Boosted_Cascode/test_bench/adexl/results/data/Interactive.0</simdir>
-			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/cadence/IC_PROJECT/Gain_Boosted_Cascode/test_bench/adexl/results/data/Interactive.0.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.0.log</runlogfile>
-			<schematicpoint></schematicpoint>
-			<test>all</test>
-		</historyentry>
-		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.1
-			<checkpoint>
-				<corners>
-					<corner enabled="1">_default</corner>
-				</corners>
-				<extensions>
-					<extension>Parasitics
-						<callback>_parSetupDBExtensionCB</callback>
-						<iconvalue></iconvalue>
-						<icontype></icontype>
-					</extension>
-				</extensions>
-				<currentmode>Single Run, Sweeps and Corners</currentmode>
-				<overwritehistory>0</overwritehistory>
-				<tests>
-					<test>Gain_Boosted_Cascode:test_bench:1
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>test_bench</value>
-							</option>
-							<option>lib
-								<value>Gain_Boosted_Cascode</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>Gain_Boosted_Cascode:test_bench:1_none_Interactive.1</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>test_bench</value>
-							</option>
-							<option>lib
-								<value>Gain_Boosted_Cascode</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-						</origoptions>
-					</test>
-				</tests>
-				<vars>
-					<var>LN
-						<value>60n</value>
-						<dependentTests>
-							<dependentTest omitted="0">Gain_Boosted_Cascode:test_bench:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>LP
-						<value>60n</value>
-						<dependentTests>
-							<dependentTest omitted="0">Gain_Boosted_Cascode:test_bench:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>MN
-						<value>1u/60n</value>
-						<dependentTests>
-							<dependentTest omitted="0">Gain_Boosted_Cascode:test_bench:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>MP
-						<value>1u/60n</value>
-						<dependentTests>
-							<dependentTest omitted="0">Gain_Boosted_Cascode:test_bench:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VDS
-						<value>0.2</value>
-						<dependentTests>
-							<dependentTest omitted="0">Gain_Boosted_Cascode:test_bench:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VGS
-						<value>0.5</value>
-						<dependentTests>
-							<dependentTest omitted="0">Gain_Boosted_Cascode:test_bench:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VSB
-						<value>0</value>
-						<dependentTests>
-							<dependentTest omitted="0">Gain_Boosted_Cascode:test_bench:1</dependentTest>
-						</dependentTests>
-					</var>
-				</vars>
-				<overwritehistoryname>Interactive.0</overwritehistoryname>
-				<plottingoptions>
-					<plottingoption>plottype
-						<value>None</value>
-					</plottingoption>
-					<plottingoption>usewaveformtemplate
-						<value>no</value>
-					</plottingoption>
-					<plottingoption>waveformtemplate
-						<value></value>
-					</plottingoption>
-				</plottingoptions>
-				<sortVariableValues>0</sortVariableValues>
-			</checkpoint>
-			<timestamp>Wed Nov 27 09:54:50 2024</timestamp>
-			<resultsname>/home/cadence/IC_PROJECT/Gain_Boosted_Cascode/test_bench/adexl/results/data/Interactive.1.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.1.rdb</simresults>
-			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
-			<netlistdelstrategy>SaveAll</netlistdelstrategy>
-			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/berkeley_cadence_095450253</localpsfdir>
-			<psfdir>/home/cadence/simulation/Gain_Boosted_Cascode/test_bench/adexl/results/data/Interactive.1</psfdir>
-			<simdir>$AXL_PROJECT_DIR/Gain_Boosted_Cascode/test_bench/adexl/results/data/Interactive.1</simdir>
-			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/cadence/IC_PROJECT/Gain_Boosted_Cascode/test_bench/adexl/results/data/Interactive.1.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.1.log</runlogfile>
-			<schematicpoint></schematicpoint>
-			<test>all</test>
-		</historyentry>
-		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.2
-			<checkpoint>
-				<corners>
-					<corner enabled="1">_default</corner>
-				</corners>
-				<extensions>
-					<extension>Parasitics
-						<callback>_parSetupDBExtensionCB</callback>
-						<iconvalue></iconvalue>
-						<icontype></icontype>
-					</extension>
-				</extensions>
-				<currentmode>Single Run, Sweeps and Corners</currentmode>
-				<overwritehistory>0</overwritehistory>
-				<tests>
-					<test>Gain_Boosted_Cascode:test_bench:1
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>test_bench</value>
-							</option>
-							<option>lib
-								<value>Gain_Boosted_Cascode</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>Gain_Boosted_Cascode:test_bench:1_none_Interactive.2</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>test_bench</value>
-							</option>
-							<option>lib
-								<value>Gain_Boosted_Cascode</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-						</origoptions>
-					</test>
-				</tests>
-				<vars>
-					<var>LN
-						<value>60n</value>
-						<dependentTests>
-							<dependentTest omitted="0">Gain_Boosted_Cascode:test_bench:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>LP
-						<value>60n</value>
-						<dependentTests>
-							<dependentTest omitted="0">Gain_Boosted_Cascode:test_bench:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>MN
-						<value>1u/60n</value>
-						<dependentTests>
-							<dependentTest omitted="0">Gain_Boosted_Cascode:test_bench:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>MP
-						<value>1u/60n</value>
-						<dependentTests>
-							<dependentTest omitted="0">Gain_Boosted_Cascode:test_bench:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VDS
-						<value>0.2</value>
-						<dependentTests>
-							<dependentTest omitted="0">Gain_Boosted_Cascode:test_bench:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VGS
-						<value>0.5</value>
-						<dependentTests>
-							<dependentTest omitted="0">Gain_Boosted_Cascode:test_bench:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VSB
-						<value>0</value>
-						<dependentTests>
-							<dependentTest omitted="0">Gain_Boosted_Cascode:test_bench:1</dependentTest>
-						</dependentTests>
-					</var>
-				</vars>
-				<overwritehistoryname>Interactive.0</overwritehistoryname>
-				<plottingoptions>
-					<plottingoption>plottype
-						<value>None</value>
-					</plottingoption>
-					<plottingoption>usewaveformtemplate
-						<value>no</value>
-					</plottingoption>
-					<plottingoption>waveformtemplate
-						<value></value>
-					</plottingoption>
-				</plottingoptions>
-				<sortVariableValues>0</sortVariableValues>
-			</checkpoint>
-			<timestamp>Wed Nov 27 12:57:26 2024
+			<timestamp>Thu Nov 28 07:14:08 2024
 </timestamp>
-			<resultsname>/home/cadence/IC_PROJECT/Gain_Boosted_Cascode/test_bench/adexl/results/data/Interactive.2.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.2.rdb</simresults>
+			<resultsname>/home/cadence/IC_PROJECT/Gain_Boosted_Cascode/test_bench/adexl/results/data/Interactive.57.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.57.rdb</simresults>
 			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
 			<netlistdelstrategy>SaveAll</netlistdelstrategy>
 			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/berkeley_cadence_125726953</localpsfdir>
-			<psfdir>/home/cadence/simulation/Gain_Boosted_Cascode/test_bench/adexl/results/data/Interactive.2</psfdir>
-			<simdir>$AXL_PROJECT_DIR/Gain_Boosted_Cascode/test_bench/adexl/results/data/Interactive.2</simdir>
+			<localpsfdir>/tmp/berkeley_cadence_071408978</localpsfdir>
+			<psfdir>/home/cadence/simulation/Gain_Boosted_Cascode/test_bench/adexl/results/data/Interactive.57</psfdir>
+			<simdir>$AXL_PROJECT_DIR/Gain_Boosted_Cascode/test_bench/adexl/results/data/Interactive.57</simdir>
 			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/cadence/IC_PROJECT/Gain_Boosted_Cascode/test_bench/adexl/results/data/Interactive.2.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.2.log</runlogfile>
-			<schematicpoint></schematicpoint>
+			<runlog>/home/cadence/IC_PROJECT/Gain_Boosted_Cascode/test_bench/adexl/results/data/Interactive.57.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.57.log</runlogfile>
+			<schematicpoint>
+				<vars>
+					<var>LP
+						<value></value>
+					</var>
+				</vars>
+			</schematicpoint>
 			<test>all</test>
 		</historyentry>
-		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.3
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.58
 			<checkpoint>
 				<corners>
 					<corner enabled="1">_default</corner>
@@ -523,7 +305,7 @@
 								<value>$AXL_SETUPDB_DIR/test_states</value>
 							</option>
 							<option>state
-								<value>Gain_Boosted_Cascode:test_bench:1_none_Interactive.3</value>
+								<value>Gain_Boosted_Cascode:test_bench:1_none_Interactive.58</value>
 							</option>
 						</tooloptions>
 						<origoptions>
@@ -540,17 +322,31 @@
 								<value>schematic</value>
 							</option>
 						</origoptions>
+						<outputs>
+							<output>cgg/id_N
+								<evalType>point</evalType>
+							</output>
+							<output>gds/id_N
+								<evalType>point</evalType>
+							</output>
+							<output>css/id_N
+								<evalType>point</evalType>
+							</output>
+							<output>cdd/id_N
+								<evalType>point</evalType>
+							</output>
+						</outputs>
 					</test>
 				</tests>
 				<vars>
 					<var>LN
-						<value>200n</value>
+						<value>180n</value>
 						<dependentTests>
 							<dependentTest omitted="0">Gain_Boosted_Cascode:test_bench:1</dependentTest>
 						</dependentTests>
 					</var>
 					<var>LP
-						<value>60n</value>
+						<value>600n</value>
 						<dependentTests>
 							<dependentTest omitted="0">Gain_Boosted_Cascode:test_bench:1</dependentTest>
 						</dependentTests>
@@ -568,13 +364,13 @@
 						</dependentTests>
 					</var>
 					<var>VDS
-						<value>0.2</value>
+						<value>0.4</value>
 						<dependentTests>
 							<dependentTest omitted="0">Gain_Boosted_Cascode:test_bench:1</dependentTest>
 						</dependentTests>
 					</var>
 					<var>VGS
-						<value>0.5</value>
+						<value>400m</value>
 						<dependentTests>
 							<dependentTest omitted="0">Gain_Boosted_Cascode:test_bench:1</dependentTest>
 						</dependentTests>
@@ -600,19 +396,1147 @@
 				</plottingoptions>
 				<sortVariableValues>0</sortVariableValues>
 			</checkpoint>
-			<timestamp>Wed Nov 27 12:59:07 2024
+			<timestamp>Thu Nov 28 07:25:05 2024
 </timestamp>
-			<resultsname>/home/cadence/IC_PROJECT/Gain_Boosted_Cascode/test_bench/adexl/results/data/Interactive.3.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.3.rdb</simresults>
+			<resultsname>/home/cadence/IC_PROJECT/Gain_Boosted_Cascode/test_bench/adexl/results/data/Interactive.58.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.58.rdb</simresults>
 			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
 			<netlistdelstrategy>SaveAll</netlistdelstrategy>
 			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/berkeley_cadence_125908288</localpsfdir>
-			<psfdir>/home/cadence/simulation/Gain_Boosted_Cascode/test_bench/adexl/results/data/Interactive.3</psfdir>
-			<simdir>$AXL_PROJECT_DIR/Gain_Boosted_Cascode/test_bench/adexl/results/data/Interactive.3</simdir>
+			<localpsfdir>/tmp/berkeley_cadence_072505593</localpsfdir>
+			<psfdir>/home/cadence/simulation/Gain_Boosted_Cascode/test_bench/adexl/results/data/Interactive.58</psfdir>
+			<simdir>$AXL_PROJECT_DIR/Gain_Boosted_Cascode/test_bench/adexl/results/data/Interactive.58</simdir>
 			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/cadence/IC_PROJECT/Gain_Boosted_Cascode/test_bench/adexl/results/data/Interactive.3.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.3.log</runlogfile>
+			<runlog>/home/cadence/IC_PROJECT/Gain_Boosted_Cascode/test_bench/adexl/results/data/Interactive.58.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.58.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.59
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>Gain_Boosted_Cascode:test_bench:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>test_bench</value>
+							</option>
+							<option>lib
+								<value>Gain_Boosted_Cascode</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>Gain_Boosted_Cascode:test_bench:1_none_Interactive.59</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>test_bench</value>
+							</option>
+							<option>lib
+								<value>Gain_Boosted_Cascode</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>cgg/id_N
+								<evalType>point</evalType>
+							</output>
+							<output>gds/id_N
+								<evalType>point</evalType>
+							</output>
+							<output>css/id_N
+								<evalType>point</evalType>
+							</output>
+							<output>cdd/id_N
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+					</test>
+				</tests>
+				<vars>
+					<var>LN
+						<value>180n</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:test_bench:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>LP
+						<value>600n</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:test_bench:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>MN
+						<value>1u/60n</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:test_bench:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>MP
+						<value>1u/60n</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:test_bench:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VDS
+						<value>0.35</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:test_bench:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VGS
+						<value>400m</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:test_bench:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VSB
+						<value>0.15</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:test_bench:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Thu Nov 28 07:29:11 2024
+</timestamp>
+			<resultsname>/home/cadence/IC_PROJECT/Gain_Boosted_Cascode/test_bench/adexl/results/data/Interactive.59.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.59.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/berkeley_cadence_072911660</localpsfdir>
+			<psfdir>/home/cadence/simulation/Gain_Boosted_Cascode/test_bench/adexl/results/data/Interactive.59</psfdir>
+			<simdir>$AXL_PROJECT_DIR/Gain_Boosted_Cascode/test_bench/adexl/results/data/Interactive.59</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/cadence/IC_PROJECT/Gain_Boosted_Cascode/test_bench/adexl/results/data/Interactive.59.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.59.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.60
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>Gain_Boosted_Cascode:test_bench:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>test_bench</value>
+							</option>
+							<option>lib
+								<value>Gain_Boosted_Cascode</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>Gain_Boosted_Cascode:test_bench:1_none_Interactive.60</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>test_bench</value>
+							</option>
+							<option>lib
+								<value>Gain_Boosted_Cascode</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>cgg/id_N
+								<evalType>point</evalType>
+							</output>
+							<output>gds/id_N
+								<evalType>point</evalType>
+							</output>
+							<output>css/id_N
+								<evalType>point</evalType>
+							</output>
+							<output>cdd/id_N
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+					</test>
+				</tests>
+				<vars>
+					<var>LN
+						<value>180n</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:test_bench:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>LP
+						<value>160n</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:test_bench:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>MN
+						<value>1u/60n</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:test_bench:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>MP
+						<value>1u/60n</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:test_bench:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VDS
+						<value>0.15</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:test_bench:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VGS
+						<value>400m</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:test_bench:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VSB
+						<value>0.15</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:test_bench:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Thu Nov 28 07:33:37 2024
+</timestamp>
+			<resultsname>/home/cadence/IC_PROJECT/Gain_Boosted_Cascode/test_bench/adexl/results/data/Interactive.60.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.60.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/berkeley_cadence_073337346</localpsfdir>
+			<psfdir>/home/cadence/simulation/Gain_Boosted_Cascode/test_bench/adexl/results/data/Interactive.60</psfdir>
+			<simdir>$AXL_PROJECT_DIR/Gain_Boosted_Cascode/test_bench/adexl/results/data/Interactive.60</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/cadence/IC_PROJECT/Gain_Boosted_Cascode/test_bench/adexl/results/data/Interactive.60.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.60.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.61
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>Gain_Boosted_Cascode:test_bench:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>test_bench</value>
+							</option>
+							<option>lib
+								<value>Gain_Boosted_Cascode</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>Gain_Boosted_Cascode:test_bench:1_none_Interactive.61</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>test_bench</value>
+							</option>
+							<option>lib
+								<value>Gain_Boosted_Cascode</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>cgg/id_N
+								<evalType>point</evalType>
+							</output>
+							<output>gds/id_N
+								<evalType>point</evalType>
+							</output>
+							<output>css/id_N
+								<evalType>point</evalType>
+							</output>
+							<output>cdd/id_N
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+					</test>
+				</tests>
+				<vars>
+					<var>LN
+						<value>180n</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:test_bench:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>LP
+						<value>160n</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:test_bench:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>MN
+						<value>1u/60n</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:test_bench:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>MP
+						<value>1u/60n</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:test_bench:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VDS
+						<value>0.15</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:test_bench:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VGS
+						<value>400m</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:test_bench:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VSB
+						<value>0.5</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:test_bench:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Thu Nov 28 07:34:16 2024
+</timestamp>
+			<resultsname>/home/cadence/IC_PROJECT/Gain_Boosted_Cascode/test_bench/adexl/results/data/Interactive.61.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.61.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/berkeley_cadence_073416232</localpsfdir>
+			<psfdir>/home/cadence/simulation/Gain_Boosted_Cascode/test_bench/adexl/results/data/Interactive.61</psfdir>
+			<simdir>$AXL_PROJECT_DIR/Gain_Boosted_Cascode/test_bench/adexl/results/data/Interactive.61</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/cadence/IC_PROJECT/Gain_Boosted_Cascode/test_bench/adexl/results/data/Interactive.61.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.61.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.62
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>Gain_Boosted_Cascode:test_bench:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>test_bench</value>
+							</option>
+							<option>lib
+								<value>Gain_Boosted_Cascode</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>Gain_Boosted_Cascode:test_bench:1_none_Interactive.62</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>test_bench</value>
+							</option>
+							<option>lib
+								<value>Gain_Boosted_Cascode</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>cgg/id_N
+								<evalType>point</evalType>
+							</output>
+							<output>gds/id_N
+								<evalType>point</evalType>
+							</output>
+							<output>css/id_N
+								<evalType>point</evalType>
+							</output>
+							<output>cdd/id_N
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+					</test>
+				</tests>
+				<vars>
+					<var>LN
+						<value>160n</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:test_bench:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>LP
+						<value>160n</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:test_bench:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>MN
+						<value>1u/60n</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:test_bench:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>MP
+						<value>1u/60n</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:test_bench:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VDS
+						<value>0.15</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:test_bench:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VGS
+						<value>400m</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:test_bench:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VSB
+						<value>0.5</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:test_bench:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Thu Nov 28 07:35:03 2024
+</timestamp>
+			<resultsname>/home/cadence/IC_PROJECT/Gain_Boosted_Cascode/test_bench/adexl/results/data/Interactive.62.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.62.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/berkeley_cadence_073504051</localpsfdir>
+			<psfdir>/home/cadence/simulation/Gain_Boosted_Cascode/test_bench/adexl/results/data/Interactive.62</psfdir>
+			<simdir>$AXL_PROJECT_DIR/Gain_Boosted_Cascode/test_bench/adexl/results/data/Interactive.62</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/cadence/IC_PROJECT/Gain_Boosted_Cascode/test_bench/adexl/results/data/Interactive.62.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.62.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.63
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>Gain_Boosted_Cascode:test_bench:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>test_bench</value>
+							</option>
+							<option>lib
+								<value>Gain_Boosted_Cascode</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>Gain_Boosted_Cascode:test_bench:1_none_Interactive.63</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>test_bench</value>
+							</option>
+							<option>lib
+								<value>Gain_Boosted_Cascode</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>cgg/id_N
+								<evalType>point</evalType>
+							</output>
+							<output>gds/id_N
+								<evalType>point</evalType>
+							</output>
+							<output>css/id_N
+								<evalType>point</evalType>
+							</output>
+							<output>cdd/id_N
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+					</test>
+				</tests>
+				<vars>
+					<var>LN
+						<value>100n</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:test_bench:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>LP
+						<value>160n</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:test_bench:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>MN
+						<value>1u/60n</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:test_bench:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>MP
+						<value>1u/60n</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:test_bench:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VDS
+						<value>0.15</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:test_bench:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VGS
+						<value>400m</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:test_bench:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VSB
+						<value>0.5</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:test_bench:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Thu Nov 28 07:38:21 2024
+</timestamp>
+			<resultsname>/home/cadence/IC_PROJECT/Gain_Boosted_Cascode/test_bench/adexl/results/data/Interactive.63.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.63.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/berkeley_cadence_073822067</localpsfdir>
+			<psfdir>/home/cadence/simulation/Gain_Boosted_Cascode/test_bench/adexl/results/data/Interactive.63</psfdir>
+			<simdir>$AXL_PROJECT_DIR/Gain_Boosted_Cascode/test_bench/adexl/results/data/Interactive.63</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/cadence/IC_PROJECT/Gain_Boosted_Cascode/test_bench/adexl/results/data/Interactive.63.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.63.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.64
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>Gain_Boosted_Cascode:test_bench:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>test_bench</value>
+							</option>
+							<option>lib
+								<value>Gain_Boosted_Cascode</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>Gain_Boosted_Cascode:test_bench:1_none_Interactive.64</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>test_bench</value>
+							</option>
+							<option>lib
+								<value>Gain_Boosted_Cascode</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>cgg/id_N
+								<evalType>point</evalType>
+							</output>
+							<output>gds/id_N
+								<evalType>point</evalType>
+							</output>
+							<output>css/id_N
+								<evalType>point</evalType>
+							</output>
+							<output>cdd/id_N
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+					</test>
+				</tests>
+				<vars>
+					<var>LN
+						<value>100n</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:test_bench:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>LP
+						<value>600n</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:test_bench:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>MN
+						<value>1u/60n</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:test_bench:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>MP
+						<value>1u/60n</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:test_bench:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VDS
+						<value>0.4</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:test_bench:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VGS
+						<value>450m</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:test_bench:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VSB
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:test_bench:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Thu Nov 28 07:43:59 2024
+</timestamp>
+			<resultsname>/home/cadence/IC_PROJECT/Gain_Boosted_Cascode/test_bench/adexl/results/data/Interactive.64.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.64.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/berkeley_cadence_074359441</localpsfdir>
+			<psfdir>/home/cadence/simulation/Gain_Boosted_Cascode/test_bench/adexl/results/data/Interactive.64</psfdir>
+			<simdir>$AXL_PROJECT_DIR/Gain_Boosted_Cascode/test_bench/adexl/results/data/Interactive.64</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/cadence/IC_PROJECT/Gain_Boosted_Cascode/test_bench/adexl/results/data/Interactive.64.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.64.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.65
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>Gain_Boosted_Cascode:test_bench:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>test_bench</value>
+							</option>
+							<option>lib
+								<value>Gain_Boosted_Cascode</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>Gain_Boosted_Cascode:test_bench:1_none_Interactive.65</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>test_bench</value>
+							</option>
+							<option>lib
+								<value>Gain_Boosted_Cascode</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>cgg/id_N
+								<evalType>point</evalType>
+							</output>
+							<output>gds/id_N
+								<evalType>point</evalType>
+							</output>
+							<output>css/id_N
+								<evalType>point</evalType>
+							</output>
+							<output>cdd/id_N
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+					</test>
+				</tests>
+				<vars>
+					<var>LN
+						<value>100n</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:test_bench:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>LP
+						<value>600n</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:test_bench:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>MN
+						<value>1u/60n</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:test_bench:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>MP
+						<value>1u/60n</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:test_bench:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VDS
+						<value>0.15</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:test_bench:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VGS
+						<value>450m</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:test_bench:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VSB
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:test_bench:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Thu Nov 28 08:10:21 2024
+</timestamp>
+			<resultsname>/home/cadence/IC_PROJECT/Gain_Boosted_Cascode/test_bench/adexl/results/data/Interactive.65.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.65.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/berkeley_cadence_081021761</localpsfdir>
+			<psfdir>/home/cadence/simulation/Gain_Boosted_Cascode/test_bench/adexl/results/data/Interactive.65</psfdir>
+			<simdir>$AXL_PROJECT_DIR/Gain_Boosted_Cascode/test_bench/adexl/results/data/Interactive.65</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/cadence/IC_PROJECT/Gain_Boosted_Cascode/test_bench/adexl/results/data/Interactive.65.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.65.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.66
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>Gain_Boosted_Cascode:test_bench:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>test_bench</value>
+							</option>
+							<option>lib
+								<value>Gain_Boosted_Cascode</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>Gain_Boosted_Cascode:test_bench:1_none_Interactive.66</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>test_bench</value>
+							</option>
+							<option>lib
+								<value>Gain_Boosted_Cascode</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>cgg/id_N
+								<evalType>point</evalType>
+							</output>
+							<output>gds/id_N
+								<evalType>point</evalType>
+							</output>
+							<output>css/id_N
+								<evalType>point</evalType>
+							</output>
+							<output>cdd/id_N
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+					</test>
+				</tests>
+				<vars>
+					<var>LN
+						<value>100n</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:test_bench:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>LP
+						<value>600n</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:test_bench:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>MN
+						<value>1u/60n</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:test_bench:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>MP
+						<value>1u/60n</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:test_bench:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VDS
+						<value>0.15</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:test_bench:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VGS
+						<value>450m</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:test_bench:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VSB
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:test_bench:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Thu Nov 28 08:10:48 2024
+</timestamp>
+			<resultsname>/home/cadence/IC_PROJECT/Gain_Boosted_Cascode/test_bench/adexl/results/data/Interactive.66.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.66.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/berkeley_cadence_081048872</localpsfdir>
+			<psfdir>/home/cadence/simulation/Gain_Boosted_Cascode/test_bench/adexl/results/data/Interactive.66</psfdir>
+			<simdir>$AXL_PROJECT_DIR/Gain_Boosted_Cascode/test_bench/adexl/results/data/Interactive.66</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/cadence/IC_PROJECT/Gain_Boosted_Cascode/test_bench/adexl/results/data/Interactive.66.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.66.log</runlogfile>
 			<schematicpoint></schematicpoint>
 			<test>all</test>
 		</historyentry>

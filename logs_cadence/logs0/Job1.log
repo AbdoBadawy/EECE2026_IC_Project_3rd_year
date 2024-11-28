@@ -11,9 +11,9 @@
 	View         = schematic
 	Simulator    = spectre
 	State Path   = $AXL_SETUPDB_DIR/test_states
-	State Name   = Gain_Boosted_Cascode:test_bench:1_none_Interactive.2
-	Results DB   = /home/cadence/IC_PROJECT/Gain_Boosted_Cascode/test_bench/adexl/results/data/Interactive.2.rdb
-	Results Dir  = /home/cadence/simulation/Gain_Boosted_Cascode/test_bench/adexl/results/data/Interactive.2/1/Gain_Boosted_Cascode:test_bench:1
+	State Name   = Gain_Boosted_Cascode:test_bench:1_none_Interactive.43
+	Results DB   = /home/cadence/IC_PROJECT/Gain_Boosted_Cascode/test_bench/adexl/results/data/Interactive.43.rdb
+	Results Dir  = /home/cadence/simulation/Gain_Boosted_Cascode/test_bench/adexl/results/data/Interactive.43/1/Gain_Boosted_Cascode:test_bench:1
 	Results Loc  = /home/cadence/simulation/Gain_Boosted_Cascode/test_bench/adexl/results/data
 	Project Dir  = /home/cadence/simulation
 	Setup DB loc = /home/cadence/IC_PROJECT/Gain_Boosted_Cascode/test_bench/adexl
@@ -34,33 +34,36 @@ Resetting statistical vars
 
 *Info*    Setting parameter values ...
 
-Setting var LN = "60n"
-Setting var LP = "60n"
+Setting var LN = "180n"
+Setting var LP = "120n"
 Setting var MN = "16.6666666666667"
 Setting var MP = "16.6666666666667"
-Setting var VDS = "0.2"
-Setting var VGS = "0.5"
-Setting var VSB = "0"
+Setting var VDS = "0.35"
+Setting var VGS = "350m"
+Setting var VSB = "0.15"
 Setting temp(T) = 27
 
 *Info*    Netlist Directory =
-          /home/cadence/simulation/Gain_Boosted_Cascode/test_bench/adexl/results/data/Interactive.2/1/Gain_Boosted_Cascode:test_bench:1/netlist
+          /home/cadence/simulation/Gain_Boosted_Cascode/test_bench/adexl/results/data/Interactive.43/1/Gain_Boosted_Cascode:test_bench:1/netlist
 
 
 *Info*    Data Directory    =
-          /home/cadence/simulation/Gain_Boosted_Cascode/test_bench/adexl/results/data/Interactive.2/1/Gain_Boosted_Cascode:test_bench:1
+          /home/cadence/simulation/Gain_Boosted_Cascode/test_bench/adexl/results/data/Interactive.43/1/Gain_Boosted_Cascode:test_bench:1
 
 
 *Info*    Creating Netlist for Point ID (0 1)
 
 generate netlist...
 Loading seCore.cxt 
-Begin Incremental Netlisting Nov 27 12:57:41 2024
-End netlisting Nov 27 12:57:41 2024
+Begin Incremental Netlisting Nov 28 05:44:20 2024
+End netlisting Nov 28 05:44:20 2024
 Loading monte.cxt 
 
-	The netlist is up to date.
-	Time taken to compare the design with netlist:   0.0s
+Netlisting Statistics:
+	Number of components:    7
+
+	Elapsed time:          1.0s (7.00/s)
+Errors: 0	Warnings: 0
       ...successful.
 compose simulator input file...
       ...successful.
@@ -68,7 +71,7 @@ compose simulator input file...
 *Info*    Running simulation on testbench [
           Gain_Boosted_Cascode:test_bench:1 ] for Point ID (0 1).
 
-Delete psf data in /home/cadence/simulation/Gain_Boosted_Cascode/test_bench/adexl/results/data/Interactive.2/1/Gain_Boosted_Cascode:test_bench:1/psf.
+Delete psf data in /home/cadence/simulation/Gain_Boosted_Cascode/test_bench/adexl/results/data/Interactive.43/1/Gain_Boosted_Cascode:test_bench:1/psf.
 compose simulator input file...
       ...successful.
 start simulator if needed...
