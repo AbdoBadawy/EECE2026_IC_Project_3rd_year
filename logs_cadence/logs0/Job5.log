@@ -11,9 +11,9 @@
 	View         = schematic
 	Simulator    = spectre
 	State Path   = $AXL_SETUPDB_DIR/test_states
-	State Name   = Gain_Boosted_Cascode:test_bench:1_none_Interactive.45
-	Results DB   = /home/cadence/IC_PROJECT/Gain_Boosted_Cascode/test_bench/adexl/results/data/Interactive.45.rdb
-	Results Dir  = /home/cadence/simulation/Gain_Boosted_Cascode/test_bench/adexl/results/data/Interactive.45/1/Gain_Boosted_Cascode:test_bench:1
+	State Name   = Gain_Boosted_Cascode:test_bench:1_none_Interactive.79
+	Results DB   = /home/cadence/IC_PROJECT/Gain_Boosted_Cascode/test_bench/adexl/results/data/Interactive.79.rdb
+	Results Dir  = /home/cadence/simulation/Gain_Boosted_Cascode/test_bench/adexl/results/data/Interactive.79/1/Gain_Boosted_Cascode:test_bench:1
 	Results Loc  = /home/cadence/simulation/Gain_Boosted_Cascode/test_bench/adexl/results/data
 	Project Dir  = /home/cadence/simulation
 	Setup DB loc = /home/cadence/IC_PROJECT/Gain_Boosted_Cascode/test_bench/adexl
@@ -27,35 +27,35 @@
 
 
 
-*Info*    Run start for Point ID (2 1) on testbench [
+*Info*    Run start for Point ID (0 1) on testbench [
           Gain_Boosted_Cascode:test_bench:1 ].
 
 Resetting statistical vars
 
 *Info*    Setting parameter values ...
 
-Setting var LN = "180n"
-Setting var LP = "120n"
+Setting var LN = "100n"
+Setting var LP = "600n"
 Setting var MN = "16.6666666666667"
 Setting var MP = "16.6666666666667"
-Setting var VDS = "0.2"
-Setting var VGS = "350m"
-Setting var VSB = "0.5"
+Setting var VDS = "0.4"
+Setting var VGS = "450m"
+Setting var VSB = "0"
 Setting temp(T) = 27
 
 *Info*    Netlist Directory =
-          /home/cadence/simulation/Gain_Boosted_Cascode/test_bench/adexl/results/data/Interactive.45/1/Gain_Boosted_Cascode:test_bench:1/netlist
+          /home/cadence/simulation/Gain_Boosted_Cascode/test_bench/adexl/results/data/Interactive.79/1/Gain_Boosted_Cascode:test_bench:1/netlist
 
 
 *Info*    Data Directory    =
-          /home/cadence/simulation/Gain_Boosted_Cascode/test_bench/adexl/results/data/Interactive.45/1/Gain_Boosted_Cascode:test_bench:1
+          /home/cadence/simulation/Gain_Boosted_Cascode/test_bench/adexl/results/data/Interactive.79/1/Gain_Boosted_Cascode:test_bench:1
 
 
-*Info*    Creating Netlist for Point ID (2 1)
+*Info*    Creating Netlist for Point ID (0 1)
 
 generate netlist...
-Begin Incremental Netlisting Nov 28 05:50:27 2024
-End netlisting Nov 28 05:50:27 2024
+Begin Incremental Netlisting Nov 30 07:16:32 2024
+End netlisting Nov 30 07:16:32 2024
 
 	The netlist is up to date.
 	Time taken to compare the design with netlist:   0.0s
@@ -64,9 +64,9 @@ compose simulator input file...
       ...successful.
 
 *Info*    Running simulation on testbench [
-          Gain_Boosted_Cascode:test_bench:1 ] for Point ID (2 1).
+          Gain_Boosted_Cascode:test_bench:1 ] for Point ID (0 1).
 
-Delete psf data in /home/cadence/simulation/Gain_Boosted_Cascode/test_bench/adexl/results/data/Interactive.45/1/Gain_Boosted_Cascode:test_bench:1/psf.
+Delete psf data in /home/cadence/simulation/Gain_Boosted_Cascode/test_bench/adexl/results/data/Interactive.79/1/Gain_Boosted_Cascode:test_bench:1/psf.
 compose simulator input file...
       ...successful.
 start simulator if needed...
@@ -80,8 +80,8 @@ reading simulation data...
       ...successful.
 *Info*    Client has finished evaluating ... 
 
-
-*Info*    Run complete for Point ID (2 1) on testbench [
+Only symbol and string results name are supported in this function!
+*Info*    Run complete for Point ID (0 1) on testbench [
           Gain_Boosted_Cascode:test_bench:1 ].
 
 
