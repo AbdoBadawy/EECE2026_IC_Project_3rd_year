@@ -1,0 +1,35 @@
+Starting Single Run, Sweeps and Corners...
+
+Current time: Fri Nov 29 18:02:13 2024 
+Best design point: 1
+Design specs: 
+	Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1	corner	Nominal - 
+	BW		967.3k
+	Gain		90.78
+Design parameters: 
+	AV_N		100
+	AV_P		100
+	L_CASCN		120n
+	L_CASCP		80n
+	L_INPUT		130n
+	L_SOURCEN		500n
+	L_SOURCEP		600n
+	VBN		350m
+	VBP		734.4m
+	VCASCN		950m
+	VCASCP		400m
+	VINCM		500m
+	VOCM		650m
+	W_CASCN		500u
+	W_CASCP		800u
+	W_INPUT		2m
+	W_SOURCEP		2.32m
+	WN_SOURCE		7.247m
+	VDD		1.2
+	cgg2		1f
+
+Interactive.119
+Number of points completed: 1
+Number of simulation errors: 0
+Interactive.119 completed. 
+Current time: Fri Nov 29 18:02:26 2024 
