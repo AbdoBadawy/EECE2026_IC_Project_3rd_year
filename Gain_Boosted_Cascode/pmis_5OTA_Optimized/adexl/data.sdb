@@ -11,7 +11,7 @@
 				<icontype></icontype>
 			</extension>
 		</extensions>
-		<currentmode>Local Optimization</currentmode>
+		<currentmode>Global Optimization</currentmode>
 		<overwritehistory>0</overwritehistory>
 		<tests>
 			<test>Gain_Boosted_Cascode:pmis_5OTA_Optimized:1
@@ -132,34 +132,34 @@
 			<spec>Gain_Boosted_Cascode:pmis_5OTA_Optimized:1.GAIN
 				<testname>Gain_Boosted_Cascode:pmis_5OTA_Optimized:1</testname>
 				<resname>GAIN</resname>
-				<specType>gt</specType>
-				<min>100</min>
-				<max></max>
+				<specType>max</specType>
+				<min></min>
+				<max>40</max>
 				<target></target>
 				<tol></tol>
-				<specWeight>130</specWeight>
+				<specWeight>80</specWeight>
 			</spec>
 			<spec>Gain_Boosted_Cascode:pmis_5OTA_Optimized:1.BW
 				<testname>Gain_Boosted_Cascode:pmis_5OTA_Optimized:1</testname>
 				<resname>BW</resname>
 				<specType>gt</specType>
-				<min>1M</min>
+				<min>1.72M</min>
 				<max></max>
 				<target></target>
 				<tol></tol>
-				<specWeight>10</specWeight>
+				<specWeight>50</specWeight>
 			</spec>
 		</specs>
 		<parameters>
 			<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M2
 				<parameter enabled="1">l
-					<value>100n:150n:1.5u</value>
+					<value>600n:150n:2u</value>
 				</parameter>
 				<parameter enabled="1">w
-					<value>200n:150n:2u</value>
+					<value>70u:5u:150u</value>
 				</parameter>
 				<parameter enabled="1">m
-					<value>1 2 4 8</value>
+					<value>3:1:15</value>
 				</parameter>
 			</location>
 			<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M1
@@ -175,10 +175,10 @@
 			</location>
 			<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M5
 				<parameter enabled="1">l
-					<value>100n:150n:1.5u</value>
+					<value>1u:150n:3u</value>
 				</parameter>
 				<parameter enabled="1">w
-					<value>200n:150n:2u</value>
+					<value>18u:5u:150u</value>
 				</parameter>
 				<parameter enabled="1">m
 					<value>M4/m@Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic</value>
@@ -192,80 +192,31 @@
 					<value>M5/w@Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic</value>
 				</parameter>
 				<parameter enabled="1">m
-					<value>1 2 4 8</value>
+					<value>7:1:20</value>
 				</parameter>
 			</location>
 			<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/V12
 				<parameter enabled="1">vdc
-					<value>100m:10m:1.2</value>
+					<value>0.6:10m:1.2</value>
 				</parameter>
 			</location>
 			<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/V11
 				<parameter enabled="1">vdc
-					<value>100m:10m:1.2</value>
+					<value>300m:10m:0.7</value>
 				</parameter>
 			</location>
 			<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M0
 				<parameter enabled="1">l
-					<value>100n:150n:1.5u</value>
+					<value>1u:150n:5u</value>
 				</parameter>
 				<parameter enabled="1">m
-					<value>1 2 4 8</value>
+					<value>1:1:15</value>
 				</parameter>
 				<parameter enabled="1">w
-					<value>200n:150n:2u</value>
+					<value>40u:5u:150u</value>
 				</parameter>
 			</location>
 		</parameters>
-		<startingpoint>
-			<parameters>
-				<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M2
-					<parameter>l
-						<value>60n</value>
-					</parameter>
-					<parameter>w
-						<value>200n</value>
-					</parameter>
-					<parameter>m
-						<value>2</value>
-					</parameter>
-				</location>
-				<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M5
-					<parameter>l
-						<value>60n</value>
-					</parameter>
-					<parameter>w
-						<value>200n</value>
-					</parameter>
-				</location>
-				<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M4
-					<parameter>m
-						<value>2</value>
-					</parameter>
-				</location>
-				<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/V12
-					<parameter>vdc
-						<value>500m</value>
-					</parameter>
-				</location>
-				<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/V11
-					<parameter>vdc
-						<value>500m</value>
-					</parameter>
-				</location>
-				<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M0
-					<parameter>l
-						<value>60n</value>
-					</parameter>
-					<parameter>m
-						<value>2</value>
-					</parameter>
-					<parameter>w
-						<value>200n</value>
-					</parameter>
-				</location>
-			</parameters>
-		</startingpoint>
 		<runoptions>
 			<mode>Local Optimization
 				<runoption>effort
@@ -290,681 +241,87 @@
 					<value></value>
 				</runoption>
 			</mode>
+			<mode>Global Optimization
+				<runoption>referencepoint
+					<value>0</value>
+				</runoption>
+				<runoption>startingstateorpoint
+					<value>Reference Point</value>
+				</runoption>
+				<runoption>startingstatename
+					<value>NONE</value>
+				</runoption>
+				<runoption>lazy
+					<value>1</value>
+				</runoption>
+				<runoption>tillsatisfied
+					<value>1</value>
+				</runoption>
+				<runoption>timelimit
+					<value></value>
+				</runoption>
+				<runoption>numpoints
+					<value></value>
+				</runoption>
+				<runoption>ptswithnoimprovement
+					<value></value>
+				</runoption>
+				<runoption>pointsAfterAllSpecsSatisfied
+					<value></value>
+				</runoption>
+			</mode>
 		</runoptions>
+		<startingpoint>
+			<parameters>
+				<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M2
+					<parameter>l
+						<value>850.0n</value>
+					</parameter>
+					<parameter>w
+						<value>96.0u</value>
+					</parameter>
+					<parameter>m
+						<value>5</value>
+					</parameter>
+				</location>
+				<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M5
+					<parameter>l
+						<value>1.45u</value>
+					</parameter>
+					<parameter>w
+						<value>21.0u</value>
+					</parameter>
+				</location>
+				<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M4
+					<parameter>m
+						<value>10</value>
+					</parameter>
+				</location>
+				<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/V12
+					<parameter>vdc
+						<value>770m</value>
+					</parameter>
+				</location>
+				<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/V11
+					<parameter>vdc
+						<value>370m</value>
+					</parameter>
+				</location>
+				<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M0
+					<parameter>l
+						<value>1.45u</value>
+					</parameter>
+					<parameter>m
+						<value>2</value>
+					</parameter>
+					<parameter>w
+						<value>56.0u</value>
+					</parameter>
+				</location>
+			</parameters>
+		</startingpoint>
 	</active>
 	<history>History
-		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.1
-			<checkpoint>
-				<corners>
-					<corner enabled="1">_default</corner>
-				</corners>
-				<extensions>
-					<extension>Parasitics
-						<callback>_parSetupDBExtensionCB</callback>
-						<iconvalue></iconvalue>
-						<icontype></icontype>
-					</extension>
-				</extensions>
-				<currentmode>Single Run, Sweeps and Corners</currentmode>
-				<overwritehistory>0</overwritehistory>
-				<tests>
-					<test>Gain_Boosted_Cascode:pmis_5OTA_Optimized:1
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>pmis_5OTA_Optimized</value>
-							</option>
-							<option>lib
-								<value>Gain_Boosted_Cascode</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>Gain_Boosted_Cascode:pmis_5OTA_Optimized:1_none_Interactive.1</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>pmis_5OTA_Optimized</value>
-							</option>
-							<option>lib
-								<value>Gain_Boosted_Cascode</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-						</origoptions>
-					</test>
-				</tests>
-				<overwritehistoryname>Interactive.0</overwritehistoryname>
-				<plottingoptions>
-					<plottingoption>plottype
-						<value>None</value>
-					</plottingoption>
-					<plottingoption>usewaveformtemplate
-						<value>no</value>
-					</plottingoption>
-					<plottingoption>waveformtemplate
-						<value>                            </value>
-					</plottingoption>
-				</plottingoptions>
-				<sortVariableValues>0</sortVariableValues>
-			</checkpoint>
-			<timestamp>Wed Dec  4 13:56:11 2024
-</timestamp>
-			<resultsname>/home/cadence/my_new_project/EECE2026_IC_Project_3rd_year/Gain_Boosted_Cascode/pmis_5OTA_Optimized/adexl/results/data/Interactive.1.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.1.rdb</simresults>
-			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
-			<netlistdelstrategy>SaveAll</netlistdelstrategy>
-			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/berkeley_cadence_135611798</localpsfdir>
-			<psfdir>/home/cadence/simulation/Gain_Boosted_Cascode/pmis_5OTA_Optimized/adexl/results/data/Interactive.1</psfdir>
-			<simdir>$AXL_PROJECT_DIR/Gain_Boosted_Cascode/pmis_5OTA_Optimized/adexl/results/data/Interactive.1</simdir>
-			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/cadence/my_new_project/EECE2026_IC_Project_3rd_year/Gain_Boosted_Cascode/pmis_5OTA_Optimized/adexl/results/data/Interactive.1.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.1.log</runlogfile>
-			<schematicpoint></schematicpoint>
-			<test>all</test>
-		</historyentry>
-		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.2
-			<checkpoint>
-				<corners>
-					<corner enabled="1">_default</corner>
-				</corners>
-				<extensions>
-					<extension>Parasitics
-						<callback>_parSetupDBExtensionCB</callback>
-						<iconvalue></iconvalue>
-						<icontype></icontype>
-					</extension>
-				</extensions>
-				<currentmode>Single Run, Sweeps and Corners</currentmode>
-				<overwritehistory>0</overwritehistory>
-				<tests>
-					<test>Gain_Boosted_Cascode:pmis_5OTA_Optimized:1
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>pmis_5OTA_Optimized</value>
-							</option>
-							<option>lib
-								<value>Gain_Boosted_Cascode</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>Gain_Boosted_Cascode:pmis_5OTA_Optimized:1_none_Interactive.2</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>pmis_5OTA_Optimized</value>
-							</option>
-							<option>lib
-								<value>Gain_Boosted_Cascode</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-						</origoptions>
-					</test>
-				</tests>
-				<overwritehistoryname>Interactive.0</overwritehistoryname>
-				<plottingoptions>
-					<plottingoption>plottype
-						<value>None</value>
-					</plottingoption>
-					<plottingoption>usewaveformtemplate
-						<value>no</value>
-					</plottingoption>
-					<plottingoption>waveformtemplate
-						<value>                            </value>
-					</plottingoption>
-				</plottingoptions>
-				<sortVariableValues>0</sortVariableValues>
-			</checkpoint>
-			<timestamp>Wed Dec  4 13:56:50 2024
-</timestamp>
-			<resultsname>/home/cadence/my_new_project/EECE2026_IC_Project_3rd_year/Gain_Boosted_Cascode/pmis_5OTA_Optimized/adexl/results/data/Interactive.2.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.2.rdb</simresults>
-			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
-			<netlistdelstrategy>SaveAll</netlistdelstrategy>
-			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/berkeley_cadence_135651023</localpsfdir>
-			<psfdir>/home/cadence/simulation/Gain_Boosted_Cascode/pmis_5OTA_Optimized/adexl/results/data/Interactive.2</psfdir>
-			<simdir>$AXL_PROJECT_DIR/Gain_Boosted_Cascode/pmis_5OTA_Optimized/adexl/results/data/Interactive.2</simdir>
-			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/cadence/my_new_project/EECE2026_IC_Project_3rd_year/Gain_Boosted_Cascode/pmis_5OTA_Optimized/adexl/results/data/Interactive.2.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.2.log</runlogfile>
-			<schematicpoint></schematicpoint>
-			<test>all</test>
-		</historyentry>
-		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.3
-			<checkpoint>
-				<corners>
-					<corner enabled="1">_default</corner>
-				</corners>
-				<extensions>
-					<extension>Parasitics
-						<callback>_parSetupDBExtensionCB</callback>
-						<iconvalue></iconvalue>
-						<icontype></icontype>
-					</extension>
-				</extensions>
-				<currentmode>Single Run, Sweeps and Corners</currentmode>
-				<overwritehistory>0</overwritehistory>
-				<tests>
-					<test>Gain_Boosted_Cascode:pmis_5OTA_Optimized:1
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>pmis_5OTA_Optimized</value>
-							</option>
-							<option>lib
-								<value>Gain_Boosted_Cascode</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>Gain_Boosted_Cascode:pmis_5OTA_Optimized:1_none_Interactive.3</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>pmis_5OTA_Optimized</value>
-							</option>
-							<option>lib
-								<value>Gain_Boosted_Cascode</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-						</origoptions>
-					</test>
-				</tests>
-				<overwritehistoryname>Interactive.0</overwritehistoryname>
-				<plottingoptions>
-					<plottingoption>plottype
-						<value>None</value>
-					</plottingoption>
-					<plottingoption>usewaveformtemplate
-						<value>no</value>
-					</plottingoption>
-					<plottingoption>waveformtemplate
-						<value>                            </value>
-					</plottingoption>
-				</plottingoptions>
-				<sortVariableValues>0</sortVariableValues>
-			</checkpoint>
-			<timestamp>Wed Dec  4 13:58:29 2024
-</timestamp>
-			<resultsname>/home/cadence/my_new_project/EECE2026_IC_Project_3rd_year/Gain_Boosted_Cascode/pmis_5OTA_Optimized/adexl/results/data/Interactive.3.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.3.rdb</simresults>
-			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
-			<netlistdelstrategy>SaveAll</netlistdelstrategy>
-			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/berkeley_cadence_135829375</localpsfdir>
-			<psfdir>/home/cadence/simulation/Gain_Boosted_Cascode/pmis_5OTA_Optimized/adexl/results/data/Interactive.3</psfdir>
-			<simdir>$AXL_PROJECT_DIR/Gain_Boosted_Cascode/pmis_5OTA_Optimized/adexl/results/data/Interactive.3</simdir>
-			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/cadence/my_new_project/EECE2026_IC_Project_3rd_year/Gain_Boosted_Cascode/pmis_5OTA_Optimized/adexl/results/data/Interactive.3.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.3.log</runlogfile>
-			<schematicpoint></schematicpoint>
-			<test>all</test>
-		</historyentry>
-		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.4
-			<checkpoint>
-				<corners>
-					<corner enabled="1">_default</corner>
-				</corners>
-				<extensions>
-					<extension>Parasitics
-						<callback>_parSetupDBExtensionCB</callback>
-						<iconvalue></iconvalue>
-						<icontype></icontype>
-					</extension>
-				</extensions>
-				<currentmode>Single Run, Sweeps and Corners</currentmode>
-				<overwritehistory>0</overwritehistory>
-				<tests>
-					<test>Gain_Boosted_Cascode:pmis_5OTA_Optimized:1
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>pmis_5OTA_Optimized</value>
-							</option>
-							<option>lib
-								<value>Gain_Boosted_Cascode</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>Gain_Boosted_Cascode:pmis_5OTA_Optimized:1_none_Interactive.4</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>pmis_5OTA_Optimized</value>
-							</option>
-							<option>lib
-								<value>Gain_Boosted_Cascode</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-						</origoptions>
-					</test>
-				</tests>
-				<overwritehistoryname>Interactive.0</overwritehistoryname>
-				<plottingoptions>
-					<plottingoption>plottype
-						<value>None</value>
-					</plottingoption>
-					<plottingoption>usewaveformtemplate
-						<value>no</value>
-					</plottingoption>
-					<plottingoption>waveformtemplate
-						<value>                            </value>
-					</plottingoption>
-				</plottingoptions>
-				<sortVariableValues>0</sortVariableValues>
-			</checkpoint>
-			<timestamp>Wed Dec  4 13:59:32 2024
-</timestamp>
-			<resultsname>/home/cadence/my_new_project/EECE2026_IC_Project_3rd_year/Gain_Boosted_Cascode/pmis_5OTA_Optimized/adexl/results/data/Interactive.4.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.4.rdb</simresults>
-			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
-			<netlistdelstrategy>SaveAll</netlistdelstrategy>
-			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/berkeley_cadence_135932861</localpsfdir>
-			<psfdir>/home/cadence/simulation/Gain_Boosted_Cascode/pmis_5OTA_Optimized/adexl/results/data/Interactive.4</psfdir>
-			<simdir>$AXL_PROJECT_DIR/Gain_Boosted_Cascode/pmis_5OTA_Optimized/adexl/results/data/Interactive.4</simdir>
-			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/cadence/my_new_project/EECE2026_IC_Project_3rd_year/Gain_Boosted_Cascode/pmis_5OTA_Optimized/adexl/results/data/Interactive.4.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.4.log</runlogfile>
-			<schematicpoint></schematicpoint>
-			<test>all</test>
-		</historyentry>
-		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.5
-			<checkpoint>
-				<corners>
-					<corner enabled="1">_default</corner>
-				</corners>
-				<extensions>
-					<extension>Parasitics
-						<callback>_parSetupDBExtensionCB</callback>
-						<iconvalue></iconvalue>
-						<icontype></icontype>
-					</extension>
-				</extensions>
-				<currentmode>Single Run, Sweeps and Corners</currentmode>
-				<overwritehistory>0</overwritehistory>
-				<tests>
-					<test>Gain_Boosted_Cascode:pmis_5OTA_Optimized:1
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>pmis_5OTA_Optimized</value>
-							</option>
-							<option>lib
-								<value>Gain_Boosted_Cascode</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>Gain_Boosted_Cascode:pmis_5OTA_Optimized:1_none_Interactive.5</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>pmis_5OTA_Optimized</value>
-							</option>
-							<option>lib
-								<value>Gain_Boosted_Cascode</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-						</origoptions>
-					</test>
-				</tests>
-				<overwritehistoryname>Interactive.0</overwritehistoryname>
-				<plottingoptions>
-					<plottingoption>plottype
-						<value>None</value>
-					</plottingoption>
-					<plottingoption>usewaveformtemplate
-						<value>no</value>
-					</plottingoption>
-					<plottingoption>waveformtemplate
-						<value>                            </value>
-					</plottingoption>
-				</plottingoptions>
-				<sortVariableValues>0</sortVariableValues>
-			</checkpoint>
-			<timestamp>Wed Dec  4 14:00:22 2024
-</timestamp>
-			<resultsname>/home/cadence/my_new_project/EECE2026_IC_Project_3rd_year/Gain_Boosted_Cascode/pmis_5OTA_Optimized/adexl/results/data/Interactive.5.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.5.rdb</simresults>
-			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
-			<netlistdelstrategy>SaveAll</netlistdelstrategy>
-			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/berkeley_cadence_140022813</localpsfdir>
-			<psfdir>/home/cadence/simulation/Gain_Boosted_Cascode/pmis_5OTA_Optimized/adexl/results/data/Interactive.5</psfdir>
-			<simdir>$AXL_PROJECT_DIR/Gain_Boosted_Cascode/pmis_5OTA_Optimized/adexl/results/data/Interactive.5</simdir>
-			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/cadence/my_new_project/EECE2026_IC_Project_3rd_year/Gain_Boosted_Cascode/pmis_5OTA_Optimized/adexl/results/data/Interactive.5.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.5.log</runlogfile>
-			<schematicpoint></schematicpoint>
-			<test>all</test>
-		</historyentry>
-		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.6
-			<checkpoint>
-				<corners>
-					<corner enabled="1">_default</corner>
-				</corners>
-				<extensions>
-					<extension>Parasitics
-						<callback>_parSetupDBExtensionCB</callback>
-						<iconvalue></iconvalue>
-						<icontype></icontype>
-					</extension>
-				</extensions>
-				<currentmode>Single Run, Sweeps and Corners</currentmode>
-				<overwritehistory>0</overwritehistory>
-				<tests>
-					<test>Gain_Boosted_Cascode:pmis_5OTA_Optimized:1
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>pmis_5OTA_Optimized</value>
-							</option>
-							<option>lib
-								<value>Gain_Boosted_Cascode</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>Gain_Boosted_Cascode:pmis_5OTA_Optimized:1_none_Interactive.6</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>pmis_5OTA_Optimized</value>
-							</option>
-							<option>lib
-								<value>Gain_Boosted_Cascode</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-						</origoptions>
-					</test>
-				</tests>
-				<overwritehistoryname>Interactive.0</overwritehistoryname>
-				<plottingoptions>
-					<plottingoption>plottype
-						<value>None</value>
-					</plottingoption>
-					<plottingoption>usewaveformtemplate
-						<value>no</value>
-					</plottingoption>
-					<plottingoption>waveformtemplate
-						<value>                            </value>
-					</plottingoption>
-				</plottingoptions>
-				<sortVariableValues>0</sortVariableValues>
-			</checkpoint>
-			<timestamp>Wed Dec  4 14:07:24 2024
-</timestamp>
-			<resultsname>/home/cadence/my_new_project/EECE2026_IC_Project_3rd_year/Gain_Boosted_Cascode/pmis_5OTA_Optimized/adexl/results/data/Interactive.6.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.6.rdb</simresults>
-			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
-			<netlistdelstrategy>SaveAll</netlistdelstrategy>
-			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/berkeley_cadence_140724906</localpsfdir>
-			<psfdir>/home/cadence/simulation/Gain_Boosted_Cascode/pmis_5OTA_Optimized/adexl/results/data/Interactive.6</psfdir>
-			<simdir>$AXL_PROJECT_DIR/Gain_Boosted_Cascode/pmis_5OTA_Optimized/adexl/results/data/Interactive.6</simdir>
-			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/cadence/my_new_project/EECE2026_IC_Project_3rd_year/Gain_Boosted_Cascode/pmis_5OTA_Optimized/adexl/results/data/Interactive.6.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.6.log</runlogfile>
-			<schematicpoint></schematicpoint>
-			<test>all</test>
-		</historyentry>
-		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.7
-			<checkpoint>
-				<corners>
-					<corner enabled="1">_default</corner>
-				</corners>
-				<extensions>
-					<extension>Parasitics
-						<callback>_parSetupDBExtensionCB</callback>
-						<iconvalue></iconvalue>
-						<icontype></icontype>
-					</extension>
-				</extensions>
-				<currentmode>Single Run, Sweeps and Corners</currentmode>
-				<overwritehistory>0</overwritehistory>
-				<tests>
-					<test>Gain_Boosted_Cascode:pmis_5OTA_Optimized:1
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>pmis_5OTA_Optimized</value>
-							</option>
-							<option>lib
-								<value>Gain_Boosted_Cascode</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>Gain_Boosted_Cascode:pmis_5OTA_Optimized:1_none_Interactive.7</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>pmis_5OTA_Optimized</value>
-							</option>
-							<option>lib
-								<value>Gain_Boosted_Cascode</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-						</origoptions>
-					</test>
-				</tests>
-				<overwritehistoryname>Interactive.0</overwritehistoryname>
-				<plottingoptions>
-					<plottingoption>plottype
-						<value>None</value>
-					</plottingoption>
-					<plottingoption>usewaveformtemplate
-						<value>no</value>
-					</plottingoption>
-					<plottingoption>waveformtemplate
-						<value>                            </value>
-					</plottingoption>
-				</plottingoptions>
-				<sortVariableValues>0</sortVariableValues>
-			</checkpoint>
-			<timestamp>Wed Dec  4 14:13:19 2024
-</timestamp>
-			<resultsname>/home/cadence/my_new_project/EECE2026_IC_Project_3rd_year/Gain_Boosted_Cascode/pmis_5OTA_Optimized/adexl/results/data/Interactive.7.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.7.rdb</simresults>
-			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
-			<netlistdelstrategy>SaveAll</netlistdelstrategy>
-			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/berkeley_cadence_141319989</localpsfdir>
-			<psfdir>/home/cadence/simulation/Gain_Boosted_Cascode/pmis_5OTA_Optimized/adexl/results/data/Interactive.7</psfdir>
-			<simdir>$AXL_PROJECT_DIR/Gain_Boosted_Cascode/pmis_5OTA_Optimized/adexl/results/data/Interactive.7</simdir>
-			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/cadence/my_new_project/EECE2026_IC_Project_3rd_year/Gain_Boosted_Cascode/pmis_5OTA_Optimized/adexl/results/data/Interactive.7.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.7.log</runlogfile>
-			<schematicpoint></schematicpoint>
-			<test>all</test>
-		</historyentry>
-		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.8
-			<checkpoint>
-				<corners>
-					<corner enabled="1">_default</corner>
-				</corners>
-				<extensions>
-					<extension>Parasitics
-						<callback>_parSetupDBExtensionCB</callback>
-						<iconvalue></iconvalue>
-						<icontype></icontype>
-					</extension>
-				</extensions>
-				<currentmode>Single Run, Sweeps and Corners</currentmode>
-				<overwritehistory>0</overwritehistory>
-				<tests>
-					<test>Gain_Boosted_Cascode:pmis_5OTA_Optimized:1
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>pmis_5OTA_Optimized</value>
-							</option>
-							<option>lib
-								<value>Gain_Boosted_Cascode</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>Gain_Boosted_Cascode:pmis_5OTA_Optimized:1_none_Interactive.8</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>pmis_5OTA_Optimized</value>
-							</option>
-							<option>lib
-								<value>Gain_Boosted_Cascode</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-						</origoptions>
-						<outputs>
-							<output>bandwidth((VF("/VOUT+") - VF("/VOUT-")) 3 "low")
-								<units>Hz</units>
-							</output>
-							<output>ymax(dB20((VF("/VOUT+") - VF("/VOUT-"))))
-								<units>dB</units>
-							</output>
-						</outputs>
-					</test>
-				</tests>
-				<overwritehistoryname>Interactive.0</overwritehistoryname>
-				<plottingoptions>
-					<plottingoption>plottype
-						<value>None</value>
-					</plottingoption>
-					<plottingoption>usewaveformtemplate
-						<value>no</value>
-					</plottingoption>
-					<plottingoption>waveformtemplate
-						<value>                            </value>
-					</plottingoption>
-				</plottingoptions>
-				<sortVariableValues>0</sortVariableValues>
-			</checkpoint>
-			<timestamp>Wed Dec  4 14:13:45 2024
-</timestamp>
-			<resultsname>/home/cadence/my_new_project/EECE2026_IC_Project_3rd_year/Gain_Boosted_Cascode/pmis_5OTA_Optimized/adexl/results/data/Interactive.8.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.8.rdb</simresults>
-			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
-			<netlistdelstrategy>SaveAll</netlistdelstrategy>
-			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/berkeley_cadence_141345698</localpsfdir>
-			<psfdir>/home/cadence/simulation/Gain_Boosted_Cascode/pmis_5OTA_Optimized/adexl/results/data/Interactive.8</psfdir>
-			<simdir>$AXL_PROJECT_DIR/Gain_Boosted_Cascode/pmis_5OTA_Optimized/adexl/results/data/Interactive.8</simdir>
-			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/cadence/my_new_project/EECE2026_IC_Project_3rd_year/Gain_Boosted_Cascode/pmis_5OTA_Optimized/adexl/results/data/Interactive.8.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.8.log</runlogfile>
-			<schematicpoint></schematicpoint>
-			<test>all</test>
-		</historyentry>
 		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.9
 			<checkpoint>
 				<corners>
@@ -1479,6 +836,2957 @@
 						</parameter>
 						<parameter>w
 							<value>200n</value>
+						</parameter>
+					</location>
+				</parameters>
+			</schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">LocalOpt.1
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Local Optimization</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>Gain_Boosted_Cascode:pmis_5OTA_Optimized:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>pmis_5OTA_Optimized</value>
+							</option>
+							<option>lib
+								<value>Gain_Boosted_Cascode</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>Gain_Boosted_Cascode:pmis_5OTA_Optimized:1_none_LocalOpt.1</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>pmis_5OTA_Optimized</value>
+							</option>
+							<option>lib
+								<value>Gain_Boosted_Cascode</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>BW
+								<units>Hz</units>
+							</output>
+							<output>GAIN
+								<units>dB</units>
+								<significantDigits>3</significantDigits>
+							</output>
+						</outputs>
+					</test>
+				</tests>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value>                            </value>
+					</plottingoption>
+				</plottingoptions>
+				<specs>
+					<spec>Gain_Boosted_Cascode:pmis_5OTA_Optimized:1.OP("/M0" "region")
+						<testname>Gain_Boosted_Cascode:pmis_5OTA_Optimized:1</testname>
+						<resname>OP("/M0" "region")</resname>
+						<specType>tol</specType>
+						<min></min>
+						<max></max>
+						<target>2</target>
+						<tol>1</tol>
+						<tolType>%</tolType>
+						<specWeight>100</specWeight>
+					</spec>
+					<spec>Gain_Boosted_Cascode:pmis_5OTA_Optimized:1.OP("/M1" "region")
+						<testname>Gain_Boosted_Cascode:pmis_5OTA_Optimized:1</testname>
+						<resname>OP("/M1" "region")</resname>
+						<specType>tol</specType>
+						<min></min>
+						<max></max>
+						<target>2</target>
+						<tol>1</tol>
+						<tolType>%</tolType>
+						<specWeight>100</specWeight>
+					</spec>
+					<spec>Gain_Boosted_Cascode:pmis_5OTA_Optimized:1.OP("/M4" "region")
+						<testname>Gain_Boosted_Cascode:pmis_5OTA_Optimized:1</testname>
+						<resname>OP("/M4" "region")</resname>
+						<specType>tol</specType>
+						<min></min>
+						<max></max>
+						<target>2</target>
+						<tol>1</tol>
+						<tolType>%</tolType>
+						<specWeight>100</specWeight>
+					</spec>
+					<spec>Gain_Boosted_Cascode:pmis_5OTA_Optimized:1.OP("/M2" "region")
+						<testname>Gain_Boosted_Cascode:pmis_5OTA_Optimized:1</testname>
+						<resname>OP("/M2" "region")</resname>
+						<specType>tol</specType>
+						<min></min>
+						<max></max>
+						<target>2</target>
+						<tol>1</tol>
+						<tolType>%</tolType>
+						<specWeight>100</specWeight>
+					</spec>
+					<spec>Gain_Boosted_Cascode:pmis_5OTA_Optimized:1.OP("/M5" "region")
+						<testname>Gain_Boosted_Cascode:pmis_5OTA_Optimized:1</testname>
+						<resname>OP("/M5" "region")</resname>
+						<specType>tol</specType>
+						<min></min>
+						<max></max>
+						<target>2</target>
+						<tol>1</tol>
+						<tolType>%</tolType>
+						<specWeight>100</specWeight>
+					</spec>
+					<spec>Gain_Boosted_Cascode:pmis_5OTA_Optimized:1.GAIN
+						<testname>Gain_Boosted_Cascode:pmis_5OTA_Optimized:1</testname>
+						<resname>GAIN</resname>
+						<specType>gt</specType>
+						<min>100</min>
+						<max></max>
+						<target></target>
+						<tol></tol>
+						<specWeight>130</specWeight>
+					</spec>
+					<spec>Gain_Boosted_Cascode:pmis_5OTA_Optimized:1.BW
+						<testname>Gain_Boosted_Cascode:pmis_5OTA_Optimized:1</testname>
+						<resname>BW</resname>
+						<specType>gt</specType>
+						<min>1M</min>
+						<max></max>
+						<target></target>
+						<tol></tol>
+						<specWeight>10</specWeight>
+					</spec>
+				</specs>
+				<parameters>
+					<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M2
+						<parameter enabled="1">l
+							<value>100n:150n:1.5u</value>
+						</parameter>
+						<parameter enabled="1">w
+							<value>200n:150n:2u</value>
+						</parameter>
+						<parameter enabled="1">m
+							<value>1 2 4 8</value>
+						</parameter>
+					</location>
+					<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M1
+						<parameter enabled="1">l
+							<value>M2/l@Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic</value>
+						</parameter>
+						<parameter enabled="1">w
+							<value>M2/w@Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic</value>
+						</parameter>
+						<parameter enabled="1">m
+							<value>M2/m@Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic</value>
+						</parameter>
+					</location>
+					<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M5
+						<parameter enabled="1">l
+							<value>100n:150n:1.5u</value>
+						</parameter>
+						<parameter enabled="1">w
+							<value>200n:150n:2u</value>
+						</parameter>
+						<parameter enabled="1">m
+							<value>M4/m@Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic</value>
+						</parameter>
+					</location>
+					<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M4
+						<parameter enabled="1">l
+							<value>M5/l@Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic</value>
+						</parameter>
+						<parameter enabled="1">w
+							<value>M5/w@Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic</value>
+						</parameter>
+						<parameter enabled="1">m
+							<value>1 2 4 8</value>
+						</parameter>
+					</location>
+					<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/V12
+						<parameter enabled="1">vdc
+							<value>100m:10m:1.2</value>
+						</parameter>
+					</location>
+					<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/V11
+						<parameter enabled="1">vdc
+							<value>100m:10m:1.2</value>
+						</parameter>
+					</location>
+					<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M0
+						<parameter enabled="1">l
+							<value>100n:150n:1.5u</value>
+						</parameter>
+						<parameter enabled="1">m
+							<value>1 2 4 8</value>
+						</parameter>
+						<parameter enabled="1">w
+							<value>200n:150n:2u</value>
+						</parameter>
+					</location>
+				</parameters>
+				<startingpoint>
+					<parameters>
+						<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M2
+							<parameter>l
+								<value>60n</value>
+							</parameter>
+							<parameter>w
+								<value>200n</value>
+							</parameter>
+							<parameter>m
+								<value>2</value>
+							</parameter>
+						</location>
+						<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M5
+							<parameter>l
+								<value>60n</value>
+							</parameter>
+							<parameter>w
+								<value>200n</value>
+							</parameter>
+						</location>
+						<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M4
+							<parameter>m
+								<value>2</value>
+							</parameter>
+						</location>
+						<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/V12
+							<parameter>vdc
+								<value>500m</value>
+							</parameter>
+						</location>
+						<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/V11
+							<parameter>vdc
+								<value>500m</value>
+							</parameter>
+						</location>
+						<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M0
+							<parameter>l
+								<value>60n</value>
+							</parameter>
+							<parameter>m
+								<value>2</value>
+							</parameter>
+							<parameter>w
+								<value>200n</value>
+							</parameter>
+						</location>
+					</parameters>
+				</startingpoint>
+				<runoptions>
+					<mode>Local Optimization
+						<runoption>effort
+							<value>brentPowell</value>
+						</runoption>
+						<runoption>lazy
+							<value>1</value>
+						</runoption>
+						<runoption>tillsatisfied
+							<value>1</value>
+						</runoption>
+						<runoption>startingstateorpoint
+							<value>Reference Point</value>
+						</runoption>
+						<runoption>startingstatename
+							<value>NONE</value>
+						</runoption>
+						<runoption>timelimit
+							<value></value>
+						</runoption>
+						<runoption>numpoints
+							<value></value>
+						</runoption>
+					</mode>
+				</runoptions>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Wed Dec  4 15:09:24 2024
+</timestamp>
+			<resultsname>/home/cadence/my_new_project/EECE2026_IC_Project_3rd_year/Gain_Boosted_Cascode/pmis_5OTA_Optimized/adexl/results/data/LocalOpt.1.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/LocalOpt.1.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/berkeley_cadence_150924434</localpsfdir>
+			<psfdir>/home/cadence/simulation/Gain_Boosted_Cascode/pmis_5OTA_Optimized/adexl/results/data/LocalOpt.1</psfdir>
+			<simdir>$AXL_PROJECT_DIR/Gain_Boosted_Cascode/pmis_5OTA_Optimized/adexl/results/data/LocalOpt.1</simdir>
+			<gendatasheetplotsonsimulation>0</gendatasheetplotsonsimulation>
+			<runlog>/home/cadence/my_new_project/EECE2026_IC_Project_3rd_year/Gain_Boosted_Cascode/pmis_5OTA_Optimized/adexl/results/data/LocalOpt.1.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/LocalOpt.1.log</runlogfile>
+			<schematicpoint>
+				<parameters>
+					<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M2
+						<parameter>l
+							<value>60n</value>
+						</parameter>
+						<parameter>w
+							<value>200n</value>
+						</parameter>
+						<parameter>m
+							<value>2</value>
+						</parameter>
+					</location>
+					<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M5
+						<parameter>l
+							<value>60n</value>
+						</parameter>
+						<parameter>w
+							<value>200n</value>
+						</parameter>
+					</location>
+					<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M4
+						<parameter>m
+							<value>2</value>
+						</parameter>
+					</location>
+					<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/V12
+						<parameter>vdc
+							<value>500m</value>
+						</parameter>
+					</location>
+					<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/V11
+						<parameter>vdc
+							<value>500m</value>
+						</parameter>
+					</location>
+					<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M0
+						<parameter>l
+							<value>60n</value>
+						</parameter>
+						<parameter>m
+							<value>2</value>
+						</parameter>
+						<parameter>w
+							<value>200n</value>
+						</parameter>
+					</location>
+				</parameters>
+			</schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">LocalOpt.2
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Local Optimization</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>Gain_Boosted_Cascode:pmis_5OTA_Optimized:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>pmis_5OTA_Optimized</value>
+							</option>
+							<option>lib
+								<value>Gain_Boosted_Cascode</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>Gain_Boosted_Cascode:pmis_5OTA_Optimized:1_none_LocalOpt.2</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>pmis_5OTA_Optimized</value>
+							</option>
+							<option>lib
+								<value>Gain_Boosted_Cascode</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>BW
+								<units>Hz</units>
+							</output>
+							<output>GAIN
+								<units>dB</units>
+								<significantDigits>3</significantDigits>
+							</output>
+						</outputs>
+					</test>
+				</tests>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value>                            </value>
+					</plottingoption>
+				</plottingoptions>
+				<specs>
+					<spec>Gain_Boosted_Cascode:pmis_5OTA_Optimized:1.OP("/M0" "region")
+						<testname>Gain_Boosted_Cascode:pmis_5OTA_Optimized:1</testname>
+						<resname>OP("/M0" "region")</resname>
+						<specType>tol</specType>
+						<min></min>
+						<max></max>
+						<target>2</target>
+						<tol>1</tol>
+						<tolType>%</tolType>
+						<specWeight>100</specWeight>
+					</spec>
+					<spec>Gain_Boosted_Cascode:pmis_5OTA_Optimized:1.OP("/M1" "region")
+						<testname>Gain_Boosted_Cascode:pmis_5OTA_Optimized:1</testname>
+						<resname>OP("/M1" "region")</resname>
+						<specType>tol</specType>
+						<min></min>
+						<max></max>
+						<target>2</target>
+						<tol>1</tol>
+						<tolType>%</tolType>
+						<specWeight>100</specWeight>
+					</spec>
+					<spec>Gain_Boosted_Cascode:pmis_5OTA_Optimized:1.OP("/M4" "region")
+						<testname>Gain_Boosted_Cascode:pmis_5OTA_Optimized:1</testname>
+						<resname>OP("/M4" "region")</resname>
+						<specType>tol</specType>
+						<min></min>
+						<max></max>
+						<target>2</target>
+						<tol>1</tol>
+						<tolType>%</tolType>
+						<specWeight>100</specWeight>
+					</spec>
+					<spec>Gain_Boosted_Cascode:pmis_5OTA_Optimized:1.OP("/M2" "region")
+						<testname>Gain_Boosted_Cascode:pmis_5OTA_Optimized:1</testname>
+						<resname>OP("/M2" "region")</resname>
+						<specType>tol</specType>
+						<min></min>
+						<max></max>
+						<target>2</target>
+						<tol>1</tol>
+						<tolType>%</tolType>
+						<specWeight>100</specWeight>
+					</spec>
+					<spec>Gain_Boosted_Cascode:pmis_5OTA_Optimized:1.OP("/M5" "region")
+						<testname>Gain_Boosted_Cascode:pmis_5OTA_Optimized:1</testname>
+						<resname>OP("/M5" "region")</resname>
+						<specType>tol</specType>
+						<min></min>
+						<max></max>
+						<target>2</target>
+						<tol>1</tol>
+						<tolType>%</tolType>
+						<specWeight>100</specWeight>
+					</spec>
+					<spec>Gain_Boosted_Cascode:pmis_5OTA_Optimized:1.GAIN
+						<testname>Gain_Boosted_Cascode:pmis_5OTA_Optimized:1</testname>
+						<resname>GAIN</resname>
+						<specType>gt</specType>
+						<min>100</min>
+						<max></max>
+						<target></target>
+						<tol></tol>
+						<specWeight>130</specWeight>
+					</spec>
+					<spec>Gain_Boosted_Cascode:pmis_5OTA_Optimized:1.BW
+						<testname>Gain_Boosted_Cascode:pmis_5OTA_Optimized:1</testname>
+						<resname>BW</resname>
+						<specType>gt</specType>
+						<min>1M</min>
+						<max></max>
+						<target></target>
+						<tol></tol>
+						<specWeight>10</specWeight>
+					</spec>
+				</specs>
+				<parameters>
+					<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M2
+						<parameter enabled="1">l
+							<value>100n:150n:1.5u</value>
+						</parameter>
+						<parameter enabled="1">w
+							<value>1u:5u:100u</value>
+						</parameter>
+						<parameter enabled="1">m
+							<value>1:1:10</value>
+						</parameter>
+					</location>
+					<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M1
+						<parameter enabled="1">l
+							<value>M2/l@Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic</value>
+						</parameter>
+						<parameter enabled="1">w
+							<value>M2/w@Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic</value>
+						</parameter>
+						<parameter enabled="1">m
+							<value>M2/m@Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic</value>
+						</parameter>
+					</location>
+					<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M5
+						<parameter enabled="1">l
+							<value>100n:150n:1.5u</value>
+						</parameter>
+						<parameter enabled="1">w
+							<value>1u:5u:100u</value>
+						</parameter>
+						<parameter enabled="1">m
+							<value>M4/m@Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic</value>
+						</parameter>
+					</location>
+					<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M4
+						<parameter enabled="1">l
+							<value>M5/l@Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic</value>
+						</parameter>
+						<parameter enabled="1">w
+							<value>M5/w@Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic</value>
+						</parameter>
+						<parameter enabled="1">m
+							<value>1:1:10</value>
+						</parameter>
+					</location>
+					<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/V12
+						<parameter enabled="1">vdc
+							<value>0.5:10m:1.2</value>
+						</parameter>
+					</location>
+					<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/V11
+						<parameter enabled="1">vdc
+							<value>0:10m:0.5</value>
+						</parameter>
+					</location>
+					<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M0
+						<parameter enabled="1">l
+							<value>100n:150n:1.5u</value>
+						</parameter>
+						<parameter enabled="1">m
+							<value>1:1:10</value>
+						</parameter>
+						<parameter enabled="1">w
+							<value>1u:5u:100u</value>
+						</parameter>
+					</location>
+				</parameters>
+				<runoptions>
+					<mode>Local Optimization
+						<runoption>effort
+							<value>brentPowell</value>
+						</runoption>
+						<runoption>lazy
+							<value>1</value>
+						</runoption>
+						<runoption>tillsatisfied
+							<value>1</value>
+						</runoption>
+						<runoption>startingstateorpoint
+							<value>Reference Point</value>
+						</runoption>
+						<runoption>startingstatename
+							<value>NONE</value>
+						</runoption>
+						<runoption>timelimit
+							<value></value>
+						</runoption>
+						<runoption>numpoints
+							<value></value>
+						</runoption>
+					</mode>
+				</runoptions>
+				<startingpoint>
+					<parameters>
+						<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M2
+							<parameter>l
+								<value>60n</value>
+							</parameter>
+							<parameter>w
+								<value>200n</value>
+							</parameter>
+							<parameter>m
+								<value>2</value>
+							</parameter>
+						</location>
+						<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M5
+							<parameter>l
+								<value>60n</value>
+							</parameter>
+							<parameter>w
+								<value>200n</value>
+							</parameter>
+						</location>
+						<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M4
+							<parameter>m
+								<value>2</value>
+							</parameter>
+						</location>
+						<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/V12
+							<parameter>vdc
+								<value>500m</value>
+							</parameter>
+						</location>
+						<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/V11
+							<parameter>vdc
+								<value>500m</value>
+							</parameter>
+						</location>
+						<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M0
+							<parameter>l
+								<value>60n</value>
+							</parameter>
+							<parameter>m
+								<value>2</value>
+							</parameter>
+							<parameter>w
+								<value>200n</value>
+							</parameter>
+						</location>
+					</parameters>
+				</startingpoint>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Wed Dec  4 15:24:10 2024
+</timestamp>
+			<resultsname>/home/cadence/my_new_project/EECE2026_IC_Project_3rd_year/Gain_Boosted_Cascode/pmis_5OTA_Optimized/adexl/results/data/LocalOpt.2.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/LocalOpt.2.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/berkeley_cadence_152410762</localpsfdir>
+			<psfdir>/home/cadence/simulation/Gain_Boosted_Cascode/pmis_5OTA_Optimized/adexl/results/data/LocalOpt.2</psfdir>
+			<simdir>$AXL_PROJECT_DIR/Gain_Boosted_Cascode/pmis_5OTA_Optimized/adexl/results/data/LocalOpt.2</simdir>
+			<gendatasheetplotsonsimulation>0</gendatasheetplotsonsimulation>
+			<runlog>/home/cadence/my_new_project/EECE2026_IC_Project_3rd_year/Gain_Boosted_Cascode/pmis_5OTA_Optimized/adexl/results/data/LocalOpt.2.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/LocalOpt.2.log</runlogfile>
+			<schematicpoint>
+				<parameters>
+					<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M2
+						<parameter>l
+							<value>60n</value>
+						</parameter>
+						<parameter>w
+							<value>200n</value>
+						</parameter>
+						<parameter>m
+							<value>2</value>
+						</parameter>
+					</location>
+					<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M5
+						<parameter>l
+							<value>60n</value>
+						</parameter>
+						<parameter>w
+							<value>200n</value>
+						</parameter>
+					</location>
+					<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M4
+						<parameter>m
+							<value>2</value>
+						</parameter>
+					</location>
+					<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/V12
+						<parameter>vdc
+							<value>500m</value>
+						</parameter>
+					</location>
+					<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/V11
+						<parameter>vdc
+							<value>500m</value>
+						</parameter>
+					</location>
+					<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M0
+						<parameter>l
+							<value>60n</value>
+						</parameter>
+						<parameter>m
+							<value>2</value>
+						</parameter>
+						<parameter>w
+							<value>200n</value>
+						</parameter>
+					</location>
+				</parameters>
+			</schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">LocalOpt.3
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Local Optimization</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>Gain_Boosted_Cascode:pmis_5OTA_Optimized:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>pmis_5OTA_Optimized</value>
+							</option>
+							<option>lib
+								<value>Gain_Boosted_Cascode</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>Gain_Boosted_Cascode:pmis_5OTA_Optimized:1_none_LocalOpt.3</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>pmis_5OTA_Optimized</value>
+							</option>
+							<option>lib
+								<value>Gain_Boosted_Cascode</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>BW
+								<units>Hz</units>
+							</output>
+							<output>GAIN
+								<units>dB</units>
+								<significantDigits>3</significantDigits>
+							</output>
+						</outputs>
+					</test>
+				</tests>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value>                            </value>
+					</plottingoption>
+				</plottingoptions>
+				<specs>
+					<spec>Gain_Boosted_Cascode:pmis_5OTA_Optimized:1.OP("/M0" "region")
+						<testname>Gain_Boosted_Cascode:pmis_5OTA_Optimized:1</testname>
+						<resname>OP("/M0" "region")</resname>
+						<specType>tol</specType>
+						<min></min>
+						<max></max>
+						<target>2</target>
+						<tol>1</tol>
+						<tolType>%</tolType>
+						<specWeight>100</specWeight>
+					</spec>
+					<spec>Gain_Boosted_Cascode:pmis_5OTA_Optimized:1.OP("/M1" "region")
+						<testname>Gain_Boosted_Cascode:pmis_5OTA_Optimized:1</testname>
+						<resname>OP("/M1" "region")</resname>
+						<specType>tol</specType>
+						<min></min>
+						<max></max>
+						<target>2</target>
+						<tol>1</tol>
+						<tolType>%</tolType>
+						<specWeight>100</specWeight>
+					</spec>
+					<spec>Gain_Boosted_Cascode:pmis_5OTA_Optimized:1.OP("/M4" "region")
+						<testname>Gain_Boosted_Cascode:pmis_5OTA_Optimized:1</testname>
+						<resname>OP("/M4" "region")</resname>
+						<specType>tol</specType>
+						<min></min>
+						<max></max>
+						<target>2</target>
+						<tol>1</tol>
+						<tolType>%</tolType>
+						<specWeight>100</specWeight>
+					</spec>
+					<spec>Gain_Boosted_Cascode:pmis_5OTA_Optimized:1.OP("/M2" "region")
+						<testname>Gain_Boosted_Cascode:pmis_5OTA_Optimized:1</testname>
+						<resname>OP("/M2" "region")</resname>
+						<specType>tol</specType>
+						<min></min>
+						<max></max>
+						<target>2</target>
+						<tol>1</tol>
+						<tolType>%</tolType>
+						<specWeight>100</specWeight>
+					</spec>
+					<spec>Gain_Boosted_Cascode:pmis_5OTA_Optimized:1.OP("/M5" "region")
+						<testname>Gain_Boosted_Cascode:pmis_5OTA_Optimized:1</testname>
+						<resname>OP("/M5" "region")</resname>
+						<specType>tol</specType>
+						<min></min>
+						<max></max>
+						<target>2</target>
+						<tol>1</tol>
+						<tolType>%</tolType>
+						<specWeight>100</specWeight>
+					</spec>
+					<spec>Gain_Boosted_Cascode:pmis_5OTA_Optimized:1.GAIN
+						<testname>Gain_Boosted_Cascode:pmis_5OTA_Optimized:1</testname>
+						<resname>GAIN</resname>
+						<specType>min</specType>
+						<min>40</min>
+						<max></max>
+						<target></target>
+						<tol></tol>
+						<specWeight>130</specWeight>
+					</spec>
+					<spec>Gain_Boosted_Cascode:pmis_5OTA_Optimized:1.BW
+						<testname>Gain_Boosted_Cascode:pmis_5OTA_Optimized:1</testname>
+						<resname>BW</resname>
+						<specType>gt</specType>
+						<min>1.72M</min>
+						<max></max>
+						<target></target>
+						<tol></tol>
+						<specWeight>10</specWeight>
+					</spec>
+				</specs>
+				<parameters>
+					<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M2
+						<parameter enabled="1">l
+							<value>100n:150n:1.5u</value>
+						</parameter>
+						<parameter enabled="1">w
+							<value>1u:5u:100u</value>
+						</parameter>
+						<parameter enabled="1">m
+							<value>1:1:10</value>
+						</parameter>
+					</location>
+					<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M1
+						<parameter enabled="1">l
+							<value>M2/l@Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic</value>
+						</parameter>
+						<parameter enabled="1">w
+							<value>M2/w@Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic</value>
+						</parameter>
+						<parameter enabled="1">m
+							<value>M2/m@Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic</value>
+						</parameter>
+					</location>
+					<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M5
+						<parameter enabled="1">l
+							<value>100n:150n:1.5u</value>
+						</parameter>
+						<parameter enabled="1">w
+							<value>1u:5u:100u</value>
+						</parameter>
+						<parameter enabled="1">m
+							<value>M4/m@Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic</value>
+						</parameter>
+					</location>
+					<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M4
+						<parameter enabled="1">l
+							<value>M5/l@Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic</value>
+						</parameter>
+						<parameter enabled="1">w
+							<value>M5/w@Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic</value>
+						</parameter>
+						<parameter enabled="1">m
+							<value>1:1:10</value>
+						</parameter>
+					</location>
+					<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/V12
+						<parameter enabled="1">vdc
+							<value>0.5:10m:1.2</value>
+						</parameter>
+					</location>
+					<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/V11
+						<parameter enabled="1">vdc
+							<value>0:10m:0.5</value>
+						</parameter>
+					</location>
+					<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M0
+						<parameter enabled="1">l
+							<value>100n:150n:1.5u</value>
+						</parameter>
+						<parameter enabled="1">m
+							<value>1:1:10</value>
+						</parameter>
+						<parameter enabled="1">w
+							<value>1u:5u:100u</value>
+						</parameter>
+					</location>
+				</parameters>
+				<runoptions>
+					<mode>Local Optimization
+						<runoption>effort
+							<value>brentPowell</value>
+						</runoption>
+						<runoption>lazy
+							<value>1</value>
+						</runoption>
+						<runoption>tillsatisfied
+							<value>1</value>
+						</runoption>
+						<runoption>startingstateorpoint
+							<value>Reference Point</value>
+						</runoption>
+						<runoption>startingstatename
+							<value>NONE</value>
+						</runoption>
+						<runoption>timelimit
+							<value></value>
+						</runoption>
+						<runoption>numpoints
+							<value></value>
+						</runoption>
+					</mode>
+				</runoptions>
+				<startingpoint>
+					<parameters>
+						<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M2
+							<parameter>l
+								<value>60n</value>
+							</parameter>
+							<parameter>w
+								<value>200n</value>
+							</parameter>
+							<parameter>m
+								<value>2</value>
+							</parameter>
+						</location>
+						<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M5
+							<parameter>l
+								<value>60n</value>
+							</parameter>
+							<parameter>w
+								<value>200n</value>
+							</parameter>
+						</location>
+						<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M4
+							<parameter>m
+								<value>2</value>
+							</parameter>
+						</location>
+						<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/V12
+							<parameter>vdc
+								<value>500m</value>
+							</parameter>
+						</location>
+						<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/V11
+							<parameter>vdc
+								<value>500m</value>
+							</parameter>
+						</location>
+						<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M0
+							<parameter>l
+								<value>60n</value>
+							</parameter>
+							<parameter>m
+								<value>2</value>
+							</parameter>
+							<parameter>w
+								<value>200n</value>
+							</parameter>
+						</location>
+					</parameters>
+				</startingpoint>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Wed Dec  4 15:40:51 2024
+</timestamp>
+			<resultsname>/home/cadence/my_new_project/EECE2026_IC_Project_3rd_year/Gain_Boosted_Cascode/pmis_5OTA_Optimized/adexl/results/data/LocalOpt.3.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/LocalOpt.3.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/berkeley_cadence_154051449</localpsfdir>
+			<psfdir>/home/cadence/simulation/Gain_Boosted_Cascode/pmis_5OTA_Optimized/adexl/results/data/LocalOpt.3</psfdir>
+			<simdir>$AXL_PROJECT_DIR/Gain_Boosted_Cascode/pmis_5OTA_Optimized/adexl/results/data/LocalOpt.3</simdir>
+			<gendatasheetplotsonsimulation>0</gendatasheetplotsonsimulation>
+			<runlog>/home/cadence/my_new_project/EECE2026_IC_Project_3rd_year/Gain_Boosted_Cascode/pmis_5OTA_Optimized/adexl/results/data/LocalOpt.3.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/LocalOpt.3.log</runlogfile>
+			<schematicpoint>
+				<parameters>
+					<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M2
+						<parameter>l
+							<value>60n</value>
+						</parameter>
+						<parameter>w
+							<value>200n</value>
+						</parameter>
+						<parameter>m
+							<value>2</value>
+						</parameter>
+					</location>
+					<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M5
+						<parameter>l
+							<value>60n</value>
+						</parameter>
+						<parameter>w
+							<value>200n</value>
+						</parameter>
+					</location>
+					<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M4
+						<parameter>m
+							<value>2</value>
+						</parameter>
+					</location>
+					<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/V12
+						<parameter>vdc
+							<value>500m</value>
+						</parameter>
+					</location>
+					<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/V11
+						<parameter>vdc
+							<value>500m</value>
+						</parameter>
+					</location>
+					<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M0
+						<parameter>l
+							<value>60n</value>
+						</parameter>
+						<parameter>m
+							<value>2</value>
+						</parameter>
+						<parameter>w
+							<value>200n</value>
+						</parameter>
+					</location>
+				</parameters>
+			</schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">LocalOpt.4
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Local Optimization</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>Gain_Boosted_Cascode:pmis_5OTA_Optimized:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>pmis_5OTA_Optimized</value>
+							</option>
+							<option>lib
+								<value>Gain_Boosted_Cascode</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>Gain_Boosted_Cascode:pmis_5OTA_Optimized:1_none_LocalOpt.4</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>pmis_5OTA_Optimized</value>
+							</option>
+							<option>lib
+								<value>Gain_Boosted_Cascode</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>BW
+								<units>Hz</units>
+							</output>
+							<output>GAIN
+								<units>dB</units>
+								<significantDigits>3</significantDigits>
+							</output>
+						</outputs>
+					</test>
+				</tests>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value>                            </value>
+					</plottingoption>
+				</plottingoptions>
+				<specs>
+					<spec>Gain_Boosted_Cascode:pmis_5OTA_Optimized:1.OP("/M0" "region")
+						<testname>Gain_Boosted_Cascode:pmis_5OTA_Optimized:1</testname>
+						<resname>OP("/M0" "region")</resname>
+						<specType>tol</specType>
+						<min></min>
+						<max></max>
+						<target>2</target>
+						<tol>1</tol>
+						<tolType>%</tolType>
+						<specWeight>100</specWeight>
+					</spec>
+					<spec>Gain_Boosted_Cascode:pmis_5OTA_Optimized:1.OP("/M1" "region")
+						<testname>Gain_Boosted_Cascode:pmis_5OTA_Optimized:1</testname>
+						<resname>OP("/M1" "region")</resname>
+						<specType>tol</specType>
+						<min></min>
+						<max></max>
+						<target>2</target>
+						<tol>1</tol>
+						<tolType>%</tolType>
+						<specWeight>100</specWeight>
+					</spec>
+					<spec>Gain_Boosted_Cascode:pmis_5OTA_Optimized:1.OP("/M4" "region")
+						<testname>Gain_Boosted_Cascode:pmis_5OTA_Optimized:1</testname>
+						<resname>OP("/M4" "region")</resname>
+						<specType>tol</specType>
+						<min></min>
+						<max></max>
+						<target>2</target>
+						<tol>1</tol>
+						<tolType>%</tolType>
+						<specWeight>100</specWeight>
+					</spec>
+					<spec>Gain_Boosted_Cascode:pmis_5OTA_Optimized:1.OP("/M2" "region")
+						<testname>Gain_Boosted_Cascode:pmis_5OTA_Optimized:1</testname>
+						<resname>OP("/M2" "region")</resname>
+						<specType>tol</specType>
+						<min></min>
+						<max></max>
+						<target>2</target>
+						<tol>1</tol>
+						<tolType>%</tolType>
+						<specWeight>100</specWeight>
+					</spec>
+					<spec>Gain_Boosted_Cascode:pmis_5OTA_Optimized:1.OP("/M5" "region")
+						<testname>Gain_Boosted_Cascode:pmis_5OTA_Optimized:1</testname>
+						<resname>OP("/M5" "region")</resname>
+						<specType>tol</specType>
+						<min></min>
+						<max></max>
+						<target>2</target>
+						<tol>1</tol>
+						<tolType>%</tolType>
+						<specWeight>100</specWeight>
+					</spec>
+					<spec>Gain_Boosted_Cascode:pmis_5OTA_Optimized:1.GAIN
+						<testname>Gain_Boosted_Cascode:pmis_5OTA_Optimized:1</testname>
+						<resname>GAIN</resname>
+						<specType>max</specType>
+						<min></min>
+						<max>40</max>
+						<target></target>
+						<tol></tol>
+						<specWeight>130</specWeight>
+					</spec>
+					<spec>Gain_Boosted_Cascode:pmis_5OTA_Optimized:1.BW
+						<testname>Gain_Boosted_Cascode:pmis_5OTA_Optimized:1</testname>
+						<resname>BW</resname>
+						<specType>gt</specType>
+						<min>1.72M</min>
+						<max></max>
+						<target></target>
+						<tol></tol>
+						<specWeight>10</specWeight>
+					</spec>
+				</specs>
+				<parameters>
+					<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M2
+						<parameter enabled="1">l
+							<value>100n:150n:1.5u</value>
+						</parameter>
+						<parameter enabled="1">w
+							<value>1u:5u:100u</value>
+						</parameter>
+						<parameter enabled="1">m
+							<value>1:1:10</value>
+						</parameter>
+					</location>
+					<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M1
+						<parameter enabled="1">l
+							<value>M2/l@Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic</value>
+						</parameter>
+						<parameter enabled="1">w
+							<value>M2/w@Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic</value>
+						</parameter>
+						<parameter enabled="1">m
+							<value>M2/m@Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic</value>
+						</parameter>
+					</location>
+					<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M5
+						<parameter enabled="1">l
+							<value>100n:150n:1.5u</value>
+						</parameter>
+						<parameter enabled="1">w
+							<value>1u:5u:100u</value>
+						</parameter>
+						<parameter enabled="1">m
+							<value>M4/m@Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic</value>
+						</parameter>
+					</location>
+					<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M4
+						<parameter enabled="1">l
+							<value>M5/l@Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic</value>
+						</parameter>
+						<parameter enabled="1">w
+							<value>M5/w@Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic</value>
+						</parameter>
+						<parameter enabled="1">m
+							<value>1:1:10</value>
+						</parameter>
+					</location>
+					<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/V12
+						<parameter enabled="1">vdc
+							<value>0.5:10m:1.2</value>
+						</parameter>
+					</location>
+					<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/V11
+						<parameter enabled="1">vdc
+							<value>0:10m:0.5</value>
+						</parameter>
+					</location>
+					<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M0
+						<parameter enabled="1">l
+							<value>100n:150n:1.5u</value>
+						</parameter>
+						<parameter enabled="1">m
+							<value>1:1:10</value>
+						</parameter>
+						<parameter enabled="1">w
+							<value>1u:5u:100u</value>
+						</parameter>
+					</location>
+				</parameters>
+				<runoptions>
+					<mode>Local Optimization
+						<runoption>effort
+							<value>brentPowell</value>
+						</runoption>
+						<runoption>lazy
+							<value>1</value>
+						</runoption>
+						<runoption>tillsatisfied
+							<value>1</value>
+						</runoption>
+						<runoption>startingstateorpoint
+							<value>Reference Point</value>
+						</runoption>
+						<runoption>startingstatename
+							<value>NONE</value>
+						</runoption>
+						<runoption>timelimit
+							<value></value>
+						</runoption>
+						<runoption>numpoints
+							<value></value>
+						</runoption>
+					</mode>
+				</runoptions>
+				<startingpoint>
+					<parameters>
+						<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M2
+							<parameter>l
+								<value>60n</value>
+							</parameter>
+							<parameter>w
+								<value>200n</value>
+							</parameter>
+							<parameter>m
+								<value>2</value>
+							</parameter>
+						</location>
+						<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M5
+							<parameter>l
+								<value>60n</value>
+							</parameter>
+							<parameter>w
+								<value>200n</value>
+							</parameter>
+						</location>
+						<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M4
+							<parameter>m
+								<value>2</value>
+							</parameter>
+						</location>
+						<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/V12
+							<parameter>vdc
+								<value>500m</value>
+							</parameter>
+						</location>
+						<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/V11
+							<parameter>vdc
+								<value>500m</value>
+							</parameter>
+						</location>
+						<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M0
+							<parameter>l
+								<value>60n</value>
+							</parameter>
+							<parameter>m
+								<value>2</value>
+							</parameter>
+							<parameter>w
+								<value>200n</value>
+							</parameter>
+						</location>
+					</parameters>
+				</startingpoint>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Wed Dec  4 15:42:45 2024
+</timestamp>
+			<resultsname>/home/cadence/my_new_project/EECE2026_IC_Project_3rd_year/Gain_Boosted_Cascode/pmis_5OTA_Optimized/adexl/results/data/LocalOpt.4.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/LocalOpt.4.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/berkeley_cadence_154245796</localpsfdir>
+			<psfdir>/home/cadence/simulation/Gain_Boosted_Cascode/pmis_5OTA_Optimized/adexl/results/data/LocalOpt.4</psfdir>
+			<simdir>$AXL_PROJECT_DIR/Gain_Boosted_Cascode/pmis_5OTA_Optimized/adexl/results/data/LocalOpt.4</simdir>
+			<gendatasheetplotsonsimulation>0</gendatasheetplotsonsimulation>
+			<runlog>/home/cadence/my_new_project/EECE2026_IC_Project_3rd_year/Gain_Boosted_Cascode/pmis_5OTA_Optimized/adexl/results/data/LocalOpt.4.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/LocalOpt.4.log</runlogfile>
+			<schematicpoint>
+				<parameters>
+					<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M2
+						<parameter>l
+							<value>60n</value>
+						</parameter>
+						<parameter>w
+							<value>200n</value>
+						</parameter>
+						<parameter>m
+							<value>2</value>
+						</parameter>
+					</location>
+					<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M5
+						<parameter>l
+							<value>60n</value>
+						</parameter>
+						<parameter>w
+							<value>200n</value>
+						</parameter>
+					</location>
+					<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M4
+						<parameter>m
+							<value>2</value>
+						</parameter>
+					</location>
+					<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/V12
+						<parameter>vdc
+							<value>500m</value>
+						</parameter>
+					</location>
+					<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/V11
+						<parameter>vdc
+							<value>500m</value>
+						</parameter>
+					</location>
+					<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M0
+						<parameter>l
+							<value>60n</value>
+						</parameter>
+						<parameter>m
+							<value>2</value>
+						</parameter>
+						<parameter>w
+							<value>200n</value>
+						</parameter>
+					</location>
+				</parameters>
+			</schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">LocalOpt.5
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Local Optimization</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>Gain_Boosted_Cascode:pmis_5OTA_Optimized:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>pmis_5OTA_Optimized</value>
+							</option>
+							<option>lib
+								<value>Gain_Boosted_Cascode</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>Gain_Boosted_Cascode:pmis_5OTA_Optimized:1_none_LocalOpt.5</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>pmis_5OTA_Optimized</value>
+							</option>
+							<option>lib
+								<value>Gain_Boosted_Cascode</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>BW
+								<units>Hz</units>
+							</output>
+							<output>GAIN
+								<units>dB</units>
+								<significantDigits>3</significantDigits>
+							</output>
+						</outputs>
+					</test>
+				</tests>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value>                            </value>
+					</plottingoption>
+				</plottingoptions>
+				<specs>
+					<spec>Gain_Boosted_Cascode:pmis_5OTA_Optimized:1.OP("/M0" "region")
+						<testname>Gain_Boosted_Cascode:pmis_5OTA_Optimized:1</testname>
+						<resname>OP("/M0" "region")</resname>
+						<specType>tol</specType>
+						<min></min>
+						<max></max>
+						<target>2</target>
+						<tol>1</tol>
+						<tolType>%</tolType>
+						<specWeight>100</specWeight>
+					</spec>
+					<spec>Gain_Boosted_Cascode:pmis_5OTA_Optimized:1.OP("/M1" "region")
+						<testname>Gain_Boosted_Cascode:pmis_5OTA_Optimized:1</testname>
+						<resname>OP("/M1" "region")</resname>
+						<specType>tol</specType>
+						<min></min>
+						<max></max>
+						<target>2</target>
+						<tol>1</tol>
+						<tolType>%</tolType>
+						<specWeight>100</specWeight>
+					</spec>
+					<spec>Gain_Boosted_Cascode:pmis_5OTA_Optimized:1.OP("/M4" "region")
+						<testname>Gain_Boosted_Cascode:pmis_5OTA_Optimized:1</testname>
+						<resname>OP("/M4" "region")</resname>
+						<specType>tol</specType>
+						<min></min>
+						<max></max>
+						<target>2</target>
+						<tol>1</tol>
+						<tolType>%</tolType>
+						<specWeight>100</specWeight>
+					</spec>
+					<spec>Gain_Boosted_Cascode:pmis_5OTA_Optimized:1.OP("/M2" "region")
+						<testname>Gain_Boosted_Cascode:pmis_5OTA_Optimized:1</testname>
+						<resname>OP("/M2" "region")</resname>
+						<specType>tol</specType>
+						<min></min>
+						<max></max>
+						<target>2</target>
+						<tol>1</tol>
+						<tolType>%</tolType>
+						<specWeight>100</specWeight>
+					</spec>
+					<spec>Gain_Boosted_Cascode:pmis_5OTA_Optimized:1.OP("/M5" "region")
+						<testname>Gain_Boosted_Cascode:pmis_5OTA_Optimized:1</testname>
+						<resname>OP("/M5" "region")</resname>
+						<specType>tol</specType>
+						<min></min>
+						<max></max>
+						<target>2</target>
+						<tol>1</tol>
+						<tolType>%</tolType>
+						<specWeight>100</specWeight>
+					</spec>
+					<spec>Gain_Boosted_Cascode:pmis_5OTA_Optimized:1.GAIN
+						<testname>Gain_Boosted_Cascode:pmis_5OTA_Optimized:1</testname>
+						<resname>GAIN</resname>
+						<specType>max</specType>
+						<min></min>
+						<max>40</max>
+						<target></target>
+						<tol></tol>
+						<specWeight>80</specWeight>
+					</spec>
+					<spec>Gain_Boosted_Cascode:pmis_5OTA_Optimized:1.BW
+						<testname>Gain_Boosted_Cascode:pmis_5OTA_Optimized:1</testname>
+						<resname>BW</resname>
+						<specType>gt</specType>
+						<min>1.72M</min>
+						<max></max>
+						<target></target>
+						<tol></tol>
+						<specWeight>50</specWeight>
+					</spec>
+				</specs>
+				<parameters>
+					<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M2
+						<parameter enabled="1">l
+							<value>100n:150n:1.5u</value>
+						</parameter>
+						<parameter enabled="1">w
+							<value>1u:5u:100u</value>
+						</parameter>
+						<parameter enabled="1">m
+							<value>1:1:10</value>
+						</parameter>
+					</location>
+					<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M1
+						<parameter enabled="1">l
+							<value>M2/l@Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic</value>
+						</parameter>
+						<parameter enabled="1">w
+							<value>M2/w@Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic</value>
+						</parameter>
+						<parameter enabled="1">m
+							<value>M2/m@Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic</value>
+						</parameter>
+					</location>
+					<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M5
+						<parameter enabled="1">l
+							<value>100n:150n:1.5u</value>
+						</parameter>
+						<parameter enabled="1">w
+							<value>1u:5u:100u</value>
+						</parameter>
+						<parameter enabled="1">m
+							<value>M4/m@Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic</value>
+						</parameter>
+					</location>
+					<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M4
+						<parameter enabled="1">l
+							<value>M5/l@Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic</value>
+						</parameter>
+						<parameter enabled="1">w
+							<value>M5/w@Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic</value>
+						</parameter>
+						<parameter enabled="1">m
+							<value>1:1:10</value>
+						</parameter>
+					</location>
+					<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/V12
+						<parameter enabled="1">vdc
+							<value>0.5:10m:1.2</value>
+						</parameter>
+					</location>
+					<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/V11
+						<parameter enabled="1">vdc
+							<value>0:10m:0.5</value>
+						</parameter>
+					</location>
+					<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M0
+						<parameter enabled="1">l
+							<value>100n:150n:1.5u</value>
+						</parameter>
+						<parameter enabled="1">m
+							<value>1:1:10</value>
+						</parameter>
+						<parameter enabled="1">w
+							<value>1u:5u:100u</value>
+						</parameter>
+					</location>
+				</parameters>
+				<runoptions>
+					<mode>Local Optimization
+						<runoption>effort
+							<value>brentPowell</value>
+						</runoption>
+						<runoption>lazy
+							<value>1</value>
+						</runoption>
+						<runoption>tillsatisfied
+							<value>1</value>
+						</runoption>
+						<runoption>startingstateorpoint
+							<value>Reference Point</value>
+						</runoption>
+						<runoption>startingstatename
+							<value>NONE</value>
+						</runoption>
+						<runoption>timelimit
+							<value></value>
+						</runoption>
+						<runoption>numpoints
+							<value></value>
+						</runoption>
+					</mode>
+				</runoptions>
+				<startingpoint>
+					<parameters>
+						<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M2
+							<parameter>l
+								<value>60n</value>
+							</parameter>
+							<parameter>w
+								<value>200n</value>
+							</parameter>
+							<parameter>m
+								<value>2</value>
+							</parameter>
+						</location>
+						<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M5
+							<parameter>l
+								<value>60n</value>
+							</parameter>
+							<parameter>w
+								<value>200n</value>
+							</parameter>
+						</location>
+						<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M4
+							<parameter>m
+								<value>2</value>
+							</parameter>
+						</location>
+						<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/V12
+							<parameter>vdc
+								<value>500m</value>
+							</parameter>
+						</location>
+						<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/V11
+							<parameter>vdc
+								<value>500m</value>
+							</parameter>
+						</location>
+						<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M0
+							<parameter>l
+								<value>60n</value>
+							</parameter>
+							<parameter>m
+								<value>2</value>
+							</parameter>
+							<parameter>w
+								<value>200n</value>
+							</parameter>
+						</location>
+					</parameters>
+				</startingpoint>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Wed Dec  4 16:02:32 2024
+</timestamp>
+			<resultsname>/home/cadence/my_new_project/EECE2026_IC_Project_3rd_year/Gain_Boosted_Cascode/pmis_5OTA_Optimized/adexl/results/data/LocalOpt.5.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/LocalOpt.5.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/berkeley_cadence_160232221</localpsfdir>
+			<psfdir>/home/cadence/simulation/Gain_Boosted_Cascode/pmis_5OTA_Optimized/adexl/results/data/LocalOpt.5</psfdir>
+			<simdir>$AXL_PROJECT_DIR/Gain_Boosted_Cascode/pmis_5OTA_Optimized/adexl/results/data/LocalOpt.5</simdir>
+			<gendatasheetplotsonsimulation>0</gendatasheetplotsonsimulation>
+			<runlog>/home/cadence/my_new_project/EECE2026_IC_Project_3rd_year/Gain_Boosted_Cascode/pmis_5OTA_Optimized/adexl/results/data/LocalOpt.5.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/LocalOpt.5.log</runlogfile>
+			<schematicpoint>
+				<parameters>
+					<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M2
+						<parameter>l
+							<value>60n</value>
+						</parameter>
+						<parameter>w
+							<value>200n</value>
+						</parameter>
+						<parameter>m
+							<value>2</value>
+						</parameter>
+					</location>
+					<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M5
+						<parameter>l
+							<value>60n</value>
+						</parameter>
+						<parameter>w
+							<value>200n</value>
+						</parameter>
+					</location>
+					<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M4
+						<parameter>m
+							<value>2</value>
+						</parameter>
+					</location>
+					<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/V12
+						<parameter>vdc
+							<value>500m</value>
+						</parameter>
+					</location>
+					<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/V11
+						<parameter>vdc
+							<value>500m</value>
+						</parameter>
+					</location>
+					<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M0
+						<parameter>l
+							<value>60n</value>
+						</parameter>
+						<parameter>m
+							<value>2</value>
+						</parameter>
+						<parameter>w
+							<value>200n</value>
+						</parameter>
+					</location>
+				</parameters>
+			</schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">GlobalOpt.0
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Global Optimization</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>Gain_Boosted_Cascode:pmis_5OTA_Optimized:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>pmis_5OTA_Optimized</value>
+							</option>
+							<option>lib
+								<value>Gain_Boosted_Cascode</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>Gain_Boosted_Cascode:pmis_5OTA_Optimized:1_none_GlobalOpt.0</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>pmis_5OTA_Optimized</value>
+							</option>
+							<option>lib
+								<value>Gain_Boosted_Cascode</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>BW
+								<units>Hz</units>
+							</output>
+							<output>GAIN
+								<units>dB</units>
+								<significantDigits>3</significantDigits>
+							</output>
+						</outputs>
+					</test>
+				</tests>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value>                            </value>
+					</plottingoption>
+				</plottingoptions>
+				<specs>
+					<spec>Gain_Boosted_Cascode:pmis_5OTA_Optimized:1.OP("/M0" "region")
+						<testname>Gain_Boosted_Cascode:pmis_5OTA_Optimized:1</testname>
+						<resname>OP("/M0" "region")</resname>
+						<specType>tol</specType>
+						<min></min>
+						<max></max>
+						<target>2</target>
+						<tol>1</tol>
+						<tolType>%</tolType>
+						<specWeight>100</specWeight>
+					</spec>
+					<spec>Gain_Boosted_Cascode:pmis_5OTA_Optimized:1.OP("/M1" "region")
+						<testname>Gain_Boosted_Cascode:pmis_5OTA_Optimized:1</testname>
+						<resname>OP("/M1" "region")</resname>
+						<specType>tol</specType>
+						<min></min>
+						<max></max>
+						<target>2</target>
+						<tol>1</tol>
+						<tolType>%</tolType>
+						<specWeight>100</specWeight>
+					</spec>
+					<spec>Gain_Boosted_Cascode:pmis_5OTA_Optimized:1.OP("/M4" "region")
+						<testname>Gain_Boosted_Cascode:pmis_5OTA_Optimized:1</testname>
+						<resname>OP("/M4" "region")</resname>
+						<specType>tol</specType>
+						<min></min>
+						<max></max>
+						<target>2</target>
+						<tol>1</tol>
+						<tolType>%</tolType>
+						<specWeight>100</specWeight>
+					</spec>
+					<spec>Gain_Boosted_Cascode:pmis_5OTA_Optimized:1.OP("/M2" "region")
+						<testname>Gain_Boosted_Cascode:pmis_5OTA_Optimized:1</testname>
+						<resname>OP("/M2" "region")</resname>
+						<specType>tol</specType>
+						<min></min>
+						<max></max>
+						<target>2</target>
+						<tol>1</tol>
+						<tolType>%</tolType>
+						<specWeight>100</specWeight>
+					</spec>
+					<spec>Gain_Boosted_Cascode:pmis_5OTA_Optimized:1.OP("/M5" "region")
+						<testname>Gain_Boosted_Cascode:pmis_5OTA_Optimized:1</testname>
+						<resname>OP("/M5" "region")</resname>
+						<specType>tol</specType>
+						<min></min>
+						<max></max>
+						<target>2</target>
+						<tol>1</tol>
+						<tolType>%</tolType>
+						<specWeight>100</specWeight>
+					</spec>
+					<spec>Gain_Boosted_Cascode:pmis_5OTA_Optimized:1.GAIN
+						<testname>Gain_Boosted_Cascode:pmis_5OTA_Optimized:1</testname>
+						<resname>GAIN</resname>
+						<specType>max</specType>
+						<min></min>
+						<max>40</max>
+						<target></target>
+						<tol></tol>
+						<specWeight>80</specWeight>
+					</spec>
+					<spec>Gain_Boosted_Cascode:pmis_5OTA_Optimized:1.BW
+						<testname>Gain_Boosted_Cascode:pmis_5OTA_Optimized:1</testname>
+						<resname>BW</resname>
+						<specType>gt</specType>
+						<min>1.72M</min>
+						<max></max>
+						<target></target>
+						<tol></tol>
+						<specWeight>50</specWeight>
+					</spec>
+				</specs>
+				<parameters>
+					<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M2
+						<parameter enabled="1">l
+							<value>100n:150n:1.5u</value>
+						</parameter>
+						<parameter enabled="1">w
+							<value>1u:5u:100u</value>
+						</parameter>
+						<parameter enabled="1">m
+							<value>1:1:10</value>
+						</parameter>
+					</location>
+					<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M1
+						<parameter enabled="1">l
+							<value>M2/l@Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic</value>
+						</parameter>
+						<parameter enabled="1">w
+							<value>M2/w@Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic</value>
+						</parameter>
+						<parameter enabled="1">m
+							<value>M2/m@Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic</value>
+						</parameter>
+					</location>
+					<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M5
+						<parameter enabled="1">l
+							<value>100n:150n:1.5u</value>
+						</parameter>
+						<parameter enabled="1">w
+							<value>1u:5u:100u</value>
+						</parameter>
+						<parameter enabled="1">m
+							<value>M4/m@Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic</value>
+						</parameter>
+					</location>
+					<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M4
+						<parameter enabled="1">l
+							<value>M5/l@Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic</value>
+						</parameter>
+						<parameter enabled="1">w
+							<value>M5/w@Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic</value>
+						</parameter>
+						<parameter enabled="1">m
+							<value>1:1:10</value>
+						</parameter>
+					</location>
+					<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/V12
+						<parameter enabled="1">vdc
+							<value>0.5:10m:1.2</value>
+						</parameter>
+					</location>
+					<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/V11
+						<parameter enabled="1">vdc
+							<value>0:10m:0.5</value>
+						</parameter>
+					</location>
+					<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M0
+						<parameter enabled="1">l
+							<value>100n:150n:1.5u</value>
+						</parameter>
+						<parameter enabled="1">m
+							<value>1:1:10</value>
+						</parameter>
+						<parameter enabled="1">w
+							<value>1u:5u:100u</value>
+						</parameter>
+					</location>
+				</parameters>
+				<runoptions>
+					<mode>Local Optimization
+						<runoption>effort
+							<value>brentPowell</value>
+						</runoption>
+						<runoption>lazy
+							<value>1</value>
+						</runoption>
+						<runoption>tillsatisfied
+							<value>1</value>
+						</runoption>
+						<runoption>startingstateorpoint
+							<value>Reference Point</value>
+						</runoption>
+						<runoption>startingstatename
+							<value>NONE</value>
+						</runoption>
+						<runoption>timelimit
+							<value></value>
+						</runoption>
+						<runoption>numpoints
+							<value></value>
+						</runoption>
+					</mode>
+					<mode>Global Optimization
+						<runoption>referencepoint
+							<value>0</value>
+						</runoption>
+						<runoption>startingstateorpoint
+							<value>Reference Point</value>
+						</runoption>
+						<runoption>startingstatename
+							<value>NONE</value>
+						</runoption>
+						<runoption>lazy
+							<value>1</value>
+						</runoption>
+						<runoption>tillsatisfied
+							<value>1</value>
+						</runoption>
+						<runoption>timelimit
+							<value></value>
+						</runoption>
+						<runoption>numpoints
+							<value></value>
+						</runoption>
+						<runoption>ptswithnoimprovement
+							<value></value>
+						</runoption>
+						<runoption>pointsAfterAllSpecsSatisfied
+							<value></value>
+						</runoption>
+					</mode>
+				</runoptions>
+				<startingpoint>
+					<parameters>
+						<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M2
+							<parameter>l
+								<value>60n</value>
+							</parameter>
+							<parameter>w
+								<value>200n</value>
+							</parameter>
+							<parameter>m
+								<value>2</value>
+							</parameter>
+						</location>
+						<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M5
+							<parameter>l
+								<value>60n</value>
+							</parameter>
+							<parameter>w
+								<value>200n</value>
+							</parameter>
+						</location>
+						<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M4
+							<parameter>m
+								<value>2</value>
+							</parameter>
+						</location>
+						<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/V12
+							<parameter>vdc
+								<value>500m</value>
+							</parameter>
+						</location>
+						<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/V11
+							<parameter>vdc
+								<value>500m</value>
+							</parameter>
+						</location>
+						<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M0
+							<parameter>l
+								<value>60n</value>
+							</parameter>
+							<parameter>m
+								<value>2</value>
+							</parameter>
+							<parameter>w
+								<value>200n</value>
+							</parameter>
+						</location>
+					</parameters>
+				</startingpoint>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Wed Dec  4 16:40:58 2024
+</timestamp>
+			<resultsname>/home/cadence/my_new_project/EECE2026_IC_Project_3rd_year/Gain_Boosted_Cascode/pmis_5OTA_Optimized/adexl/results/data/GlobalOpt.0.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/GlobalOpt.0.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/berkeley_cadence_164058921</localpsfdir>
+			<psfdir>/home/cadence/simulation/Gain_Boosted_Cascode/pmis_5OTA_Optimized/adexl/results/data/GlobalOpt.0</psfdir>
+			<simdir>$AXL_PROJECT_DIR/Gain_Boosted_Cascode/pmis_5OTA_Optimized/adexl/results/data/GlobalOpt.0</simdir>
+			<gendatasheetplotsonsimulation>0</gendatasheetplotsonsimulation>
+			<runlog>/home/cadence/my_new_project/EECE2026_IC_Project_3rd_year/Gain_Boosted_Cascode/pmis_5OTA_Optimized/adexl/results/data/GlobalOpt.0.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/GlobalOpt.0.log</runlogfile>
+			<schematicpoint>
+				<parameters>
+					<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M2
+						<parameter>l
+							<value>60n</value>
+						</parameter>
+						<parameter>w
+							<value>200n</value>
+						</parameter>
+						<parameter>m
+							<value>2</value>
+						</parameter>
+					</location>
+					<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M5
+						<parameter>l
+							<value>60n</value>
+						</parameter>
+						<parameter>w
+							<value>200n</value>
+						</parameter>
+					</location>
+					<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M4
+						<parameter>m
+							<value>2</value>
+						</parameter>
+					</location>
+					<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/V12
+						<parameter>vdc
+							<value>500m</value>
+						</parameter>
+					</location>
+					<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/V11
+						<parameter>vdc
+							<value>500m</value>
+						</parameter>
+					</location>
+					<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M0
+						<parameter>l
+							<value>60n</value>
+						</parameter>
+						<parameter>m
+							<value>2</value>
+						</parameter>
+						<parameter>w
+							<value>200n</value>
+						</parameter>
+					</location>
+				</parameters>
+			</schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">GlobalOpt.1
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Global Optimization</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>Gain_Boosted_Cascode:pmis_5OTA_Optimized:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>pmis_5OTA_Optimized</value>
+							</option>
+							<option>lib
+								<value>Gain_Boosted_Cascode</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>Gain_Boosted_Cascode:pmis_5OTA_Optimized:1_none_GlobalOpt.1</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>pmis_5OTA_Optimized</value>
+							</option>
+							<option>lib
+								<value>Gain_Boosted_Cascode</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>BW
+								<units>Hz</units>
+							</output>
+							<output>GAIN
+								<units>dB</units>
+								<significantDigits>3</significantDigits>
+							</output>
+						</outputs>
+					</test>
+				</tests>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value>                            </value>
+					</plottingoption>
+				</plottingoptions>
+				<specs>
+					<spec>Gain_Boosted_Cascode:pmis_5OTA_Optimized:1.OP("/M0" "region")
+						<testname>Gain_Boosted_Cascode:pmis_5OTA_Optimized:1</testname>
+						<resname>OP("/M0" "region")</resname>
+						<specType>tol</specType>
+						<min></min>
+						<max></max>
+						<target>2</target>
+						<tol>1</tol>
+						<tolType>%</tolType>
+						<specWeight>100</specWeight>
+					</spec>
+					<spec>Gain_Boosted_Cascode:pmis_5OTA_Optimized:1.OP("/M1" "region")
+						<testname>Gain_Boosted_Cascode:pmis_5OTA_Optimized:1</testname>
+						<resname>OP("/M1" "region")</resname>
+						<specType>tol</specType>
+						<min></min>
+						<max></max>
+						<target>2</target>
+						<tol>1</tol>
+						<tolType>%</tolType>
+						<specWeight>100</specWeight>
+					</spec>
+					<spec>Gain_Boosted_Cascode:pmis_5OTA_Optimized:1.OP("/M4" "region")
+						<testname>Gain_Boosted_Cascode:pmis_5OTA_Optimized:1</testname>
+						<resname>OP("/M4" "region")</resname>
+						<specType>tol</specType>
+						<min></min>
+						<max></max>
+						<target>2</target>
+						<tol>1</tol>
+						<tolType>%</tolType>
+						<specWeight>100</specWeight>
+					</spec>
+					<spec>Gain_Boosted_Cascode:pmis_5OTA_Optimized:1.OP("/M2" "region")
+						<testname>Gain_Boosted_Cascode:pmis_5OTA_Optimized:1</testname>
+						<resname>OP("/M2" "region")</resname>
+						<specType>tol</specType>
+						<min></min>
+						<max></max>
+						<target>2</target>
+						<tol>1</tol>
+						<tolType>%</tolType>
+						<specWeight>100</specWeight>
+					</spec>
+					<spec>Gain_Boosted_Cascode:pmis_5OTA_Optimized:1.OP("/M5" "region")
+						<testname>Gain_Boosted_Cascode:pmis_5OTA_Optimized:1</testname>
+						<resname>OP("/M5" "region")</resname>
+						<specType>tol</specType>
+						<min></min>
+						<max></max>
+						<target>2</target>
+						<tol>1</tol>
+						<tolType>%</tolType>
+						<specWeight>100</specWeight>
+					</spec>
+					<spec>Gain_Boosted_Cascode:pmis_5OTA_Optimized:1.GAIN
+						<testname>Gain_Boosted_Cascode:pmis_5OTA_Optimized:1</testname>
+						<resname>GAIN</resname>
+						<specType>max</specType>
+						<min></min>
+						<max>40</max>
+						<target></target>
+						<tol></tol>
+						<specWeight>80</specWeight>
+					</spec>
+					<spec>Gain_Boosted_Cascode:pmis_5OTA_Optimized:1.BW
+						<testname>Gain_Boosted_Cascode:pmis_5OTA_Optimized:1</testname>
+						<resname>BW</resname>
+						<specType>gt</specType>
+						<min>1.72M</min>
+						<max></max>
+						<target></target>
+						<tol></tol>
+						<specWeight>50</specWeight>
+					</spec>
+				</specs>
+				<parameters>
+					<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M2
+						<parameter enabled="1">l
+							<value>100n:150n:1.5u</value>
+						</parameter>
+						<parameter enabled="1">w
+							<value>1u:5u:100u</value>
+						</parameter>
+						<parameter enabled="1">m
+							<value>1:1:10</value>
+						</parameter>
+					</location>
+					<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M1
+						<parameter enabled="1">l
+							<value>M2/l@Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic</value>
+						</parameter>
+						<parameter enabled="1">w
+							<value>M2/w@Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic</value>
+						</parameter>
+						<parameter enabled="1">m
+							<value>M2/m@Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic</value>
+						</parameter>
+					</location>
+					<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M5
+						<parameter enabled="1">l
+							<value>100n:150n:1.5u</value>
+						</parameter>
+						<parameter enabled="1">w
+							<value>1u:5u:100u</value>
+						</parameter>
+						<parameter enabled="1">m
+							<value>M4/m@Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic</value>
+						</parameter>
+					</location>
+					<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M4
+						<parameter enabled="1">l
+							<value>M5/l@Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic</value>
+						</parameter>
+						<parameter enabled="1">w
+							<value>M5/w@Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic</value>
+						</parameter>
+						<parameter enabled="1">m
+							<value>1:1:10</value>
+						</parameter>
+					</location>
+					<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/V12
+						<parameter enabled="1">vdc
+							<value>0.5:10m:1.2</value>
+						</parameter>
+					</location>
+					<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/V11
+						<parameter enabled="1">vdc
+							<value>0:10m:0.5</value>
+						</parameter>
+					</location>
+					<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M0
+						<parameter enabled="1">l
+							<value>100n:150n:1.5u</value>
+						</parameter>
+						<parameter enabled="1">m
+							<value>1:1:10</value>
+						</parameter>
+						<parameter enabled="1">w
+							<value>1u:5u:100u</value>
+						</parameter>
+					</location>
+				</parameters>
+				<runoptions>
+					<mode>Local Optimization
+						<runoption>effort
+							<value>brentPowell</value>
+						</runoption>
+						<runoption>lazy
+							<value>1</value>
+						</runoption>
+						<runoption>tillsatisfied
+							<value>1</value>
+						</runoption>
+						<runoption>startingstateorpoint
+							<value>Reference Point</value>
+						</runoption>
+						<runoption>startingstatename
+							<value>NONE</value>
+						</runoption>
+						<runoption>timelimit
+							<value></value>
+						</runoption>
+						<runoption>numpoints
+							<value></value>
+						</runoption>
+					</mode>
+					<mode>Global Optimization
+						<runoption>referencepoint
+							<value>0</value>
+						</runoption>
+						<runoption>startingstateorpoint
+							<value>Reference Point</value>
+						</runoption>
+						<runoption>startingstatename
+							<value>NONE</value>
+						</runoption>
+						<runoption>lazy
+							<value>1</value>
+						</runoption>
+						<runoption>tillsatisfied
+							<value>1</value>
+						</runoption>
+						<runoption>timelimit
+							<value></value>
+						</runoption>
+						<runoption>numpoints
+							<value></value>
+						</runoption>
+						<runoption>ptswithnoimprovement
+							<value></value>
+						</runoption>
+						<runoption>pointsAfterAllSpecsSatisfied
+							<value></value>
+						</runoption>
+					</mode>
+				</runoptions>
+				<startingpoint>
+					<parameters>
+						<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M2
+							<parameter>l
+								<value>60n</value>
+							</parameter>
+							<parameter>w
+								<value>200n</value>
+							</parameter>
+							<parameter>m
+								<value>2</value>
+							</parameter>
+						</location>
+						<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M5
+							<parameter>l
+								<value>60n</value>
+							</parameter>
+							<parameter>w
+								<value>200n</value>
+							</parameter>
+						</location>
+						<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M4
+							<parameter>m
+								<value>2</value>
+							</parameter>
+						</location>
+						<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/V12
+							<parameter>vdc
+								<value>500m</value>
+							</parameter>
+						</location>
+						<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/V11
+							<parameter>vdc
+								<value>500m</value>
+							</parameter>
+						</location>
+						<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M0
+							<parameter>l
+								<value>60n</value>
+							</parameter>
+							<parameter>m
+								<value>2</value>
+							</parameter>
+							<parameter>w
+								<value>200n</value>
+							</parameter>
+						</location>
+					</parameters>
+				</startingpoint>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Wed Dec  4 18:21:57 2024
+</timestamp>
+			<resultsname>/home/cadence/my_new_project/EECE2026_IC_Project_3rd_year/Gain_Boosted_Cascode/pmis_5OTA_Optimized/adexl/results/data/GlobalOpt.1.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/GlobalOpt.1.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/berkeley_cadence_182157182</localpsfdir>
+			<psfdir>/home/cadence/simulation/Gain_Boosted_Cascode/pmis_5OTA_Optimized/adexl/results/data/GlobalOpt.1</psfdir>
+			<simdir>$AXL_PROJECT_DIR/Gain_Boosted_Cascode/pmis_5OTA_Optimized/adexl/results/data/GlobalOpt.1</simdir>
+			<gendatasheetplotsonsimulation>0</gendatasheetplotsonsimulation>
+			<runlog>/home/cadence/my_new_project/EECE2026_IC_Project_3rd_year/Gain_Boosted_Cascode/pmis_5OTA_Optimized/adexl/results/data/GlobalOpt.1.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/GlobalOpt.1.log</runlogfile>
+			<schematicpoint>
+				<parameters>
+					<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M2
+						<parameter>l
+							<value>850.0n</value>
+						</parameter>
+						<parameter>w
+							<value>96.0u</value>
+						</parameter>
+						<parameter>m
+							<value>5</value>
+						</parameter>
+					</location>
+					<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M5
+						<parameter>l
+							<value>1.45u</value>
+						</parameter>
+						<parameter>w
+							<value>21.0u</value>
+						</parameter>
+					</location>
+					<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M4
+						<parameter>m
+							<value>10</value>
+						</parameter>
+					</location>
+					<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/V12
+						<parameter>vdc
+							<value>770m</value>
+						</parameter>
+					</location>
+					<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/V11
+						<parameter>vdc
+							<value>370m</value>
+						</parameter>
+					</location>
+					<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M0
+						<parameter>l
+							<value>1.45u</value>
+						</parameter>
+						<parameter>m
+							<value>2</value>
+						</parameter>
+						<parameter>w
+							<value>56.0u</value>
+						</parameter>
+					</location>
+				</parameters>
+			</schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">GlobalOpt.2
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Global Optimization</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>Gain_Boosted_Cascode:pmis_5OTA_Optimized:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>pmis_5OTA_Optimized</value>
+							</option>
+							<option>lib
+								<value>Gain_Boosted_Cascode</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>Gain_Boosted_Cascode:pmis_5OTA_Optimized:1_none_GlobalOpt.2</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>pmis_5OTA_Optimized</value>
+							</option>
+							<option>lib
+								<value>Gain_Boosted_Cascode</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>BW
+								<units>Hz</units>
+							</output>
+							<output>GAIN
+								<units>dB</units>
+								<significantDigits>3</significantDigits>
+							</output>
+						</outputs>
+					</test>
+				</tests>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value>                            </value>
+					</plottingoption>
+				</plottingoptions>
+				<specs>
+					<spec>Gain_Boosted_Cascode:pmis_5OTA_Optimized:1.OP("/M0" "region")
+						<testname>Gain_Boosted_Cascode:pmis_5OTA_Optimized:1</testname>
+						<resname>OP("/M0" "region")</resname>
+						<specType>tol</specType>
+						<min></min>
+						<max></max>
+						<target>2</target>
+						<tol>1</tol>
+						<tolType>%</tolType>
+						<specWeight>100</specWeight>
+					</spec>
+					<spec>Gain_Boosted_Cascode:pmis_5OTA_Optimized:1.OP("/M1" "region")
+						<testname>Gain_Boosted_Cascode:pmis_5OTA_Optimized:1</testname>
+						<resname>OP("/M1" "region")</resname>
+						<specType>tol</specType>
+						<min></min>
+						<max></max>
+						<target>2</target>
+						<tol>1</tol>
+						<tolType>%</tolType>
+						<specWeight>100</specWeight>
+					</spec>
+					<spec>Gain_Boosted_Cascode:pmis_5OTA_Optimized:1.OP("/M4" "region")
+						<testname>Gain_Boosted_Cascode:pmis_5OTA_Optimized:1</testname>
+						<resname>OP("/M4" "region")</resname>
+						<specType>tol</specType>
+						<min></min>
+						<max></max>
+						<target>2</target>
+						<tol>1</tol>
+						<tolType>%</tolType>
+						<specWeight>100</specWeight>
+					</spec>
+					<spec>Gain_Boosted_Cascode:pmis_5OTA_Optimized:1.OP("/M2" "region")
+						<testname>Gain_Boosted_Cascode:pmis_5OTA_Optimized:1</testname>
+						<resname>OP("/M2" "region")</resname>
+						<specType>tol</specType>
+						<min></min>
+						<max></max>
+						<target>2</target>
+						<tol>1</tol>
+						<tolType>%</tolType>
+						<specWeight>100</specWeight>
+					</spec>
+					<spec>Gain_Boosted_Cascode:pmis_5OTA_Optimized:1.OP("/M5" "region")
+						<testname>Gain_Boosted_Cascode:pmis_5OTA_Optimized:1</testname>
+						<resname>OP("/M5" "region")</resname>
+						<specType>tol</specType>
+						<min></min>
+						<max></max>
+						<target>2</target>
+						<tol>1</tol>
+						<tolType>%</tolType>
+						<specWeight>100</specWeight>
+					</spec>
+					<spec>Gain_Boosted_Cascode:pmis_5OTA_Optimized:1.GAIN
+						<testname>Gain_Boosted_Cascode:pmis_5OTA_Optimized:1</testname>
+						<resname>GAIN</resname>
+						<specType>max</specType>
+						<min></min>
+						<max>40</max>
+						<target></target>
+						<tol></tol>
+						<specWeight>80</specWeight>
+					</spec>
+					<spec>Gain_Boosted_Cascode:pmis_5OTA_Optimized:1.BW
+						<testname>Gain_Boosted_Cascode:pmis_5OTA_Optimized:1</testname>
+						<resname>BW</resname>
+						<specType>gt</specType>
+						<min>1.72M</min>
+						<max></max>
+						<target></target>
+						<tol></tol>
+						<specWeight>50</specWeight>
+					</spec>
+				</specs>
+				<parameters>
+					<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M2
+						<parameter enabled="1">l
+							<value>600n:150n:2u</value>
+						</parameter>
+						<parameter enabled="1">w
+							<value>70u:5u:150u</value>
+						</parameter>
+						<parameter enabled="1">m
+							<value>3:1:15</value>
+						</parameter>
+					</location>
+					<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M1
+						<parameter enabled="1">l
+							<value>M2/l@Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic</value>
+						</parameter>
+						<parameter enabled="1">w
+							<value>M2/w@Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic</value>
+						</parameter>
+						<parameter enabled="1">m
+							<value>M2/m@Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic</value>
+						</parameter>
+					</location>
+					<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M5
+						<parameter enabled="1">l
+							<value>1u:150n:3u</value>
+						</parameter>
+						<parameter enabled="1">w
+							<value>18u:5u:150u</value>
+						</parameter>
+						<parameter enabled="1">m
+							<value>M4/m@Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic</value>
+						</parameter>
+					</location>
+					<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M4
+						<parameter enabled="1">l
+							<value>M5/l@Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic</value>
+						</parameter>
+						<parameter enabled="1">w
+							<value>M5/w@Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic</value>
+						</parameter>
+						<parameter enabled="1">m
+							<value>7:1:20</value>
+						</parameter>
+					</location>
+					<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/V12
+						<parameter enabled="1">vdc
+							<value>0.6:10m:1.2</value>
+						</parameter>
+					</location>
+					<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/V11
+						<parameter enabled="1">vdc
+							<value>300m:10m:0.7</value>
+						</parameter>
+					</location>
+					<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M0
+						<parameter enabled="1">l
+							<value>1u:150n:5u</value>
+						</parameter>
+						<parameter enabled="1">m
+							<value>1:1:15</value>
+						</parameter>
+						<parameter enabled="1">w
+							<value>40u:5u:150u</value>
+						</parameter>
+					</location>
+				</parameters>
+				<runoptions>
+					<mode>Local Optimization
+						<runoption>effort
+							<value>brentPowell</value>
+						</runoption>
+						<runoption>lazy
+							<value>1</value>
+						</runoption>
+						<runoption>tillsatisfied
+							<value>1</value>
+						</runoption>
+						<runoption>startingstateorpoint
+							<value>Reference Point</value>
+						</runoption>
+						<runoption>startingstatename
+							<value>NONE</value>
+						</runoption>
+						<runoption>timelimit
+							<value></value>
+						</runoption>
+						<runoption>numpoints
+							<value></value>
+						</runoption>
+					</mode>
+					<mode>Global Optimization
+						<runoption>referencepoint
+							<value>0</value>
+						</runoption>
+						<runoption>startingstateorpoint
+							<value>Reference Point</value>
+						</runoption>
+						<runoption>startingstatename
+							<value>NONE</value>
+						</runoption>
+						<runoption>lazy
+							<value>1</value>
+						</runoption>
+						<runoption>tillsatisfied
+							<value>1</value>
+						</runoption>
+						<runoption>timelimit
+							<value></value>
+						</runoption>
+						<runoption>numpoints
+							<value></value>
+						</runoption>
+						<runoption>ptswithnoimprovement
+							<value></value>
+						</runoption>
+						<runoption>pointsAfterAllSpecsSatisfied
+							<value></value>
+						</runoption>
+					</mode>
+				</runoptions>
+				<startingpoint>
+					<parameters>
+						<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M2
+							<parameter>l
+								<value>850.0n</value>
+							</parameter>
+							<parameter>w
+								<value>96.0u</value>
+							</parameter>
+							<parameter>m
+								<value>5</value>
+							</parameter>
+						</location>
+						<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M5
+							<parameter>l
+								<value>1.45u</value>
+							</parameter>
+							<parameter>w
+								<value>21.0u</value>
+							</parameter>
+						</location>
+						<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M4
+							<parameter>m
+								<value>10</value>
+							</parameter>
+						</location>
+						<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/V12
+							<parameter>vdc
+								<value>770m</value>
+							</parameter>
+						</location>
+						<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/V11
+							<parameter>vdc
+								<value>370m</value>
+							</parameter>
+						</location>
+						<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M0
+							<parameter>l
+								<value>1.45u</value>
+							</parameter>
+							<parameter>m
+								<value>2</value>
+							</parameter>
+							<parameter>w
+								<value>56.0u</value>
+							</parameter>
+						</location>
+					</parameters>
+				</startingpoint>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Wed Dec  4 18:27:10 2024
+</timestamp>
+			<resultsname>/home/cadence/my_new_project/EECE2026_IC_Project_3rd_year/Gain_Boosted_Cascode/pmis_5OTA_Optimized/adexl/results/data/GlobalOpt.2.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/GlobalOpt.2.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/berkeley_cadence_182710572</localpsfdir>
+			<psfdir>/home/cadence/simulation/Gain_Boosted_Cascode/pmis_5OTA_Optimized/adexl/results/data/GlobalOpt.2</psfdir>
+			<simdir>$AXL_PROJECT_DIR/Gain_Boosted_Cascode/pmis_5OTA_Optimized/adexl/results/data/GlobalOpt.2</simdir>
+			<gendatasheetplotsonsimulation>0</gendatasheetplotsonsimulation>
+			<runlog>/home/cadence/my_new_project/EECE2026_IC_Project_3rd_year/Gain_Boosted_Cascode/pmis_5OTA_Optimized/adexl/results/data/GlobalOpt.2.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/GlobalOpt.2.log</runlogfile>
+			<schematicpoint>
+				<parameters>
+					<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M2
+						<parameter>l
+							<value>850.0n</value>
+						</parameter>
+						<parameter>w
+							<value>96.0u</value>
+						</parameter>
+						<parameter>m
+							<value>5</value>
+						</parameter>
+					</location>
+					<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M5
+						<parameter>l
+							<value>1.45u</value>
+						</parameter>
+						<parameter>w
+							<value>21.0u</value>
+						</parameter>
+					</location>
+					<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M4
+						<parameter>m
+							<value>10</value>
+						</parameter>
+					</location>
+					<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/V12
+						<parameter>vdc
+							<value>770m</value>
+						</parameter>
+					</location>
+					<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/V11
+						<parameter>vdc
+							<value>370m</value>
+						</parameter>
+					</location>
+					<location>Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M0
+						<parameter>l
+							<value>1.45u</value>
+						</parameter>
+						<parameter>m
+							<value>2</value>
+						</parameter>
+						<parameter>w
+							<value>56.0u</value>
 						</parameter>
 					</location>
 				</parameters>

@@ -496,3 +496,8 @@ Design parameters:
 	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M0  m		2
 	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M0  w		200n
 
+LocalOpt.0 stopped because ADE GXL cannot find a better design point.
+Number of points completed: 523
+Number of simulation errors: 433
+LocalOpt.0 completed. 
+Current time: Wed Dec  4 14:57:18 2024 
