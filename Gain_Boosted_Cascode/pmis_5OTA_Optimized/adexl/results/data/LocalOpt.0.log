@@ -1,0 +1,498 @@
+Starting Local Optimization...
+
+Current time: Wed Dec  4 14:31:44 2024 
+Best design point: 1
+Design specs: 
+	Gain_Boosted_Cascode:pmis_5OTA_Optimized:1	corner	Nominal - 
+	gainBwProd((VF("/VOUT+") - VF("/VOUT-")))		27.41M
+	unityGainFreq((VF("/VOUT+") - VF("/VOUT-")))		26.38M
+	OP("/M0" "region")		2	Yes
+	OP("/M1" "region")		2	Yes
+	OP("/M2" "region")		2	Yes
+	OP("/M4" "region")		2	Yes
+	OP("/M5" "region")		2	Yes
+	IDC("/V9/MINUS")		42.43u
+	GAIN		10.07	No
+	BW		8.581M	Yes
+	DC_GAIN		10.07
+Design parameters: 
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M2  l		100n
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M2  w		200n
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M2  m		2
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M1  l		100n
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M1  w		200n
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M1  m		2
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M5  l		100n
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M5  w		200n
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M5  m		2
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M4  l		100n
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M4  w		200n
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M4  m		2
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/V12  vdc		500m
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/V11  vdc		500m
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M0  l		100n
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M0  m		2
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M0  w		200n
+
+Best design point: 13
+Design specs: 
+	Gain_Boosted_Cascode:pmis_5OTA_Optimized:1	corner	Nominal - 
+	gainBwProd((VF("/VOUT+") - VF("/VOUT-")))		36.06M
+	unityGainFreq((VF("/VOUT+") - VF("/VOUT-")))		35.13M
+	OP("/M0" "region")		2	Yes
+	OP("/M1" "region")		2	Yes
+	OP("/M2" "region")		2	Yes
+	OP("/M4" "region")		2	Yes
+	OP("/M5" "region")		2	Yes
+	IDC("/V9/MINUS")		43.32u
+	GAIN		12.56	No
+	BW		8.47M	Yes
+	DC_GAIN		12.56
+Design parameters: 
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M2  l		100n
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M2  w		350n
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M2  m		2
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M1  l		100n
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M1  w		350n
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M1  m		2
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M5  l		100n
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M5  w		200n
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M5  m		2
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M4  l		100n
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M4  w		200n
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M4  m		2
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/V12  vdc		500m
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/V11  vdc		500m
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M0  l		100n
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M0  m		2
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M0  w		200n
+
+Best design point: 14
+Design specs: 
+	Gain_Boosted_Cascode:pmis_5OTA_Optimized:1	corner	Nominal - 
+	gainBwProd((VF("/VOUT+") - VF("/VOUT-")))		42.41M
+	unityGainFreq((VF("/VOUT+") - VF("/VOUT-")))		42.62M
+	OP("/M0" "region")		2	Yes
+	OP("/M1" "region")		2	Yes
+	OP("/M2" "region")		2	Yes
+	OP("/M4" "region")		2	Yes
+	OP("/M5" "region")		2	Yes
+	IDC("/V9/MINUS")		43.81u
+	GAIN		13.9	No
+	BW		8.539M	Yes
+	DC_GAIN		13.9
+Design parameters: 
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M2  l		100n
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M2  w		500n
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M2  m		2
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M1  l		100n
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M1  w		500n
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M1  m		2
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M5  l		100n
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M5  w		200n
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M5  m		2
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M4  l		100n
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M4  w		200n
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M4  m		2
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/V12  vdc		500m
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/V11  vdc		500m
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M0  l		100n
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M0  m		2
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M0  w		200n
+
+Best design point: 15
+Design specs: 
+	Gain_Boosted_Cascode:pmis_5OTA_Optimized:1	corner	Nominal - 
+	gainBwProd((VF("/VOUT+") - VF("/VOUT-")))		47.5M
+	unityGainFreq((VF("/VOUT+") - VF("/VOUT-")))		48M
+	OP("/M0" "region")		2	Yes
+	OP("/M1" "region")		2	Yes
+	OP("/M2" "region")		2	Yes
+	OP("/M4" "region")		2	Yes
+	OP("/M5" "region")		2	Yes
+	IDC("/V9/MINUS")		44.14u
+	GAIN		14.73	No
+	BW		8.698M	Yes
+	DC_GAIN		14.73
+Design parameters: 
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M2  l		100n
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M2  w		650n
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M2  m		2
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M1  l		100n
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M1  w		650n
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M1  m		2
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M5  l		100n
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M5  w		200n
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M5  m		2
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M4  l		100n
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M4  w		200n
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M4  m		2
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/V12  vdc		500m
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/V11  vdc		500m
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M0  l		100n
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M0  m		2
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M0  w		200n
+
+Best design point: 16
+Design specs: 
+	Gain_Boosted_Cascode:pmis_5OTA_Optimized:1	corner	Nominal - 
+	gainBwProd((VF("/VOUT+") - VF("/VOUT-")))		51.75M
+	unityGainFreq((VF("/VOUT+") - VF("/VOUT-")))		51.69M
+	OP("/M0" "region")		2	Yes
+	OP("/M1" "region")		2	Yes
+	OP("/M2" "region")		2	Yes
+	OP("/M4" "region")		2	Yes
+	OP("/M5" "region")		2	Yes
+	IDC("/V9/MINUS")		44.39u
+	GAIN		15.27	No
+	BW		8.898M	Yes
+	DC_GAIN		15.27
+Design parameters: 
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M2  l		100n
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M2  w		800n
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M2  m		2
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M1  l		100n
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M1  w		800n
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M1  m		2
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M5  l		100n
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M5  w		200n
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M5  m		2
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M4  l		100n
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M4  w		200n
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M4  m		2
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/V12  vdc		500m
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/V11  vdc		500m
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M0  l		100n
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M0  m		2
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M0  w		200n
+
+Best design point: 17
+Design specs: 
+	Gain_Boosted_Cascode:pmis_5OTA_Optimized:1	corner	Nominal - 
+	gainBwProd((VF("/VOUT+") - VF("/VOUT-")))		55.26M
+	unityGainFreq((VF("/VOUT+") - VF("/VOUT-")))		54.33M
+	OP("/M0" "region")		2	Yes
+	OP("/M1" "region")		2	Yes
+	OP("/M2" "region")		2	Yes
+	OP("/M4" "region")		2	Yes
+	OP("/M5" "region")		2	Yes
+	IDC("/V9/MINUS")		44.59u
+	GAIN		15.66	No
+	BW		9.086M	Yes
+	DC_GAIN		15.66
+Design parameters: 
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M2  l		100n
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M2  w		950n
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M2  m		2
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M1  l		100n
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M1  w		950n
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M1  m		2
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M5  l		100n
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M5  w		200n
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M5  m		2
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M4  l		100n
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M4  w		200n
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M4  m		2
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/V12  vdc		500m
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/V11  vdc		500m
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M0  l		100n
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M0  m		2
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M0  w		200n
+
+Best design point: 18
+Design specs: 
+	Gain_Boosted_Cascode:pmis_5OTA_Optimized:1	corner	Nominal - 
+	gainBwProd((VF("/VOUT+") - VF("/VOUT-")))		57.85M
+	unityGainFreq((VF("/VOUT+") - VF("/VOUT-")))		57.47M
+	OP("/M0" "region")		2	Yes
+	OP("/M1" "region")		2	Yes
+	OP("/M2" "region")		2	Yes
+	OP("/M4" "region")		2	Yes
+	OP("/M5" "region")		2	Yes
+	IDC("/V9/MINUS")		44.74u
+	GAIN		15.87	No
+	BW		9.289M	Yes
+	DC_GAIN		15.87
+Design parameters: 
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M2  l		100n
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M2  w		1.1u
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M2  m		2
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M1  l		100n
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M1  w		1.1u
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M1  m		2
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M5  l		100n
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M5  w		200n
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M5  m		2
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M4  l		100n
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M4  w		200n
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M4  m		2
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/V12  vdc		500m
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/V11  vdc		500m
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M0  l		100n
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M0  m		2
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M0  w		200n
+
+Best design point: 19
+Design specs: 
+	Gain_Boosted_Cascode:pmis_5OTA_Optimized:1	corner	Nominal - 
+	gainBwProd((VF("/VOUT+") - VF("/VOUT-")))		59.91M
+	unityGainFreq((VF("/VOUT+") - VF("/VOUT-")))		60.34M
+	OP("/M0" "region")		2	Yes
+	OP("/M1" "region")		2	Yes
+	OP("/M2" "region")		2	Yes
+	OP("/M4" "region")		2	Yes
+	OP("/M5" "region")		2	Yes
+	IDC("/V9/MINUS")		44.87u
+	GAIN		15.99	No
+	BW		9.49M	Yes
+	DC_GAIN		15.99
+Design parameters: 
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M2  l		100n
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M2  w		1.25u
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M2  m		2
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M1  l		100n
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M1  w		1.25u
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M1  m		2
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M5  l		100n
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M5  w		200n
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M5  m		2
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M4  l		100n
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M4  w		200n
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M4  m		2
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/V12  vdc		500m
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/V11  vdc		500m
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M0  l		100n
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M0  m		2
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M0  w		200n
+
+Best design point: 20
+Design specs: 
+	Gain_Boosted_Cascode:pmis_5OTA_Optimized:1	corner	Nominal - 
+	gainBwProd((VF("/VOUT+") - VF("/VOUT-")))		61.72M
+	unityGainFreq((VF("/VOUT+") - VF("/VOUT-")))		62.7M
+	OP("/M0" "region")		2	Yes
+	OP("/M1" "region")		2	Yes
+	OP("/M2" "region")		2	Yes
+	OP("/M4" "region")		2	Yes
+	OP("/M5" "region")		2	Yes
+	IDC("/V9/MINUS")		44.98u
+	GAIN		16.07	No
+	BW		9.676M	Yes
+	DC_GAIN		16.07
+Design parameters: 
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M2  l		100n
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M2  w		1.4u
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M2  m		2
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M1  l		100n
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M1  w		1.4u
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M1  m		2
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M5  l		100n
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M5  w		200n
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M5  m		2
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M4  l		100n
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M4  w		200n
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M4  m		2
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/V12  vdc		500m
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/V11  vdc		500m
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M0  l		100n
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M0  m		2
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M0  w		200n
+
+Best design point: 21
+Design specs: 
+	Gain_Boosted_Cascode:pmis_5OTA_Optimized:1	corner	Nominal - 
+	gainBwProd((VF("/VOUT+") - VF("/VOUT-")))		63.31M
+	unityGainFreq((VF("/VOUT+") - VF("/VOUT-")))		64.68M
+	OP("/M0" "region")		2	Yes
+	OP("/M1" "region")		2	Yes
+	OP("/M2" "region")		2	Yes
+	OP("/M4" "region")		2	Yes
+	OP("/M5" "region")		2	Yes
+	IDC("/V9/MINUS")		45.07u
+	GAIN		16.14	No
+	BW		9.848M	Yes
+	DC_GAIN		16.14
+Design parameters: 
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M2  l		100n
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M2  w		1.55u
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M2  m		2
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M1  l		100n
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M1  w		1.55u
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M1  m		2
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M5  l		100n
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M5  w		200n
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M5  m		2
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M4  l		100n
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M4  w		200n
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M4  m		2
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/V12  vdc		500m
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/V11  vdc		500m
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M0  l		100n
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M0  m		2
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M0  w		200n
+
+Best design point: 22
+Design specs: 
+	Gain_Boosted_Cascode:pmis_5OTA_Optimized:1	corner	Nominal - 
+	gainBwProd((VF("/VOUT+") - VF("/VOUT-")))		64.74M
+	unityGainFreq((VF("/VOUT+") - VF("/VOUT-")))		66.37M
+	OP("/M0" "region")		2	Yes
+	OP("/M1" "region")		2	Yes
+	OP("/M2" "region")		2	Yes
+	OP("/M4" "region")		2	Yes
+	OP("/M5" "region")		2	Yes
+	IDC("/V9/MINUS")		45.16u
+	GAIN		16.2	No
+	BW		10.01M	Yes
+	DC_GAIN		16.2
+Design parameters: 
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M2  l		100n
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M2  w		1.7u
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M2  m		2
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M1  l		100n
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M1  w		1.7u
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M1  m		2
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M5  l		100n
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M5  w		200n
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M5  m		2
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M4  l		100n
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M4  w		200n
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M4  m		2
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/V12  vdc		500m
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/V11  vdc		500m
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M0  l		100n
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M0  m		2
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M0  w		200n
+
+Best design point: 23
+Design specs: 
+	Gain_Boosted_Cascode:pmis_5OTA_Optimized:1	corner	Nominal - 
+	gainBwProd((VF("/VOUT+") - VF("/VOUT-")))		66.03M
+	unityGainFreq((VF("/VOUT+") - VF("/VOUT-")))		67.84M
+	OP("/M0" "region")		2	Yes
+	OP("/M1" "region")		2	Yes
+	OP("/M2" "region")		2	Yes
+	OP("/M4" "region")		2	Yes
+	OP("/M5" "region")		2	Yes
+	IDC("/V9/MINUS")		45.24u
+	GAIN		16.24	No
+	BW		10.16M	Yes
+	DC_GAIN		16.24
+Design parameters: 
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M2  l		100n
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M2  w		1.85u
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M2  m		2
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M1  l		100n
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M1  w		1.85u
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M1  m		2
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M5  l		100n
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M5  w		200n
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M5  m		2
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M4  l		100n
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M4  w		200n
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M4  m		2
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/V12  vdc		500m
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/V11  vdc		500m
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M0  l		100n
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M0  m		2
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M0  w		200n
+
+Best design point: 24
+Design specs: 
+	Gain_Boosted_Cascode:pmis_5OTA_Optimized:1	corner	Nominal - 
+	gainBwProd((VF("/VOUT+") - VF("/VOUT-")))		67.2M
+	unityGainFreq((VF("/VOUT+") - VF("/VOUT-")))		69.13M
+	OP("/M0" "region")		2	Yes
+	OP("/M1" "region")		2	Yes
+	OP("/M2" "region")		2	Yes
+	OP("/M4" "region")		2	Yes
+	OP("/M5" "region")		2	Yes
+	IDC("/V9/MINUS")		45.31u
+	GAIN		16.27	No
+	BW		10.3M	Yes
+	DC_GAIN		16.27
+Design parameters: 
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M2  l		100n
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M2  w		2u
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M2  m		2
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M1  l		100n
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M1  w		2u
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M1  m		2
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M5  l		100n
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M5  w		200n
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M5  m		2
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M4  l		100n
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M4  w		200n
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M4  m		2
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/V12  vdc		500m
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/V11  vdc		500m
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M0  l		100n
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M0  m		2
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M0  w		200n
+
+Best design point: 115
+Design specs: 
+	Gain_Boosted_Cascode:pmis_5OTA_Optimized:1	corner	Nominal - 
+	gainBwProd((VF("/VOUT+") - VF("/VOUT-")))		51.23M
+	unityGainFreq((VF("/VOUT+") - VF("/VOUT-")))		51.7M
+	OP("/M0" "region")		2	Yes
+	OP("/M1" "region")		2	Yes
+	OP("/M2" "region")		2	Yes
+	OP("/M4" "region")		2	Yes
+	OP("/M5" "region")		2	Yes
+	IDC("/V9/MINUS")		44.51u
+	GAIN		18.62	No
+	BW		5.993M	Yes
+	DC_GAIN		18.62
+Design parameters: 
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M2  l		250n
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M2  w		2u
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M2  m		1
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M1  l		250n
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M1  w		2u
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M1  m		1
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M5  l		100n
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M5  w		200n
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M5  m		4
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M4  l		100n
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M4  w		200n
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M4  m		4
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/V12  vdc		500m
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/V11  vdc		500m
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M0  l		100n
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M0  m		2
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M0  w		200n
+
+Best design point: 162
+Design specs: 
+	Gain_Boosted_Cascode:pmis_5OTA_Optimized:1	corner	Nominal - 
+	gainBwProd((VF("/VOUT+") - VF("/VOUT-")))		51.9M
+	unityGainFreq((VF("/VOUT+") - VF("/VOUT-")))		52.17M
+	OP("/M0" "region")		2	Yes
+	OP("/M1" "region")		2	Yes
+	OP("/M2" "region")		2	Yes
+	OP("/M4" "region")		2	Yes
+	OP("/M5" "region")		2	Yes
+	IDC("/V9/MINUS")		46.29u
+	GAIN		18.92	No
+	BW		5.866M	Yes
+	DC_GAIN		18.92
+Design parameters: 
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M2  l		250n
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M2  w		2u
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M2  m		8
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M1  l		250n
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M1  w		2u
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M1  m		8
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M5  l		100n
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M5  w		200n
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M5  m		8
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M4  l		100n
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M4  w		200n
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M4  m		8
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/V12  vdc		490m
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/V11  vdc		500m
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M0  l		100n
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M0  m		2
+	Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M0  w		200n
+

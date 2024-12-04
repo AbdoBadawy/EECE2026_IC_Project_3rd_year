@@ -1,102 +1,85 @@
 \o Program:		@(#)$CDS: libManager version 6.1.7 - CAT35 10/18/2015 00:06 (sjfnl678) $
 \o Sub version:		sub-version  p009 
-\o Arguments:		-mpssession virtuoso1600 -mpshost berkeley 
-\o Working Directory:	berkeley:/home/cadence/IC_PROJECT
+\o Arguments:		-mpssession virtuoso19095 -mpshost berkeley 
+\o Working Directory:	berkeley:/home/cadence/my_new_project/EECE2026_IC_Project_3rd_year
 \o 64-bit offsets
-\o changeWorkingDir("/home/cadence/IC_PROJECT") unnecessary.
+\o Qt version: 		4.8.5
+\o Log file is "/home/cadence/my_new_project/EECE2026_IC_Project_3rd_year/libManager.log".
+\o Opening libManager window.
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(cdsLibManager list(0 25 1020 695))
+\o changeWorkingDir("/home/cadence/my_new_project/EECE2026_IC_Project_3rd_year") unnecessary.
 \o ddSetForcedLib("") unnecessary.
-\a nrSetWindowVisibility(cdsLibManager "show")
 \o MPS service: map window
 \o Library Manager customization server connected.
 \a nrSetCurrentWindow(cdsLibManager)
-\a nrResizeWindow(cdsLibManager list(12 732 1892 312))
-\o Qt version: 		4.8.5
-\o Log file is "/home/cadence/IC_PROJECT/libManager.log".
-\o Opening libManager window.
-\a nrResizeWindow(cdsLibManager list(12 732 1892 312))
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrResizeWindow(cdsLibManager list(658 316 600 400))
-\a cdsLibManager->libListBox->value = "tsmcN65"
 \a cdsLibManager->libListBox->value = "Gain_Boosted_Cascode"
 \a cdsLibManager->libLineEdit->value = "Gain_Boosted_Cascode"
-\a cdsLibManager->cellListBox->value = "test_bench"
+\a cdsLibManager->cellListBox->value = "pmos_5OTA"
 \a cdsLibManager->cellListBox->value = nil
-\a nrListItemAction(cdsLibManager->cellListBox 1 0)
-\a cdsLibManager->cellListBox->value = "test_bench"
-\o MPS request: edit design
-\a cdsLibManager->cellLineEdit->value = "test_bench"
-\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->cellListBox->value = "pmos_5OTA"
+\a lmgrLogShowPopup("mainListPopup1" 139 31 2 "pmos_5OTA")
+\a cdsLibManager->cellLineEdit->value = "pmos_5OTA"
 \a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->libLineEdit->value = ""
-\a cdsLibManager->libListBox->value = "Gain_Boosted_Cascode"
-\a cdsLibManager->libLineEdit->value = "Gain_Boosted_Cascode"
-\a cdsLibManager->cellListBox->value = "test_bench"
-\a cdsLibManager->cellLineEdit->value = "test_bench"
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->cellListBox->value = "test_bench"
-\a nrListItemAction(cdsLibManager->cellListBox 1 0)
-\o MPS request: edit design
-\a cdsLibManager->cellLineEdit->value = "test_bench"
-\a cdsLibManager->libListBox->value = nil
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->libLineEdit->value = ""
-\a cdsLibManager->libListBox->value = "Gain_Boosted_Cascode"
-\a cdsLibManager->libLineEdit->value = "Gain_Boosted_Cascode"
-\a cdsLibManager->cellListBox->value = "test_bench"
-\a cdsLibManager->cellLineEdit->value = "test_bench"
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
 \a cdsLibManager->cellListBox->value = "Gain_Boosted_OTA_behavior"
-\a cdsLibManager->cellListBox->value = "test_bench"
+\a cdsLibManager->cellListBox->value = "pmos_5OTA"
 \a nrListItemAction(cdsLibManager->cellListBox 1 0)
 \o MPS request: edit design
-\a cdsLibManager->cellListBox->value = nil
-\a nrListItemAction(cdsLibManager->cellListBox 1 0)
-\a cdsLibManager->cellListBox->value = "test_bench"
-\o MPS request: edit design
-\a cdsLibManager->cellListBox->value = nil
-\a nrListItemAction(cdsLibManager->cellListBox 1 0)
-\a cdsLibManager->cellListBox->value = "test_bench"
-\o MPS request: edit design
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->cellListBox->value = "test_bench"
-\a nrResizeWindow(cdsLibManager list(963 36 941 488))
-\a cdsLibManager->cellListBox->value = nil
-\a nrListItemAction(cdsLibManager->cellListBox 1 0)
-\a cdsLibManager->cellListBox->value = "test_bench"
-\o MPS request: edit design
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->cellListBox->value = "test_bench"
-\a cdsLibManager->cellLineEdit->value = "test_bench"
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrResizeWindow(cdsLibManager list(963 36 941 488))
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrResizeWindow(cdsLibManager list(643 36 630 488))
+\a cdsLibManager->cellLineEdit->value = "pmos_5OTA"
 \a cdsLibManager->libListBox->value = nil
 \a cdsLibManager->cellListBox->value = nil
 \a cdsLibManager->cellLineEdit->value = ""
 \a cdsLibManager->libLineEdit->value = ""
 \a cdsLibManager->libListBox->value = "Gain_Boosted_Cascode"
 \a cdsLibManager->libLineEdit->value = "Gain_Boosted_Cascode"
+\a cdsLibManager->cellListBox->value = "pmos_5OTA"
+\a cdsLibManager->cellLineEdit->value = "pmos_5OTA"
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = nil
+\a lmgrLogShowPopup("mainListPopup1" 64 163 2 "")
+\a cdsLibManager->cellLineEdit->value = ""
+\a lmgrLogShowPopup("mainListPopup1" 65 83 2 "")
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libListBox->value = "Gain_Boosted_Cascode"
+\a cdsLibManager->libLineEdit->value = "Gain_Boosted_Cascode"
+\a lmgrLogShowPopup("mainListPopup1" 52 87 2 "")
+\a lmgrLogShowPopup("mainListPopup1" 84 102 2 "")
 \a cdsLibManager->cellListBox->value = "test_bench"
-\a cdsLibManager->cellLineEdit->value = "test_bench"
+\a cdsLibManager->cellListBox->value = "pmos_5OTA"
+\a cdsLibManager->cellListBox->value = nil
+\a lmgrLogShowPopup("mainListPopup1" 63 117 2 "")
+\a cdsLibManager->cellLineEdit->value = ""
+\a lmgrLogShowPopup("mainListPopup0" 71 4 2 "Gain_Boosted_Cascode")
+\a cdsLibManager->FileNewCVButton->value = t
 \a nrSetCurrentWindow(cdsLibManager)
 \a nrSetCurrentWindow(cdsLibManager)
 \a nrSetCurrentWindow(cdsLibManager)
 \a nrSetCurrentWindow(cdsLibManager)
 \a nrSetCurrentWindow(cdsLibManager)
 \a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "Gain_Boosted_Cascode"
+\a cdsLibManager->libLineEdit->value = "Gain_Boosted_Cascode"
 \a nrSetCurrentWindow(cdsLibManager)
-\a nrResizeWindow(cdsLibManager list(963 36 941 488))
+\a cdsLibManager->cellListBox->value = "pmos_5OTA"
+\a cdsLibManager->cellListBox->value = nil
+\a nrListItemAction(cdsLibManager->cellListBox 2 0)
+\a cdsLibManager->cellListBox->value = "pmos_5OTA"
+\o MPS request: edit design
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "Gain_Boosted_Cascode"
+\a cdsLibManager->libLineEdit->value = "Gain_Boosted_Cascode"
+\a cdsLibManager->cellListBox->value = "pmos_5OTA"
+\a cdsLibManager->cellLineEdit->value = "pmos_5OTA"
 \a nrSetCurrentWindow(cdsLibManager)
 \a nrSetCurrentWindow(cdsLibManager)
-\o MPS service: shutdown
-\o libManager is exiting.
-\a nrSetWindowVisibility(cdsLibManager "hide")
-\a exit(0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
