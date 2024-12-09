@@ -7,16 +7,16 @@
 *Info*    Configuring the session ...
 
 	Library      = Gain_Boosted_Cascode
-	Cell         = Gain_Boosted_OTA_behavior
+	Cell         = pmis_5OTA_Optimized
 	View         = schematic
 	Simulator    = spectre
 	State Path   = $AXL_SETUPDB_DIR/test_states
-	State Name   = Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1_none_Interactive.127
-	Results DB   = /home/cadence/my_new_project/EECE2026_IC_Project_3rd_year/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.127.rdb
-	Results Dir  = /home/cadence/simulation/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.127/1/Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1
-	Results Loc  = /home/cadence/simulation/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data
+	State Name   = Gain_Boosted_Cascode:pmis_5OTA_Optimized:1_none_Interactive.16
+	Results DB   = /home/cadence/IC_PROJECT/Gain_Boosted_Cascode/pmis_5OTA_Optimized/adexl/results/data/Interactive.16.rdb
+	Results Dir  = /home/cadence/simulation/Gain_Boosted_Cascode/pmis_5OTA_Optimized/adexl/results/data/Interactive.16/1/Gain_Boosted_Cascode:pmis_5OTA_Optimized:1
+	Results Loc  = /home/cadence/simulation/Gain_Boosted_Cascode/pmis_5OTA_Optimized/adexl/results/data
 	Project Dir  = /home/cadence/simulation
-	Setup DB loc = /home/cadence/my_new_project/EECE2026_IC_Project_3rd_year/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl
+	Setup DB loc = /home/cadence/IC_PROJECT/Gain_Boosted_Cascode/pmis_5OTA_Optimized/adexl
 	File Encoding = 0
 
 
@@ -28,40 +28,44 @@
 
 
 *Info*    Run start for Point ID (0 1) on testbench [
-          Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1 ].
+          Gain_Boosted_Cascode:pmis_5OTA_Optimized:1 ].
 
 Resetting statistical vars
 
 *Info*    Setting parameter values ...
 
-Setting var AV_N = "100"
-Setting var AV_P = "100"
-Setting var L_CASCN = "120n"
-Setting var L_CASCP = "80n"
-Setting var L_INPUT = "130n"
-Setting var L_SOURCEN = "500n"
-Setting var L_SOURCEP = "600n"
-Setting var VBN = "350m"
-Setting var VBP = "734.44m"
-Setting var VCASCN = "900m"
-Setting var VCASCP = "350m"
-Setting var VDD = "1.2"
-Setting var VINCM = "500m"
-Setting var VOCM = "600m"
-Setting var WN_SOURCE = "7.247m"
-Setting var W_CASCN = "500u"
-Setting var W_CASCP = "800u"
-Setting var W_INPUT = "3m"
-Setting var W_SOURCEP = "2.32m"
-Setting var cgg2 = "1f"
+Lib = Gain_Boosted_Cascode 	 Cell = pmis_5OTA_Optimized 	 View = schematic 
+Inst = M0 	 Name = l 	 Val = "20u"
+Setting device parameter Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M0.l = "20u"
+Lib = Gain_Boosted_Cascode 	 Cell = pmis_5OTA_Optimized 	 View = schematic 
+Inst = M0 	 Name = w 	 Val = "334.4u"
+Setting device parameter Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M0.w = "334.4u"
+Lib = Gain_Boosted_Cascode 	 Cell = pmis_5OTA_Optimized 	 View = schematic 
+Inst = M1 	 Name = l 	 Val = "1.98u"
+Setting device parameter Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M1.l = "1.98u"
+Lib = Gain_Boosted_Cascode 	 Cell = pmis_5OTA_Optimized 	 View = schematic 
+Inst = M1 	 Name = w 	 Val = "8.035u"
+Setting device parameter Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M1.w = "8.035u"
+Lib = Gain_Boosted_Cascode 	 Cell = pmis_5OTA_Optimized 	 View = schematic 
+Inst = M5 	 Name = l 	 Val = "3.38u"
+Setting device parameter Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M5.l = "3.38u"
+Lib = Gain_Boosted_Cascode 	 Cell = pmis_5OTA_Optimized 	 View = schematic 
+Inst = M5 	 Name = w 	 Val = "4.66u"
+Setting device parameter Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M5.w = "4.66u"
+Lib = Gain_Boosted_Cascode 	 Cell = pmis_5OTA_Optimized 	 View = schematic 
+Inst = V11 	 Name = vdc 	 Val = "1.17"
+Setting device parameter Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/V11.vdc = "1.17"
+Lib = Gain_Boosted_Cascode 	 Cell = pmis_5OTA_Optimized 	 View = schematic 
+Inst = V12 	 Name = vdc 	 Val = "1.505"
+Setting device parameter Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/V12.vdc = "1.505"
 Setting temp(T) = 27
 
 *Info*    Netlist Directory =
-          /home/cadence/simulation/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.127/1/Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1/netlist
+          /home/cadence/simulation/Gain_Boosted_Cascode/pmis_5OTA_Optimized/adexl/results/data/Interactive.16/1/Gain_Boosted_Cascode:pmis_5OTA_Optimized:1/netlist
 
 
 *Info*    Data Directory    =
-          /home/cadence/simulation/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.127/1/Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1
+          /home/cadence/simulation/Gain_Boosted_Cascode/pmis_5OTA_Optimized/adexl/results/data/Interactive.16/1/Gain_Boosted_Cascode:pmis_5OTA_Optimized:1
 
 
 *Info*    Creating Netlist for Point ID (0 1)
@@ -69,27 +73,33 @@ Setting temp(T) = 27
 generate netlist...
 Loading seCore.cxt 
 Initializing the control file using cp:
-    cp /usr/local/cadence/IC617/tools.lnx86/dfII/etc/si/control.spectre /home/cadence/simulation/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.127/1/Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1/netlist/control
+    cp /usr/local/cadence/IC617/tools.lnx86/dfII/etc/si/control.spectre /home/cadence/simulation/Gain_Boosted_Cascode/pmis_5OTA_Optimized/adexl/results/data/Interactive.16/1/Gain_Boosted_Cascode:pmis_5OTA_Optimized:1/netlist/control
 Copying Spectre source file 'spectre.inp'
 Copying Spectre command file 'spectre.sim'
-Begin Incremental Netlisting Dec  9 00:13:25 2024
-End netlisting Dec  9 00:13:26 2024
+Begin Incremental Netlisting Dec  9 08:39:55 2024
+Setting var DPAR_3 = "1.98e-06"
+Setting var DPAR_4 = "8.035e-06"
+Setting var DPAR_1 = "2e-05"
+Setting var DPAR_2 = "0.0003344"
+Setting var DPAR_5 = "3.38e-06"
+Setting var DPAR_6 = "4.66e-06"
+End netlisting Dec  9 08:39:55 2024
 Loading monte.cxt 
 
 Netlisting Statistics:
-	Number of components:   39
+	Number of components:   13
 
-	Elapsed time:          1.0s (39.00/s)
+	Elapsed time:          1.0s (13.00/s)
 Errors: 0	Warnings: 0
       ...successful.
 compose simulator input file...
       ...successful.
 
 *Info*    Running simulation on testbench [
-          Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1 ] for
-          Point ID (0 1).
+          Gain_Boosted_Cascode:pmis_5OTA_Optimized:1 ] for Point ID
+          (0 1).
 
-Delete psf data in /home/cadence/simulation/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.127/1/Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1/psf.
+Delete psf data in /home/cadence/simulation/Gain_Boosted_Cascode/pmis_5OTA_Optimized/adexl/results/data/Interactive.16/1/Gain_Boosted_Cascode:pmis_5OTA_Optimized:1/psf.
 compose simulator input file...
       ...successful.
 start simulator if needed...
@@ -98,104 +108,14 @@ simulate...
 To view the simulator output, right-click on the test name, result 
 name, or any value in the "Results" tab of the Outputs section and 
 choose "Output Log" menu option.
-INFO (ADE-3067): Errors encountered during simulation. For more information, right-click
-        on a test name in the 'Results' tab of the Outputs pane and choose 'Output Log'
-        to view the simulation run log.
-
-*Error*   Error ID  = 5011
-*Error*   Error Msg = Simulator failed to complete the simulation.
-
-          Error found by spectre during circuit read-in.
-Error found
-          by spectre during circuit read-in.
-ERROR (SFE-868):
-          "input.scs" 58: Unable to open input file
-          `/home/cadence/IC_PROJECT/save_op'.
-
-
-
-
-
-
-
-
-
-
-*Info*    Run start for Point ID (0 1) on testbench [
-          Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1 ].
-
-Resetting statistical vars
-
-*Info*    Setting parameter values ...
-
-Setting var AV_N = "100"
-Setting var AV_P = "100"
-Setting var L_CASCN = "120n"
-Setting var L_CASCP = "80n"
-Setting var L_INPUT = "130n"
-Setting var L_SOURCEN = "500n"
-Setting var L_SOURCEP = "600n"
-Setting var VBN = "350m"
-Setting var VBP = "734.44m"
-Setting var VCASCN = "900m"
-Setting var VCASCP = "350m"
-Setting var VDD = "1.2"
-Setting var VINCM = "500m"
-Setting var VOCM = "600m"
-Setting var WN_SOURCE = "7.247m"
-Setting var W_CASCN = "500u"
-Setting var W_CASCP = "800u"
-Setting var W_INPUT = "3m"
-Setting var W_SOURCEP = "2.32m"
-Setting var cgg2 = "1f"
-Setting temp(T) = 27
-
-*Info*    Netlist Directory =
-          /home/cadence/simulation/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.127/1/Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1/netlist
-
-
-*Info*    Data Directory    =
-          /home/cadence/simulation/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.127/1/Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1
-
-
-*Info*    Creating Netlist for Point ID (0 1)
-
-generate netlist...
-Begin Incremental Netlisting Dec  9 00:13:36 2024
-End netlisting Dec  9 00:13:36 2024
-
-	The netlist is up to date.
-	Time taken to compare the design with netlist:   0.0s
+INFO (ADE-3071): Simulation completed successfully.
+reading simulation data...
       ...successful.
-compose simulator input file...
-      ...successful.
+*Info*    Client has finished evaluating ... 
 
-*Info*    Running simulation on testbench [
-          Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1 ] for
-          Point ID (0 1).
 
-Delete psf data in /home/cadence/simulation/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.127/1/Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1/psf.
-compose simulator input file...
-      ...successful.
-start simulator if needed...
-      ...successful.
-simulate...
-To view the simulator output, right-click on the test name, result 
-name, or any value in the "Results" tab of the Outputs section and 
-choose "Output Log" menu option.
-INFO (ADE-3067): Errors encountered during simulation. For more information, right-click
-        on a test name in the 'Results' tab of the Outputs pane and choose 'Output Log'
-        to view the simulation run log.
-
-*Error*   Error ID  = 5011
-*Error*   Error Msg = Simulator failed to complete the simulation.
-
-          Error found by spectre during circuit read-in.
-Error found
-          by spectre during circuit read-in.
-ERROR (SFE-868):
-          "input.scs" 58: Unable to open input file
-          `/home/cadence/IC_PROJECT/save_op'.
+*Info*    Run complete for Point ID (0 1) on testbench [
+          Gain_Boosted_Cascode:pmis_5OTA_Optimized:1 ].
 
 
 

@@ -11,12 +11,12 @@
 	View         = schematic
 	Simulator    = spectre
 	State Path   = $AXL_SETUPDB_DIR/test_states
-	State Name   = Gain_Boosted_Cascode:pmis_5OTA_Optimized:1_none_Interactive.15
-	Results DB   = /home/cadence/my_new_project/EECE2026_IC_Project_3rd_year/Gain_Boosted_Cascode/pmis_5OTA_Optimized/adexl/results/data/Interactive.15.rdb
-	Results Dir  = /home/cadence/simulation/Gain_Boosted_Cascode/pmis_5OTA_Optimized/adexl/results/data/Interactive.15/1/Gain_Boosted_Cascode:pmis_5OTA_Optimized:1
+	State Name   = Gain_Boosted_Cascode:pmis_5OTA_Optimized:1_none_Interactive.46
+	Results DB   = /home/cadence/IC_PROJECT/Gain_Boosted_Cascode/pmis_5OTA_Optimized/adexl/results/data/Interactive.46.rdb
+	Results Dir  = /home/cadence/simulation/Gain_Boosted_Cascode/pmis_5OTA_Optimized/adexl/results/data/Interactive.46/1/Gain_Boosted_Cascode:pmis_5OTA_Optimized:1
 	Results Loc  = /home/cadence/simulation/Gain_Boosted_Cascode/pmis_5OTA_Optimized/adexl/results/data
 	Project Dir  = /home/cadence/simulation
-	Setup DB loc = /home/cadence/my_new_project/EECE2026_IC_Project_3rd_year/Gain_Boosted_Cascode/pmis_5OTA_Optimized/adexl
+	Setup DB loc = /home/cadence/IC_PROJECT/Gain_Boosted_Cascode/pmis_5OTA_Optimized/adexl
 	File Encoding = 0
 
 
@@ -27,78 +27,50 @@
 
 
 
-*Info*    Run start for Point ID (15 1) on testbench [
+*Info*    Run start for Point ID (30 1) on testbench [
           Gain_Boosted_Cascode:pmis_5OTA_Optimized:1 ].
 
 Resetting statistical vars
 
 *Info*    Setting parameter values ...
 
-Lib = Gain_Boosted_Cascode 	 Cell = pmis_5OTA_Optimized 	 View = schematic 
-Inst = M0 	 Name = l 	 Val = "20u"
-Setting device parameter Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M0.l = "20u"
-Lib = Gain_Boosted_Cascode 	 Cell = pmis_5OTA_Optimized 	 View = schematic 
-Inst = M0 	 Name = w 	 Val = "334.4u"
-Setting device parameter Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M0.w = "334.4u"
-Lib = Gain_Boosted_Cascode 	 Cell = pmis_5OTA_Optimized 	 View = schematic 
-Inst = M1 	 Name = l 	 Val = "1.98u"
-Setting device parameter Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M1.l = "1.98u"
-Lib = Gain_Boosted_Cascode 	 Cell = pmis_5OTA_Optimized 	 View = schematic 
-Inst = M1 	 Name = w 	 Val = "8.035u"
-Setting device parameter Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M1.w = "8.035u"
-Lib = Gain_Boosted_Cascode 	 Cell = pmis_5OTA_Optimized 	 View = schematic 
-Inst = M5 	 Name = l 	 Val = "3.38u"
-Setting device parameter Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M5.l = "3.38u"
-Lib = Gain_Boosted_Cascode 	 Cell = pmis_5OTA_Optimized 	 View = schematic 
-Inst = M5 	 Name = w 	 Val = "4.66u"
-Setting device parameter Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M5.w = "4.66u"
-Lib = Gain_Boosted_Cascode 	 Cell = pmis_5OTA_Optimized 	 View = schematic 
-Inst = V11 	 Name = vdc 	 Val = "1.17"
-Setting device parameter Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/V11.vdc = "1.17"
-Lib = Gain_Boosted_Cascode 	 Cell = pmis_5OTA_Optimized 	 View = schematic 
-Inst = V12 	 Name = vdc 	 Val = "1.505"
-Setting device parameter Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/V12.vdc = "1.505"
+Setting var CL = "10p"
+Setting var LIN_BUF = "100n"
+Setting var LN = "5u"
+Setting var LP = "2.5u"
+Setting var LS_BUF = "1u"
+Setting var VB_BUF = "0.5"
+Setting var W = "5u"
+Setting var WIN_BUF = "1.0125e-6"
+Setting var WS_BUF = "975e-9"
+Setting var W_SOURCE = "44.5u"
 Setting temp(T) = 27
 
 *Info*    Netlist Directory =
-          /home/cadence/simulation/Gain_Boosted_Cascode/pmis_5OTA_Optimized/adexl/results/data/Interactive.15/1/Gain_Boosted_Cascode:pmis_5OTA_Optimized:1/netlist
+          /home/cadence/simulation/Gain_Boosted_Cascode/pmis_5OTA_Optimized/adexl/results/data/Interactive.46/1/Gain_Boosted_Cascode:pmis_5OTA_Optimized:1/netlist
 
 
 *Info*    Data Directory    =
-          /home/cadence/simulation/Gain_Boosted_Cascode/pmis_5OTA_Optimized/adexl/results/data/Interactive.15/1/Gain_Boosted_Cascode:pmis_5OTA_Optimized:1
+          /home/cadence/simulation/Gain_Boosted_Cascode/pmis_5OTA_Optimized/adexl/results/data/Interactive.46/1/Gain_Boosted_Cascode:pmis_5OTA_Optimized:1
 
 
-*Info*    Creating Netlist for Point ID (15 1)
+*Info*    Creating Netlist for Point ID (30 1)
 
 generate netlist...
-Begin Incremental Netlisting Dec  9 03:19:02 2024
-WARNING (OSSHNL-226): There are more design variables used in the current netlisting session as
-compared to the last session in the current run directory. The netlist(s)
-generated in the last netlisting session cannot be reused for incremental
-netlisting. Therefore re-netlisting the design.
+Begin Incremental Netlisting Dec  9 09:42:17 2024
+End netlisting Dec  9 09:42:17 2024
 
-Setting var DPAR_3 = "1.98e-06"
-Setting var DPAR_4 = "8.035e-06"
-Setting var DPAR_1 = "2e-05"
-Setting var DPAR_2 = "0.0003344"
-Setting var DPAR_5 = "3.38e-06"
-Setting var DPAR_6 = "4.66e-06"
-End netlisting Dec  9 03:19:02 2024
-
-Netlisting Statistics:
-	Number of components:   13
-
-	Elapsed time:          0.0s
-Errors: 0	Warnings: 0
+	The netlist is up to date.
+	Time taken to compare the design with netlist:   0.0s
       ...successful.
 compose simulator input file...
       ...successful.
 
 *Info*    Running simulation on testbench [
           Gain_Boosted_Cascode:pmis_5OTA_Optimized:1 ] for Point ID
-          (15 1).
+          (30 1).
 
-Delete psf data in /home/cadence/simulation/Gain_Boosted_Cascode/pmis_5OTA_Optimized/adexl/results/data/Interactive.15/1/Gain_Boosted_Cascode:pmis_5OTA_Optimized:1/psf.
+Delete psf data in /home/cadence/simulation/Gain_Boosted_Cascode/pmis_5OTA_Optimized/adexl/results/data/Interactive.46/1/Gain_Boosted_Cascode:pmis_5OTA_Optimized:1/psf.
 compose simulator input file...
       ...successful.
 start simulator if needed...
@@ -113,7 +85,7 @@ reading simulation data...
 *Info*    Client has finished evaluating ... 
 
 
-*Info*    Run complete for Point ID (15 1) on testbench [
+*Info*    Run complete for Point ID (30 1) on testbench [
           Gain_Boosted_Cascode:pmis_5OTA_Optimized:1 ].
 
 

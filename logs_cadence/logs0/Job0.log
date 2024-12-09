@@ -1,15 +1,15 @@
-\# Program start time UTC 2024.12.09 05:13:21.309
-\# Local time Monday 9 December 2024, 12:13 am
+\# Program start time UTC 2024.12.09 13:36:37.976
+\# Local time Monday 9 December 2024, 8:36 am
 \o Program:		@(#)$CDS: virtuoso version 6.1.7-64b 11/09/2015 12:45 (sjfnl165) $
 \o Hierarchy:		/usr/local/cadence/IC617/tools.lnx86/dfII/
 \o Sub version:		sub-version  IC6.1.7-64b.78  (64-bit addresses)
-\# Command line:	/usr/local/cadence/IC617/tools.lnx86/dfII/bin/64bit/virtuoso -noautostart -mpssession virtuoso1569 -mpshost berkeley -davinciService DaVinciService_1569_1733721195 -log /home/cadence/my_new_project/EECE2026_IC_Project_3rd_year/logs_cadence/logs0/Job0.log -licenseLockFileName /home/cadence/my_new_project/EECE2026_IC_Project_3rd_year/.tmp_cadence/.berkeley_1569 -nograph -nostdin -axlChildIdFlag 0
+\# Command line:	/usr/local/cadence/IC617/tools.lnx86/dfII/bin/64bit/virtuoso -noautostart -mpssession virtuoso1585 -mpshost berkeley -davinciService DaVinciService_1585_1733751389 -log /home/cadence/IC_PROJECT/logs_cadence/logs0/Job0.log -licenseLockFileName /home/cadence/IC_PROJECT/.tmp_cadence/.berkeley_1585 -nograph -nostdin -axlChildIdFlag 0
 \# Host name (type):	berkeley (x86_64)
-\# Operating system:	Linux 3.16.0-4-amd64 #1 SMP Debian 3.16.36-1+deb8u2 (2016-10-19)
+\# Operating system:	Linux 3.16.0-6-amd64 #1 SMP Debian 3.16.56-1+deb8u1 (2018-05-08)
 \# Linux /etc/issue:	Debian GNU/Linux 8 \n \l
 \# X display name (WxH):	berkeley:80 (1024x868)
 \# Available geometry:			TL(0:0) BR(1023:867)
-\# X server:			RealVNC Ltd (VNC nograph server, PID 4310)
+\# X server:			RealVNC Ltd (VNC nograph server, PID 4245)
 \# Depth of Visual (Root):	16 (16)
 \# Number of Planes Used:	16
 \# X version:		11.0 (vendor release 3370)
@@ -17,18 +17,18 @@
 \# 			current id 0x0, current max 0x3ffffa (4194298)
 \# Max data seg size:	     unlimited
 \# Max process size:	     unlimited
-\# Initial sbrk value:	        364 MB
-\# Available memory:	     10,639 MB
-\# System memory:	     11,541 MB
-\# Maximum memory size:	     11,258 MB
-\# Max mem available:	     10,719 MB
+\# Initial sbrk value:	        366 MB
+\# Available memory:	      5,008 MB
+\# System memory:	      6,101 MB
+\# Maximum memory size:	      5,815 MB
+\# Max mem available:	      5,088 MB
 \# Initial memory used:	         80 MB
 \#        process size:	        890 MB
 \# Qt version:		4.8.5
 \# Window Manager:	other
 \# User Name:		cadence
-\o Working Directory:	berkeley:/home/cadence/my_new_project/EECE2026_IC_Project_3rd_year
-\# Process Id:		4327
+\o Working Directory:	berkeley:/home/cadence/IC_PROJECT
+\# Process Id:		4251
 \o 
 \o COPYRIGHT © 1992-2015  CADENCE DESIGN SYSTEMS INC.  ALL RIGHTS RESERVED.
 \o           © 1992-2015  UNIX SYSTEMS Laboratories INC.,
@@ -76,7 +76,7 @@
 \o //              OR ITS LICENSORS AND IS SUBJECT TO LICENSE TERMS.
 \o //
 \o //
-\# Memory report: using         197 MB, process size 1,139 MB at UTC 2024.12.09 05:13:26.192
+\# Memory report: using         194 MB, process size 1,136 MB at UTC 2024.12.09 13:36:41.377
 \o Sonnet:  The Sonnet directory is "/usr/local/sonnet"
 \o //  Could not initialize Calibre layout-server socket on at berkeley.localdomain:9189. Trying to find free socket ...
 \o //  Calibre layout-server initialized successfully at socket 5000, host berkeley.localdomain.
@@ -100,6 +100,7 @@
 \o //   Graphics End-User License Agreement or your signed agreement 
 \o //   with Mentor Graphics that contains beta terms, whichever applies.
 \o // 
+\o 
 \o Calibre server launched successfully
 \o //  Calibre RealTime embedded client initialized successfully at berkeley.localdomain:5000
 \o //  Calibre RealTime: Initialization complete
@@ -111,8 +112,8 @@
 \o * sonnet application of type maskLayoutSonnet is registered in maskLayout...
 \o * bindkeys are inherited from maskLayout...
 \o * all menus including user menus are inherited from maskLayout...
-\# Available memory:         10,382 MB at UTC 2024.12.09 05:13:31.615
-\# Memory report: Maximum memory size now 10,589 MB at UTC 2024.12.09 05:13:31.615
+\# Available memory:          4,724 MB at UTC 2024.12.09 13:36:49.598
+\# Memory report: Maximum memory size now 4,932 MB at UTC 2024.12.09 13:36:49.599
 \o * all forms are created ...
 \o * symbolic link "sonnet" created in "/home/cadence/doc"...
 \o * sonnet online help is available...
@@ -128,8 +129,6 @@
 \p > 
 \a _treeSetOpcGUI(t)
 \r t
-\# Memory report: Maximum memory size now 10,354 MB at UTC 2024.12.09 05:14:11.617
-\# Memory report: Maximum memory size now 9,997 MB at UTC 2024.12.09 05:16:11.623
 \o Job 0 timed out after no activity in 300 seconds.
 \w *WARNING* (DB-270040): dbFullLibPath: cannot open library MentorMessengerLib
 \o Loading lce.cxt 
@@ -138,3 +137,5 @@
 \o 
 \o 
 \o Loading simui.cxt 
+\# Memory report: on exit            212 MB, process size 1,157 MB at UTC 2024.12.09 13:42:01.762
+\# Memory report: peak usage         212 MB, process size 1,157 MB

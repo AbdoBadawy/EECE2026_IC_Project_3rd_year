@@ -11,12 +11,12 @@
 	View         = schematic
 	Simulator    = spectre
 	State Path   = $AXL_SETUPDB_DIR/test_states
-	State Name   = Gain_Boosted_Cascode:pmis_5OTA_Optimized:1_none_Interactive.9
-	Results DB   = /home/cadence/my_new_project/EECE2026_IC_Project_3rd_year/Gain_Boosted_Cascode/pmis_5OTA_Optimized/adexl/results/data/Interactive.9.rdb
-	Results Dir  = /home/cadence/simulation/Gain_Boosted_Cascode/pmis_5OTA_Optimized/adexl/results/data/Interactive.9/1/Gain_Boosted_Cascode:pmis_5OTA_Optimized:1
+	State Name   = Gain_Boosted_Cascode:pmis_5OTA_Optimized:1_none_Interactive.40
+	Results DB   = /home/cadence/IC_PROJECT/Gain_Boosted_Cascode/pmis_5OTA_Optimized/adexl/results/data/Interactive.40.rdb
+	Results Dir  = /home/cadence/simulation/Gain_Boosted_Cascode/pmis_5OTA_Optimized/adexl/results/data/Interactive.40/1/Gain_Boosted_Cascode:pmis_5OTA_Optimized:1
 	Results Loc  = /home/cadence/simulation/Gain_Boosted_Cascode/pmis_5OTA_Optimized/adexl/results/data
 	Project Dir  = /home/cadence/simulation
-	Setup DB loc = /home/cadence/my_new_project/EECE2026_IC_Project_3rd_year/Gain_Boosted_Cascode/pmis_5OTA_Optimized/adexl
+	Setup DB loc = /home/cadence/IC_PROJECT/Gain_Boosted_Cascode/pmis_5OTA_Optimized/adexl
 	File Encoding = 0
 
 
@@ -27,33 +27,42 @@
 
 
 
-*Info*    Run start for Point ID (9 1) on testbench [
+*Info*    Run start for Point ID (24 1) on testbench [
           Gain_Boosted_Cascode:pmis_5OTA_Optimized:1 ].
 
 Resetting statistical vars
 
 *Info*    Setting parameter values ...
 
+Setting var LN = "5u"
+Setting var LP = "2.2u"
+Setting var W = "5u"
+Setting var W_SOURCE = "40u"
 Setting temp(T) = 27
 
 *Info*    Netlist Directory =
-          /home/cadence/simulation/Gain_Boosted_Cascode/pmis_5OTA_Optimized/adexl/results/data/Interactive.9/1/Gain_Boosted_Cascode:pmis_5OTA_Optimized:1/netlist
+          /home/cadence/simulation/Gain_Boosted_Cascode/pmis_5OTA_Optimized/adexl/results/data/Interactive.40/1/Gain_Boosted_Cascode:pmis_5OTA_Optimized:1/netlist
 
 
 *Info*    Data Directory    =
-          /home/cadence/simulation/Gain_Boosted_Cascode/pmis_5OTA_Optimized/adexl/results/data/Interactive.9/1/Gain_Boosted_Cascode:pmis_5OTA_Optimized:1
+          /home/cadence/simulation/Gain_Boosted_Cascode/pmis_5OTA_Optimized/adexl/results/data/Interactive.40/1/Gain_Boosted_Cascode:pmis_5OTA_Optimized:1
 
 
-*Info*    Creating Netlist for Point ID (9 1)
+*Info*    Creating Netlist for Point ID (24 1)
 
 generate netlist...
-Begin Incremental Netlisting Dec  9 03:06:47 2024
-End netlisting Dec  9 03:06:47 2024
+Begin Incremental Netlisting Dec  9 09:20:27 2024
+WARNING (OSSHNL-226): There are more design variables used in the current netlisting session as
+compared to the last session in the current run directory. The netlist(s)
+generated in the last netlisting session cannot be reused for incremental
+netlisting. Therefore re-netlisting the design.
+
+End netlisting Dec  9 09:20:27 2024
 
 Netlisting Statistics:
 	Number of components:   13
 
-	Elapsed time:          0.0s
+	Elapsed time:          1.0s (13.00/s)
 Errors: 0	Warnings: 0
       ...successful.
 compose simulator input file...
@@ -61,9 +70,9 @@ compose simulator input file...
 
 *Info*    Running simulation on testbench [
           Gain_Boosted_Cascode:pmis_5OTA_Optimized:1 ] for Point ID
-          (9 1).
+          (24 1).
 
-Delete psf data in /home/cadence/simulation/Gain_Boosted_Cascode/pmis_5OTA_Optimized/adexl/results/data/Interactive.9/1/Gain_Boosted_Cascode:pmis_5OTA_Optimized:1/psf.
+Delete psf data in /home/cadence/simulation/Gain_Boosted_Cascode/pmis_5OTA_Optimized/adexl/results/data/Interactive.40/1/Gain_Boosted_Cascode:pmis_5OTA_Optimized:1/psf.
 compose simulator input file...
       ...successful.
 start simulator if needed...
@@ -78,10 +87,13 @@ reading simulation data...
 *Info*    Client has finished evaluating ... 
 
 
-*Info*    Run complete for Point ID (9 1) on testbench [
+*Info*    Run complete for Point ID (24 1) on testbench [
           Gain_Boosted_Cascode:pmis_5OTA_Optimized:1 ].
 
 
 
 
 
+Simulation design variables differ from those on the cellView,
+they have been saved in the file "/tmp/saved-design-variables".
+To save future changes, copy variables to cellView before exiting.
