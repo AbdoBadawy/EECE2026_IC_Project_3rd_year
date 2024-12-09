@@ -56,121 +56,121 @@
 			<var>AV_N
 				<value>100</value>
 				<dependentTests>
-					<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+					<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
 				</dependentTests>
 			</var>
 			<var>AV_P
 				<value>100</value>
 				<dependentTests>
-					<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+					<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
 				</dependentTests>
 			</var>
 			<var>L_CASCN
 				<value>120n</value>
 				<dependentTests>
-					<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+					<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
 				</dependentTests>
 			</var>
 			<var>L_CASCP
 				<value>80n</value>
 				<dependentTests>
-					<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+					<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
 				</dependentTests>
 			</var>
 			<var>L_INPUT
 				<value>130n</value>
 				<dependentTests>
-					<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+					<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
 				</dependentTests>
 			</var>
 			<var>L_SOURCEN
 				<value>500n</value>
 				<dependentTests>
-					<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+					<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
 				</dependentTests>
 			</var>
 			<var>L_SOURCEP
 				<value>600n</value>
 				<dependentTests>
-					<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+					<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
 				</dependentTests>
 			</var>
 			<var>VBN
 				<value>350m</value>
 				<dependentTests>
-					<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+					<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
 				</dependentTests>
 			</var>
 			<var>VBP
 				<value>734.44m</value>
 				<dependentTests>
-					<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+					<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
 				</dependentTests>
 			</var>
 			<var>VCASCN
 				<value>900m</value>
 				<dependentTests>
-					<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+					<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
 				</dependentTests>
 			</var>
 			<var>VCASCP
 				<value>350m</value>
 				<dependentTests>
-					<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+					<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
 				</dependentTests>
 			</var>
 			<var>VINCM
 				<value>500m</value>
 				<dependentTests>
-					<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+					<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
 				</dependentTests>
 			</var>
 			<var>VOCM
 				<value>600m</value>
 				<dependentTests>
-					<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+					<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
 				</dependentTests>
 			</var>
 			<var>W_CASCN
 				<value>500u</value>
 				<dependentTests>
-					<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+					<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
 				</dependentTests>
 			</var>
 			<var>W_CASCP
 				<value>800u</value>
 				<dependentTests>
-					<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+					<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
 				</dependentTests>
 			</var>
 			<var>W_INPUT
 				<value>3m</value>
 				<dependentTests>
-					<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+					<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
 				</dependentTests>
 			</var>
 			<var>W_SOURCEP
 				<value>2.32m</value>
 				<dependentTests>
-					<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+					<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
 				</dependentTests>
 			</var>
 			<var>WN_SOURCE
 				<value>7.247m</value>
 				<dependentTests>
-					<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+					<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
 				</dependentTests>
 			</var>
 			<var>VDD
 				<value>1.2</value>
 				<dependentTests>
-					<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+					<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
 				</dependentTests>
 			</var>
 			<var>cgg2
 				<value>1f</value>
 				<dependentTests>
-					<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+					<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
 				</dependentTests>
 			</var>
 		</vars>
@@ -188,414 +188,6 @@
 		</plottingoptions>
 	</active>
 	<history>History
-		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.117
-			<checkpoint>
-				<corners>
-					<corner enabled="1">_default</corner>
-				</corners>
-				<currentmode>Single Run, Sweeps and Corners</currentmode>
-				<extensions>
-					<extension>Parasitics
-						<callback>_parSetupDBExtensionCB</callback>
-						<iconvalue></iconvalue>
-						<icontype></icontype>
-					</extension>
-				</extensions>
-				<overwritehistory>0</overwritehistory>
-				<tests>
-					<test>Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>Gain_Boosted_OTA_behavior</value>
-							</option>
-							<option>lib
-								<value>Gain_Boosted_Cascode</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1_none_Interactive.117</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>Gain_Boosted_OTA_behavior</value>
-							</option>
-							<option>lib
-								<value>Gain_Boosted_Cascode</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-						</origoptions>
-					</test>
-				</tests>
-				<vars>
-					<var>AV_N
-						<value>100</value>
-						<dependentTests>
-							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>AV_P
-						<value>100</value>
-						<dependentTests>
-							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>L_CASCN
-						<value>120n</value>
-						<dependentTests>
-							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>L_CASCP
-						<value>80n</value>
-						<dependentTests>
-							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>L_INPUT
-						<value>130n</value>
-						<dependentTests>
-							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>L_SOURCEN
-						<value>500n</value>
-						<dependentTests>
-							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>L_SOURCEP
-						<value>600n</value>
-						<dependentTests>
-							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VBN
-						<value>350m</value>
-						<dependentTests>
-							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VBP
-						<value>734.44m</value>
-						<dependentTests>
-							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VCASCN
-						<value>950m</value>
-						<dependentTests>
-							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VCASCP
-						<value>0.8-0.4</value>
-						<dependentTests>
-							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VINCM
-						<value>500m</value>
-						<dependentTests>
-							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VOCM
-						<value>600m</value>
-						<dependentTests>
-							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>W_CASCN
-						<value>1000u</value>
-						<dependentTests>
-							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>W_CASCP
-						<value>800u</value>
-						<dependentTests>
-							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>W_INPUT
-						<value>2m</value>
-						<dependentTests>
-							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>W_SOURCEP
-						<value>2.32m</value>
-						<dependentTests>
-							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>WN_SOURCE
-						<value>7.247m</value>
-						<dependentTests>
-							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VDD
-						<value>1.2</value>
-						<dependentTests>
-							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>cgg2
-						<value>1f</value>
-						<dependentTests>
-							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
-						</dependentTests>
-					</var>
-				</vars>
-				<overwritehistoryname>Interactive.0</overwritehistoryname>
-				<plottingoptions>
-					<plottingoption>plottype
-						<value>None</value>
-					</plottingoption>
-					<plottingoption>usewaveformtemplate
-						<value>no</value>
-					</plottingoption>
-					<plottingoption>waveformtemplate
-						<value></value>
-					</plottingoption>
-				</plottingoptions>
-				<sortVariableValues>0</sortVariableValues>
-			</checkpoint>
-			<timestamp>Fri Nov 29 18:00:49 2024</timestamp>
-			<resultsname>/home/cadence/IC_PROJECT/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.117.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.117.rdb</simresults>
-			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
-			<netlistdelstrategy>SaveAll</netlistdelstrategy>
-			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/berkeley_cadence_180049600</localpsfdir>
-			<psfdir>/home/cadence/simulation/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.117</psfdir>
-			<simdir>$AXL_PROJECT_DIR/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.117</simdir>
-			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/cadence/IC_PROJECT/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.117.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.117.log</runlogfile>
-			<schematicpoint></schematicpoint>
-			<test>all</test>
-		</historyentry>
-		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.118
-			<checkpoint>
-				<corners>
-					<corner enabled="1">_default</corner>
-				</corners>
-				<currentmode>Single Run, Sweeps and Corners</currentmode>
-				<extensions>
-					<extension>Parasitics
-						<callback>_parSetupDBExtensionCB</callback>
-						<iconvalue></iconvalue>
-						<icontype></icontype>
-					</extension>
-				</extensions>
-				<overwritehistory>0</overwritehistory>
-				<tests>
-					<test>Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>Gain_Boosted_OTA_behavior</value>
-							</option>
-							<option>lib
-								<value>Gain_Boosted_Cascode</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1_none_Interactive.118</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>Gain_Boosted_OTA_behavior</value>
-							</option>
-							<option>lib
-								<value>Gain_Boosted_Cascode</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-						</origoptions>
-					</test>
-				</tests>
-				<vars>
-					<var>AV_N
-						<value>100</value>
-						<dependentTests>
-							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>AV_P
-						<value>100</value>
-						<dependentTests>
-							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>L_CASCN
-						<value>120n</value>
-						<dependentTests>
-							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>L_CASCP
-						<value>80n</value>
-						<dependentTests>
-							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>L_INPUT
-						<value>130n</value>
-						<dependentTests>
-							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>L_SOURCEN
-						<value>500n</value>
-						<dependentTests>
-							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>L_SOURCEP
-						<value>600n</value>
-						<dependentTests>
-							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VBN
-						<value>350m</value>
-						<dependentTests>
-							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VBP
-						<value>734.44m</value>
-						<dependentTests>
-							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VCASCN
-						<value>950m</value>
-						<dependentTests>
-							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VCASCP
-						<value>0.8-0.4</value>
-						<dependentTests>
-							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VINCM
-						<value>500m</value>
-						<dependentTests>
-							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VOCM
-						<value>650m</value>
-						<dependentTests>
-							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>W_CASCN
-						<value>1000u</value>
-						<dependentTests>
-							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>W_CASCP
-						<value>800u</value>
-						<dependentTests>
-							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>W_INPUT
-						<value>2m</value>
-						<dependentTests>
-							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>W_SOURCEP
-						<value>2.32m</value>
-						<dependentTests>
-							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>WN_SOURCE
-						<value>7.247m</value>
-						<dependentTests>
-							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VDD
-						<value>1.2</value>
-						<dependentTests>
-							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>cgg2
-						<value>1f</value>
-						<dependentTests>
-							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
-						</dependentTests>
-					</var>
-				</vars>
-				<overwritehistoryname>Interactive.0</overwritehistoryname>
-				<plottingoptions>
-					<plottingoption>plottype
-						<value>None</value>
-					</plottingoption>
-					<plottingoption>usewaveformtemplate
-						<value>no</value>
-					</plottingoption>
-					<plottingoption>waveformtemplate
-						<value></value>
-					</plottingoption>
-				</plottingoptions>
-				<sortVariableValues>0</sortVariableValues>
-			</checkpoint>
-			<timestamp>Fri Nov 29 18:01:37 2024</timestamp>
-			<resultsname>/home/cadence/IC_PROJECT/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.118.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.118.rdb</simresults>
-			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
-			<netlistdelstrategy>SaveAll</netlistdelstrategy>
-			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/berkeley_cadence_180137540</localpsfdir>
-			<psfdir>/home/cadence/simulation/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.118</psfdir>
-			<simdir>$AXL_PROJECT_DIR/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.118</simdir>
-			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/cadence/IC_PROJECT/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.118.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.118.log</runlogfile>
-			<schematicpoint></schematicpoint>
-			<test>all</test>
-		</historyentry>
 		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.119
 			<checkpoint>
 				<corners>
@@ -2213,8 +1805,7 @@
 				</plottingoptions>
 				<sortVariableValues>0</sortVariableValues>
 			</checkpoint>
-			<timestamp>Sat Nov 30 06:53:26 2024
-</timestamp>
+			<timestamp>Sat Nov 30 06:53:26 2024</timestamp>
 			<resultsname>/home/cadence/IC_PROJECT/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.126.rdb</resultsname>
 			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.126.rdb</simresults>
 			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
@@ -2226,6 +1817,416 @@
 			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
 			<runlog>/home/cadence/IC_PROJECT/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.126.log</runlog>
 			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.126.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.127
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>Gain_Boosted_OTA_behavior</value>
+							</option>
+							<option>lib
+								<value>Gain_Boosted_Cascode</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1_none_Interactive.127</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>Gain_Boosted_OTA_behavior</value>
+							</option>
+							<option>lib
+								<value>Gain_Boosted_Cascode</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var>AV_N
+						<value>100</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AV_P
+						<value>100</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>L_CASCN
+						<value>120n</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>L_CASCP
+						<value>80n</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>L_INPUT
+						<value>130n</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>L_SOURCEN
+						<value>500n</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>L_SOURCEP
+						<value>600n</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VBN
+						<value>350m</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VBP
+						<value>734.44m</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VCASCN
+						<value>900m</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VCASCP
+						<value>350m</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VINCM
+						<value>500m</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VOCM
+						<value>600m</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>W_CASCN
+						<value>500u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>W_CASCP
+						<value>800u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>W_INPUT
+						<value>3m</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>W_SOURCEP
+						<value>2.32m</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>WN_SOURCE
+						<value>7.247m</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VDD
+						<value>1.2</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>cgg2
+						<value>1f</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Mon Dec  9 00:13:22 2024
+</timestamp>
+			<resultsname>/home/cadence/my_new_project/EECE2026_IC_Project_3rd_year/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.127.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.127.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/berkeley_cadence_001322366</localpsfdir>
+			<psfdir>/home/cadence/simulation/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.127</psfdir>
+			<simdir>$AXL_PROJECT_DIR/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.127</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/cadence/my_new_project/EECE2026_IC_Project_3rd_year/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.127.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.127.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.128
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>Gain_Boosted_OTA_behavior</value>
+							</option>
+							<option>lib
+								<value>Gain_Boosted_Cascode</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1_none_Interactive.128</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>Gain_Boosted_OTA_behavior</value>
+							</option>
+							<option>lib
+								<value>Gain_Boosted_Cascode</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var>AV_N
+						<value>100</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AV_P
+						<value>100</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>L_CASCN
+						<value>120n</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>L_CASCP
+						<value>80n</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>L_INPUT
+						<value>130n</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>L_SOURCEN
+						<value>500n</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>L_SOURCEP
+						<value>600n</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VBN
+						<value>350m</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VBP
+						<value>734.44m</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VCASCN
+						<value>900m</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VCASCP
+						<value>350m</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VINCM
+						<value>500m</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VOCM
+						<value>600m</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>W_CASCN
+						<value>500u</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>W_CASCP
+						<value>800u</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>W_INPUT
+						<value>3m</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>W_SOURCEP
+						<value>2.32m</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>WN_SOURCE
+						<value>7.247m</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VDD
+						<value>1.2</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>cgg2
+						<value>1f</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Mon Dec  9 00:15:12 2024
+</timestamp>
+			<resultsname>/home/cadence/my_new_project/EECE2026_IC_Project_3rd_year/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.128.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.128.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/berkeley_cadence_001512645</localpsfdir>
+			<psfdir>/home/cadence/simulation/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.128</psfdir>
+			<simdir>$AXL_PROJECT_DIR/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.128</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/cadence/my_new_project/EECE2026_IC_Project_3rd_year/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.128.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.128.log</runlogfile>
 			<schematicpoint></schematicpoint>
 			<test>all</test>
 		</historyentry>

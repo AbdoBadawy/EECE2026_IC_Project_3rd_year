@@ -1,0 +1,125 @@
+*Info*    Exporting services from client ... 
+
+*Info*    Client has finished starting ... 
+
+
+
+*Info*    Configuring the session ...
+
+	Library      = Gain_Boosted_Cascode
+	Cell         = pmis_5OTA_Optimized
+	View         = schematic
+	Simulator    = spectre
+	State Path   = $AXL_SETUPDB_DIR/test_states
+	State Name   = Gain_Boosted_Cascode:pmis_5OTA_Optimized:1_none_Interactive.15
+	Results DB   = /home/cadence/my_new_project/EECE2026_IC_Project_3rd_year/Gain_Boosted_Cascode/pmis_5OTA_Optimized/adexl/results/data/Interactive.15.rdb
+	Results Dir  = /home/cadence/simulation/Gain_Boosted_Cascode/pmis_5OTA_Optimized/adexl/results/data/Interactive.15/1/Gain_Boosted_Cascode:pmis_5OTA_Optimized:1
+	Results Loc  = /home/cadence/simulation/Gain_Boosted_Cascode/pmis_5OTA_Optimized/adexl/results/data
+	Project Dir  = /home/cadence/simulation
+	Setup DB loc = /home/cadence/my_new_project/EECE2026_IC_Project_3rd_year/Gain_Boosted_Cascode/pmis_5OTA_Optimized/adexl
+	File Encoding = 0
+
+
+*Info*    Spectre controlMode is set "batch".
+
+
+
+
+
+
+*Info*    Run start for Point ID (15 1) on testbench [
+          Gain_Boosted_Cascode:pmis_5OTA_Optimized:1 ].
+
+Resetting statistical vars
+
+*Info*    Setting parameter values ...
+
+Lib = Gain_Boosted_Cascode 	 Cell = pmis_5OTA_Optimized 	 View = schematic 
+Inst = M0 	 Name = l 	 Val = "20u"
+Setting device parameter Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M0.l = "20u"
+Lib = Gain_Boosted_Cascode 	 Cell = pmis_5OTA_Optimized 	 View = schematic 
+Inst = M0 	 Name = w 	 Val = "334.4u"
+Setting device parameter Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M0.w = "334.4u"
+Lib = Gain_Boosted_Cascode 	 Cell = pmis_5OTA_Optimized 	 View = schematic 
+Inst = M1 	 Name = l 	 Val = "1.98u"
+Setting device parameter Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M1.l = "1.98u"
+Lib = Gain_Boosted_Cascode 	 Cell = pmis_5OTA_Optimized 	 View = schematic 
+Inst = M1 	 Name = w 	 Val = "8.035u"
+Setting device parameter Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M1.w = "8.035u"
+Lib = Gain_Boosted_Cascode 	 Cell = pmis_5OTA_Optimized 	 View = schematic 
+Inst = M5 	 Name = l 	 Val = "3.38u"
+Setting device parameter Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M5.l = "3.38u"
+Lib = Gain_Boosted_Cascode 	 Cell = pmis_5OTA_Optimized 	 View = schematic 
+Inst = M5 	 Name = w 	 Val = "4.66u"
+Setting device parameter Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/M5.w = "4.66u"
+Lib = Gain_Boosted_Cascode 	 Cell = pmis_5OTA_Optimized 	 View = schematic 
+Inst = V11 	 Name = vdc 	 Val = "1.17"
+Setting device parameter Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/V11.vdc = "1.17"
+Lib = Gain_Boosted_Cascode 	 Cell = pmis_5OTA_Optimized 	 View = schematic 
+Inst = V12 	 Name = vdc 	 Val = "1.505"
+Setting device parameter Gain_Boosted_Cascode/pmis_5OTA_Optimized/schematic/V12.vdc = "1.505"
+Setting temp(T) = 27
+
+*Info*    Netlist Directory =
+          /home/cadence/simulation/Gain_Boosted_Cascode/pmis_5OTA_Optimized/adexl/results/data/Interactive.15/1/Gain_Boosted_Cascode:pmis_5OTA_Optimized:1/netlist
+
+
+*Info*    Data Directory    =
+          /home/cadence/simulation/Gain_Boosted_Cascode/pmis_5OTA_Optimized/adexl/results/data/Interactive.15/1/Gain_Boosted_Cascode:pmis_5OTA_Optimized:1
+
+
+*Info*    Creating Netlist for Point ID (15 1)
+
+generate netlist...
+Begin Incremental Netlisting Dec  9 03:19:02 2024
+WARNING (OSSHNL-226): There are more design variables used in the current netlisting session as
+compared to the last session in the current run directory. The netlist(s)
+generated in the last netlisting session cannot be reused for incremental
+netlisting. Therefore re-netlisting the design.
+
+Setting var DPAR_3 = "1.98e-06"
+Setting var DPAR_4 = "8.035e-06"
+Setting var DPAR_1 = "2e-05"
+Setting var DPAR_2 = "0.0003344"
+Setting var DPAR_5 = "3.38e-06"
+Setting var DPAR_6 = "4.66e-06"
+End netlisting Dec  9 03:19:02 2024
+
+Netlisting Statistics:
+	Number of components:   13
+
+	Elapsed time:          0.0s
+Errors: 0	Warnings: 0
+      ...successful.
+compose simulator input file...
+      ...successful.
+
+*Info*    Running simulation on testbench [
+          Gain_Boosted_Cascode:pmis_5OTA_Optimized:1 ] for Point ID
+          (15 1).
+
+Delete psf data in /home/cadence/simulation/Gain_Boosted_Cascode/pmis_5OTA_Optimized/adexl/results/data/Interactive.15/1/Gain_Boosted_Cascode:pmis_5OTA_Optimized:1/psf.
+compose simulator input file...
+      ...successful.
+start simulator if needed...
+      ...successful.
+simulate...
+To view the simulator output, right-click on the test name, result 
+name, or any value in the "Results" tab of the Outputs section and 
+choose "Output Log" menu option.
+INFO (ADE-3071): Simulation completed successfully.
+reading simulation data...
+      ...successful.
+*Info*    Client has finished evaluating ... 
+
+
+*Info*    Run complete for Point ID (15 1) on testbench [
+          Gain_Boosted_Cascode:pmis_5OTA_Optimized:1 ].
+
+
+
+
+
+Simulation design variables differ from those on the cellView,
+they have been saved in the file "/tmp/saved-design-variables".
+To save future changes, copy variables to cellView before exiting.

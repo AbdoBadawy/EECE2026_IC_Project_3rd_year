@@ -12,11 +12,11 @@
 	Simulator    = spectre
 	State Path   = $AXL_SETUPDB_DIR/test_states
 	State Name   = Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1_none_Interactive.127
-	Results DB   = /home/cadence/my_new_project/EECE2026_IC_Project_3rd_year/Gain_Boosted_Cascode/pmos_5OTA/adexl/results/data/Interactive.127.rdb
-	Results Dir  = /home/cadence/simulation/Gain_Boosted_Cascode/pmos_5OTA/adexl/results/data/Interactive.127/1/Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1
-	Results Loc  = /home/cadence/simulation/Gain_Boosted_Cascode/pmos_5OTA/adexl/results/data
+	Results DB   = /home/cadence/my_new_project/EECE2026_IC_Project_3rd_year/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.127.rdb
+	Results Dir  = /home/cadence/simulation/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.127/1/Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1
+	Results Loc  = /home/cadence/simulation/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data
 	Project Dir  = /home/cadence/simulation
-	Setup DB loc = /home/cadence/my_new_project/EECE2026_IC_Project_3rd_year/Gain_Boosted_Cascode/pmos_5OTA/adexl
+	Setup DB loc = /home/cadence/my_new_project/EECE2026_IC_Project_3rd_year/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl
 	File Encoding = 0
 
 
@@ -57,11 +57,11 @@ Setting var cgg2 = "1f"
 Setting temp(T) = 27
 
 *Info*    Netlist Directory =
-          /home/cadence/simulation/Gain_Boosted_Cascode/pmos_5OTA/adexl/results/data/Interactive.127/1/Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1/netlist
+          /home/cadence/simulation/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.127/1/Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1/netlist
 
 
 *Info*    Data Directory    =
-          /home/cadence/simulation/Gain_Boosted_Cascode/pmos_5OTA/adexl/results/data/Interactive.127/1/Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1
+          /home/cadence/simulation/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.127/1/Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1
 
 
 *Info*    Creating Netlist for Point ID (0 1)
@@ -69,17 +69,17 @@ Setting temp(T) = 27
 generate netlist...
 Loading seCore.cxt 
 Initializing the control file using cp:
-    cp /usr/local/cadence/IC617/tools.lnx86/dfII/etc/si/control.spectre /home/cadence/simulation/Gain_Boosted_Cascode/pmos_5OTA/adexl/results/data/Interactive.127/1/Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1/netlist/control
+    cp /usr/local/cadence/IC617/tools.lnx86/dfII/etc/si/control.spectre /home/cadence/simulation/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.127/1/Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1/netlist/control
 Copying Spectre source file 'spectre.inp'
 Copying Spectre command file 'spectre.sim'
-Begin Incremental Netlisting Dec  4 12:51:12 2024
-End netlisting Dec  4 12:51:12 2024
+Begin Incremental Netlisting Dec  9 00:13:25 2024
+End netlisting Dec  9 00:13:26 2024
 Loading monte.cxt 
 
 Netlisting Statistics:
 	Number of components:   39
 
-	Elapsed time:          0.0s
+	Elapsed time:          1.0s (39.00/s)
 Errors: 0	Warnings: 0
       ...successful.
 compose simulator input file...
@@ -89,7 +89,7 @@ compose simulator input file...
           Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1 ] for
           Point ID (0 1).
 
-Delete psf data in /home/cadence/simulation/Gain_Boosted_Cascode/pmos_5OTA/adexl/results/data/Interactive.127/1/Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1/psf.
+Delete psf data in /home/cadence/simulation/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.127/1/Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1/psf.
 compose simulator input file...
       ...successful.
 start simulator if needed...
@@ -151,18 +151,18 @@ Setting var cgg2 = "1f"
 Setting temp(T) = 27
 
 *Info*    Netlist Directory =
-          /home/cadence/simulation/Gain_Boosted_Cascode/pmos_5OTA/adexl/results/data/Interactive.127/1/Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1/netlist
+          /home/cadence/simulation/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.127/1/Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1/netlist
 
 
 *Info*    Data Directory    =
-          /home/cadence/simulation/Gain_Boosted_Cascode/pmos_5OTA/adexl/results/data/Interactive.127/1/Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1
+          /home/cadence/simulation/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.127/1/Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1
 
 
 *Info*    Creating Netlist for Point ID (0 1)
 
 generate netlist...
-Begin Incremental Netlisting Dec  4 12:51:16 2024
-End netlisting Dec  4 12:51:16 2024
+Begin Incremental Netlisting Dec  9 00:13:36 2024
+End netlisting Dec  9 00:13:36 2024
 
 	The netlist is up to date.
 	Time taken to compare the design with netlist:   0.0s
@@ -174,7 +174,7 @@ compose simulator input file...
           Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1 ] for
           Point ID (0 1).
 
-Delete psf data in /home/cadence/simulation/Gain_Boosted_Cascode/pmos_5OTA/adexl/results/data/Interactive.127/1/Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1/psf.
+Delete psf data in /home/cadence/simulation/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.127/1/Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1/psf.
 compose simulator input file...
       ...successful.
 start simulator if needed...
