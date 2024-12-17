@@ -1,0 +1,20 @@
+Starting Single Run, Sweeps and Corners...
+
+Current time: Wed Nov 27 09:51:37 2024 
+Best design point: 1
+Design specs: 
+	Gain_Boosted_Cascode:test_bench:1	corner	Nominal - 
+Design parameters: 
+	LN		60n
+	LP		60n
+	MN		16.67
+	MP		16.67
+	VDS		200m
+	VGS		500m
+	VSB		0
+
+Interactive.0
+Number of points completed: 1
+Number of simulation errors: 0
+Interactive.0 completed. 
+Current time: Wed Nov 27 09:51:57 2024 
