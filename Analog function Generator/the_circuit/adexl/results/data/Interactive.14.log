@@ -1,0 +1,26 @@
+Starting Single Run, Sweeps and Corners...
+
+Current time: Sun Dec  1 15:12:55 2024 
+Best design point: 1
+Design specs: 
+	IC___PROLECT:the_circuit:1	corner	Nominal - 
+Design parameters: 
+	C3		10n
+	C4		100p
+	C6		100p
+	cop		10p
+	Gop		10k
+	R1		10k
+	R2		5k
+	R3		500
+	R5		10k
+	R6		5k
+	Rop		159.2
+	vcc		12
+	R4		2k
+
+Interactive.14
+Number of points completed: 1
+Number of simulation errors: 0
+Interactive.14 completed. 
+Current time: Sun Dec  1 15:13:07 2024 
