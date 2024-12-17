@@ -1,0 +1,4713 @@
+<?xml version="1.0"?>
+<setupdb version="5">data
+	<active>Active Setup
+		<corners>
+			<corner enabled="1">_default</corner>
+		</corners>
+		<currentmode>Single Run, Sweeps and Corners</currentmode>
+		<extensions>
+			<extension>Parasitics
+				<callback>_parSetupDBExtensionCB</callback>
+				<iconvalue></iconvalue>
+				<icontype></icontype>
+			</extension>
+		</extensions>
+		<overwritehistory>0</overwritehistory>
+		<tests>
+			<test enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1
+				<tool>ADE</tool>
+				<tooloptions>
+					<option>cell
+						<value>Gain_Boosted_OTA_behavior</value>
+					</option>
+					<option>lib
+						<value>Gain_Boosted_Cascode</value>
+					</option>
+					<option>sim
+						<value>spectre</value>
+					</option>
+					<option>view
+						<value>schematic</value>
+					</option>
+					<option>path
+						<value>$AXL_SETUPDB_DIR/test_states</value>
+					</option>
+					<option>state
+						<value>Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1_active</value>
+					</option>
+				</tooloptions>
+				<origoptions>
+					<option>cell
+						<value>Gain_Boosted_OTA_behavior</value>
+					</option>
+					<option>lib
+						<value>Gain_Boosted_Cascode</value>
+					</option>
+					<option>sim
+						<value>spectre</value>
+					</option>
+					<option>view
+						<value>schematic</value>
+					</option>
+				</origoptions>
+			</test>
+			<test>Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1
+				<tool>ADE</tool>
+				<tooloptions>
+					<option>cell
+						<value>Gain_Boosted_Cascode_Actual</value>
+					</option>
+					<option>lib
+						<value>Gain_Boosted_Cascode</value>
+					</option>
+					<option>sim
+						<value>spectre</value>
+					</option>
+					<option>view
+						<value>schematic</value>
+					</option>
+					<option>path
+						<value>$AXL_SETUPDB_DIR/test_states</value>
+					</option>
+					<option>state
+						<value>Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1_active</value>
+					</option>
+				</tooloptions>
+				<origoptions>
+					<option>cell
+						<value>Gain_Boosted_Cascode_Actual</value>
+					</option>
+					<option>lib
+						<value>Gain_Boosted_Cascode</value>
+					</option>
+					<option>sim
+						<value>spectre</value>
+					</option>
+					<option>view
+						<value>schematic</value>
+					</option>
+				</origoptions>
+			</test>
+		</tests>
+		<vars>
+			<var>AV_N
+				<value>100</value>
+				<dependentTests>
+					<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>AV_P
+				<value>100</value>
+				<dependentTests>
+					<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>L_CASCN
+				<value>120n</value>
+				<dependentTests>
+					<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+					<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>L_CASCP
+				<value>120n</value>
+				<dependentTests>
+					<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+					<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>L_INPUT
+				<value>160n</value>
+				<dependentTests>
+					<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+					<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>L_SOURCEN
+				<value>500n</value>
+				<dependentTests>
+					<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+					<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>L_SOURCEP
+				<value>600n</value>
+				<dependentTests>
+					<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+					<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>VBN
+				<value>350m</value>
+				<dependentTests>
+					<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+					<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>VBP
+				<value>732.3347m</value>
+				<dependentTests>
+					<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+					<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>VCASCN
+				<value>900m</value>
+				<dependentTests>
+					<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+					<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>VCASCP
+				<value>350m</value>
+				<dependentTests>
+					<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+					<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>VINCM
+				<value>500m</value>
+				<dependentTests>
+					<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+					<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>VOCM
+				<value>600m</value>
+				<dependentTests>
+					<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+					<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>W_CASCN
+				<value>500u*0.35</value>
+				<dependentTests>
+					<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+					<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>W_CASCP
+				<value>500u*0.35</value>
+				<dependentTests>
+					<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+					<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>W_INPUT
+				<value>4m</value>
+				<dependentTests>
+					<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+					<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>W_SOURCEP
+				<value>2.32m*0.4</value>
+				<dependentTests>
+					<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+					<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>WN_SOURCE
+				<value>7.247m*0.4</value>
+				<dependentTests>
+					<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+					<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>VDD
+				<value>1.2</value>
+				<dependentTests>
+					<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+					<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>cgg2
+				<value>1f</value>
+				<dependentTests>
+					<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>AUX_NMOS_L_BUF_IN
+				<value>100n</value>
+				<dependentTests>
+					<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>AUX_NMOS_L_BUF_SOURCE
+				<value>1u</value>
+				<dependentTests>
+					<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>AUX_NMOS_L_IN
+				<value>2.57u</value>
+				<dependentTests>
+					<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>AUX_NMOS_L_LOAD
+				<value>3.77u</value>
+				<dependentTests>
+					<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>AUX_NMOS_L_TAIL
+				<value>1u</value>
+				<dependentTests>
+					<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>AUX_NMOS_W_BUF_IN
+				<value>3.15u</value>
+				<dependentTests>
+					<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>AUX_NMOS_W_BUF_SOURCE
+				<value>1.975u</value>
+				<dependentTests>
+					<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>AUX_NMOS_W_IN
+				<value>34.35u</value>
+				<dependentTests>
+					<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>AUX_NMOS_W_LOAD
+				<value>6.96u</value>
+				<dependentTests>
+					<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>AUX_NMOS_W_TAIL
+				<value>48u</value>
+				<dependentTests>
+					<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>AUX_PMOS_L_IN
+				<value>2.2u</value>
+				<dependentTests>
+					<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>AUX_PMOS_L_TAIL
+				<value>130n</value>
+				<dependentTests>
+					<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>AUX_PMOS_LIN_BUF
+				<value>100n</value>
+				<dependentTests>
+					<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>AUX_PMOS_LS_BUF
+				<value>1u</value>
+				<dependentTests>
+					<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>AUX_PMOS_LSOURCE
+				<value>6u</value>
+				<dependentTests>
+					<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>AUX_PMOS_W_IN
+				<value>100u</value>
+				<dependentTests>
+					<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>AUX_PMOS_W_TAIL
+				<value>44.5u</value>
+				<dependentTests>
+					<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>AUX_PMOS_WIN_BUF
+				<value>675n*1.5</value>
+				<dependentTests>
+					<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>AUX_PMOS_WS_BUF
+				<value>650n*1.5</value>
+				<dependentTests>
+					<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>AUX_PMOS_WSOURCE
+				<value>5u</value>
+				<dependentTests>
+					<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>AUXN_VBN
+				<value>300m</value>
+				<dependentTests>
+					<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>AUXN_VBP
+				<value>600m</value>
+				<dependentTests>
+					<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>AUXN_VBUF
+				<value>0.7</value>
+				<dependentTests>
+					<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>AUXN_VOCM
+				<value>600m</value>
+				<dependentTests>
+					<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>AUXP_VBN
+				<value>520m</value>
+				<dependentTests>
+					<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>AUXP_VBP
+				<value>900m</value>
+				<dependentTests>
+					<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>AUXP_VBUF
+				<value>500m</value>
+				<dependentTests>
+					<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>AUXP_VOCM
+				<value>750m</value>
+				<dependentTests>
+					<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+				</dependentTests>
+			</var>
+		</vars>
+		<overwritehistoryname>Interactive.0</overwritehistoryname>
+		<plottingoptions>
+			<plottingoption>plottype
+				<value>None</value>
+			</plottingoption>
+			<plottingoption>usewaveformtemplate
+				<value>no</value>
+			</plottingoption>
+			<plottingoption>waveformtemplate
+				<value></value>
+			</plottingoption>
+		</plottingoptions>
+		<disabledtests>
+			<test>Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</test>
+		</disabledtests>
+	</active>
+	<history>History
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.176
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>Gain_Boosted_OTA_behavior</value>
+							</option>
+							<option>lib
+								<value>Gain_Boosted_Cascode</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1_none_Interactive.176</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>Gain_Boosted_OTA_behavior</value>
+							</option>
+							<option>lib
+								<value>Gain_Boosted_Cascode</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+					<test>Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>Gain_Boosted_Cascode_Actual</value>
+							</option>
+							<option>lib
+								<value>Gain_Boosted_Cascode</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1_none_Interactive.176</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>Gain_Boosted_Cascode_Actual</value>
+							</option>
+							<option>lib
+								<value>Gain_Boosted_Cascode</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var>AV_N
+						<value>100</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AV_P
+						<value>100</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>L_CASCN
+						<value>120n</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>L_CASCP
+						<value>120n</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>L_INPUT
+						<value>130n</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>L_SOURCEN
+						<value>500n</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>L_SOURCEP
+						<value>600n</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VBN
+						<value>350m</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VBP
+						<value>734.44m</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VCASCN
+						<value>900m</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VCASCP
+						<value>350m</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VINCM
+						<value>500m</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VOCM
+						<value>600m</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>W_CASCN
+						<value>500u*0.5</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>W_CASCP
+						<value>500u*0.5</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>W_INPUT
+						<value>4m</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>W_SOURCEP
+						<value>2.32m*0.5</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>WN_SOURCE
+						<value>7.247m*0.5</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VDD
+						<value>1.2</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>cgg2
+						<value>1f</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_L_BUF_IN
+						<value>100n</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_L_BUF_SOURCE
+						<value>1u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_L_IN
+						<value>2.57u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_L_LOAD
+						<value>3.77u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_L_TAIL
+						<value>1u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_W_BUF_IN
+						<value>3.15u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_W_BUF_SOURCE
+						<value>1.975u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_W_IN
+						<value>34.35u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_W_LOAD
+						<value>6.96u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_W_TAIL
+						<value>48u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_L_IN
+						<value>2.2u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_L_TAIL
+						<value>130n</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_LIN_BUF
+						<value>100n</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_LS_BUF
+						<value>1u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_LSOURCE
+						<value>6u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_W_IN
+						<value>100u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_W_TAIL
+						<value>44.5u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_WIN_BUF
+						<value>675n*1.5</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_WS_BUF
+						<value>650n*1.5</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_WSOURCE
+						<value>5u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUXN_VBN
+						<value>300m</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUXN_VBP
+						<value>600m</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUXN_VBUF
+						<value>0.7</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUXN_VOCM
+						<value>600m</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUXP_VBN
+						<value>520m</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUXP_VBP
+						<value>900m</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUXP_VBUF
+						<value>500m</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUXP_VOCM
+						<value>750m</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<disabledtests>
+					<test>Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</test>
+				</disabledtests>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Mon Dec 9 15:35:08 2024</timestamp>
+			<resultsname>/home/cadence/IC_PROJECT/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.176.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.176.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/berkeley_cadence_153508902</localpsfdir>
+			<psfdir>/home/cadence/simulation/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.176</psfdir>
+			<simdir>$AXL_PROJECT_DIR/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.176</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/cadence/IC_PROJECT/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.176.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.176.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.177
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>Gain_Boosted_OTA_behavior</value>
+							</option>
+							<option>lib
+								<value>Gain_Boosted_Cascode</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1_none_Interactive.177</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>Gain_Boosted_OTA_behavior</value>
+							</option>
+							<option>lib
+								<value>Gain_Boosted_Cascode</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+					<test>Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>Gain_Boosted_Cascode_Actual</value>
+							</option>
+							<option>lib
+								<value>Gain_Boosted_Cascode</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1_none_Interactive.177</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>Gain_Boosted_Cascode_Actual</value>
+							</option>
+							<option>lib
+								<value>Gain_Boosted_Cascode</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var>AV_N
+						<value>100</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AV_P
+						<value>100</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>L_CASCN
+						<value>120n</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>L_CASCP
+						<value>120n</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>L_INPUT
+						<value>130n</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>L_SOURCEN
+						<value>500n</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>L_SOURCEP
+						<value>600n</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VBN
+						<value>350m</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VBP
+						<value>734.44m</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VCASCN
+						<value>900m</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VCASCP
+						<value>350m</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VINCM
+						<value>500m</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VOCM
+						<value>600m</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>W_CASCN
+						<value>500u*0.35</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>W_CASCP
+						<value>500u*0.35</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>W_INPUT
+						<value>4m</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>W_SOURCEP
+						<value>2.32m*0.4</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>WN_SOURCE
+						<value>7.247m*0.4</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VDD
+						<value>1.2</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>cgg2
+						<value>1f</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_L_BUF_IN
+						<value>100n</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_L_BUF_SOURCE
+						<value>1u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_L_IN
+						<value>2.57u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_L_LOAD
+						<value>3.77u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_L_TAIL
+						<value>1u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_W_BUF_IN
+						<value>3.15u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_W_BUF_SOURCE
+						<value>1.975u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_W_IN
+						<value>34.35u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_W_LOAD
+						<value>6.96u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_W_TAIL
+						<value>48u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_L_IN
+						<value>2.2u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_L_TAIL
+						<value>130n</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_LIN_BUF
+						<value>100n</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_LS_BUF
+						<value>1u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_LSOURCE
+						<value>6u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_W_IN
+						<value>100u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_W_TAIL
+						<value>44.5u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_WIN_BUF
+						<value>675n*1.5</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_WS_BUF
+						<value>650n*1.5</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_WSOURCE
+						<value>5u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUXN_VBN
+						<value>300m</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUXN_VBP
+						<value>600m</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUXN_VBUF
+						<value>0.7</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUXN_VOCM
+						<value>600m</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUXP_VBN
+						<value>520m</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUXP_VBP
+						<value>900m</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUXP_VBUF
+						<value>500m</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUXP_VOCM
+						<value>750m</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<disabledtests>
+					<test>Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</test>
+				</disabledtests>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Mon Dec 9 15:36:38 2024</timestamp>
+			<resultsname>/home/cadence/IC_PROJECT/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.177.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.177.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/berkeley_cadence_153638893</localpsfdir>
+			<psfdir>/home/cadence/simulation/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.177</psfdir>
+			<simdir>$AXL_PROJECT_DIR/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.177</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/cadence/IC_PROJECT/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.177.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.177.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.178
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>Gain_Boosted_OTA_behavior</value>
+							</option>
+							<option>lib
+								<value>Gain_Boosted_Cascode</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1_none_Interactive.178</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>Gain_Boosted_OTA_behavior</value>
+							</option>
+							<option>lib
+								<value>Gain_Boosted_Cascode</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+					<test>Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>Gain_Boosted_Cascode_Actual</value>
+							</option>
+							<option>lib
+								<value>Gain_Boosted_Cascode</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1_none_Interactive.178</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>Gain_Boosted_Cascode_Actual</value>
+							</option>
+							<option>lib
+								<value>Gain_Boosted_Cascode</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var>AV_N
+						<value>100</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AV_P
+						<value>100</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>L_CASCN
+						<value>120n</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>L_CASCP
+						<value>120n</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>L_INPUT
+						<value>150n</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>L_SOURCEN
+						<value>500n</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>L_SOURCEP
+						<value>600n</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VBN
+						<value>350m</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VBP
+						<value>734.44m</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VCASCN
+						<value>900m</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VCASCP
+						<value>350m</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VINCM
+						<value>500m</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VOCM
+						<value>600m</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>W_CASCN
+						<value>500u*0.35</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>W_CASCP
+						<value>500u*0.35</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>W_INPUT
+						<value>4m</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>W_SOURCEP
+						<value>2.32m*0.4</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>WN_SOURCE
+						<value>7.247m*0.4</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VDD
+						<value>1.2</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>cgg2
+						<value>1f</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_L_BUF_IN
+						<value>100n</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_L_BUF_SOURCE
+						<value>1u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_L_IN
+						<value>2.57u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_L_LOAD
+						<value>3.77u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_L_TAIL
+						<value>1u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_W_BUF_IN
+						<value>3.15u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_W_BUF_SOURCE
+						<value>1.975u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_W_IN
+						<value>34.35u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_W_LOAD
+						<value>6.96u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_W_TAIL
+						<value>48u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_L_IN
+						<value>2.2u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_L_TAIL
+						<value>130n</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_LIN_BUF
+						<value>100n</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_LS_BUF
+						<value>1u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_LSOURCE
+						<value>6u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_W_IN
+						<value>100u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_W_TAIL
+						<value>44.5u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_WIN_BUF
+						<value>675n*1.5</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_WS_BUF
+						<value>650n*1.5</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_WSOURCE
+						<value>5u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUXN_VBN
+						<value>300m</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUXN_VBP
+						<value>600m</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUXN_VBUF
+						<value>0.7</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUXN_VOCM
+						<value>600m</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUXP_VBN
+						<value>520m</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUXP_VBP
+						<value>900m</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUXP_VBUF
+						<value>500m</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUXP_VOCM
+						<value>750m</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<disabledtests>
+					<test>Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</test>
+				</disabledtests>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Mon Dec 9 15:37:22 2024</timestamp>
+			<resultsname>/home/cadence/IC_PROJECT/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.178.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.178.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/berkeley_cadence_153723077</localpsfdir>
+			<psfdir>/home/cadence/simulation/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.178</psfdir>
+			<simdir>$AXL_PROJECT_DIR/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.178</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/cadence/IC_PROJECT/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.178.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.178.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.179
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>Gain_Boosted_OTA_behavior</value>
+							</option>
+							<option>lib
+								<value>Gain_Boosted_Cascode</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1_none_Interactive.179</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>Gain_Boosted_OTA_behavior</value>
+							</option>
+							<option>lib
+								<value>Gain_Boosted_Cascode</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+					<test>Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>Gain_Boosted_Cascode_Actual</value>
+							</option>
+							<option>lib
+								<value>Gain_Boosted_Cascode</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1_none_Interactive.179</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>Gain_Boosted_Cascode_Actual</value>
+							</option>
+							<option>lib
+								<value>Gain_Boosted_Cascode</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var>AV_N
+						<value>100</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AV_P
+						<value>100</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>L_CASCN
+						<value>120n</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>L_CASCP
+						<value>120n</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>L_INPUT
+						<value>160n</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>L_SOURCEN
+						<value>500n</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>L_SOURCEP
+						<value>600n</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VBN
+						<value>350m</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VBP
+						<value>734.44m</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VCASCN
+						<value>900m</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VCASCP
+						<value>350m</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VINCM
+						<value>500m</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VOCM
+						<value>600m</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>W_CASCN
+						<value>500u*0.35</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>W_CASCP
+						<value>500u*0.35</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>W_INPUT
+						<value>4m</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>W_SOURCEP
+						<value>2.32m*0.4</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>WN_SOURCE
+						<value>7.247m*0.4</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VDD
+						<value>1.2</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>cgg2
+						<value>1f</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_L_BUF_IN
+						<value>100n</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_L_BUF_SOURCE
+						<value>1u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_L_IN
+						<value>2.57u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_L_LOAD
+						<value>3.77u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_L_TAIL
+						<value>1u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_W_BUF_IN
+						<value>3.15u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_W_BUF_SOURCE
+						<value>1.975u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_W_IN
+						<value>34.35u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_W_LOAD
+						<value>6.96u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_W_TAIL
+						<value>48u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_L_IN
+						<value>2.2u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_L_TAIL
+						<value>130n</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_LIN_BUF
+						<value>100n</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_LS_BUF
+						<value>1u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_LSOURCE
+						<value>6u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_W_IN
+						<value>100u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_W_TAIL
+						<value>44.5u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_WIN_BUF
+						<value>675n*1.5</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_WS_BUF
+						<value>650n*1.5</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_WSOURCE
+						<value>5u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUXN_VBN
+						<value>300m</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUXN_VBP
+						<value>600m</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUXN_VBUF
+						<value>0.7</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUXN_VOCM
+						<value>600m</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUXP_VBN
+						<value>520m</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUXP_VBP
+						<value>900m</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUXP_VBUF
+						<value>500m</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUXP_VOCM
+						<value>750m</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<disabledtests>
+					<test>Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</test>
+				</disabledtests>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Mon Dec 9 15:38:00 2024</timestamp>
+			<resultsname>/home/cadence/IC_PROJECT/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.179.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.179.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/berkeley_cadence_153801720</localpsfdir>
+			<psfdir>/home/cadence/simulation/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.179</psfdir>
+			<simdir>$AXL_PROJECT_DIR/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.179</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/cadence/IC_PROJECT/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.179.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.179.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.180
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>Gain_Boosted_OTA_behavior</value>
+							</option>
+							<option>lib
+								<value>Gain_Boosted_Cascode</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1_none_Interactive.180</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>Gain_Boosted_OTA_behavior</value>
+							</option>
+							<option>lib
+								<value>Gain_Boosted_Cascode</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+					<test>Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>Gain_Boosted_Cascode_Actual</value>
+							</option>
+							<option>lib
+								<value>Gain_Boosted_Cascode</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1_none_Interactive.180</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>Gain_Boosted_Cascode_Actual</value>
+							</option>
+							<option>lib
+								<value>Gain_Boosted_Cascode</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var>AV_N
+						<value>100</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AV_P
+						<value>100</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>L_CASCN
+						<value>120n</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>L_CASCP
+						<value>120n</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>L_INPUT
+						<value>160n</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>L_SOURCEN
+						<value>500n</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>L_SOURCEP
+						<value>600n</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VBN
+						<value>350m</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VBP
+						<value>734.44m</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VCASCN
+						<value>900m</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VCASCP
+						<value>350m</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VINCM
+						<value>500m</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VOCM
+						<value>600m</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>W_CASCN
+						<value>500u*0.35</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>W_CASCP
+						<value>500u*0.35</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>W_INPUT
+						<value>4m</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>W_SOURCEP
+						<value>2.32m*0.4</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>WN_SOURCE
+						<value>7.247m*0.4</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VDD
+						<value>1.2</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>cgg2
+						<value>1f</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_L_BUF_IN
+						<value>100n</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_L_BUF_SOURCE
+						<value>1u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_L_IN
+						<value>2.57u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_L_LOAD
+						<value>3.77u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_L_TAIL
+						<value>1u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_W_BUF_IN
+						<value>3.15u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_W_BUF_SOURCE
+						<value>1.975u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_W_IN
+						<value>34.35u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_W_LOAD
+						<value>6.96u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_W_TAIL
+						<value>48u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_L_IN
+						<value>2.2u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_L_TAIL
+						<value>130n</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_LIN_BUF
+						<value>100n</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_LS_BUF
+						<value>1u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_LSOURCE
+						<value>6u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_W_IN
+						<value>100u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_W_TAIL
+						<value>44.5u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_WIN_BUF
+						<value>675n*1.5</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_WS_BUF
+						<value>650n*1.5</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_WSOURCE
+						<value>5u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUXN_VBN
+						<value>300m</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUXN_VBP
+						<value>600m</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUXN_VBUF
+						<value>0.7</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUXN_VOCM
+						<value>600m</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUXP_VBN
+						<value>520m</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUXP_VBP
+						<value>900m</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUXP_VBUF
+						<value>500m</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUXP_VOCM
+						<value>750m</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<disabledtests>
+					<test>Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</test>
+				</disabledtests>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Tue Dec 10 14:06:56 2024
+</timestamp>
+			<resultsname>/home/cadence/IC_PROJECT/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.180.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.180.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/berkeley_cadence_140658017</localpsfdir>
+			<psfdir>/home/cadence/simulation/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.180</psfdir>
+			<simdir>$AXL_PROJECT_DIR/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.180</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/cadence/IC_PROJECT/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.180.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.180.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.181
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>Gain_Boosted_OTA_behavior</value>
+							</option>
+							<option>lib
+								<value>Gain_Boosted_Cascode</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1_none_Interactive.181</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>Gain_Boosted_OTA_behavior</value>
+							</option>
+							<option>lib
+								<value>Gain_Boosted_Cascode</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+					<test>Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>Gain_Boosted_Cascode_Actual</value>
+							</option>
+							<option>lib
+								<value>Gain_Boosted_Cascode</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1_none_Interactive.181</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>Gain_Boosted_Cascode_Actual</value>
+							</option>
+							<option>lib
+								<value>Gain_Boosted_Cascode</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var>AV_N
+						<value>100</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AV_P
+						<value>100</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>L_CASCN
+						<value>120n</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>L_CASCP
+						<value>120n</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>L_INPUT
+						<value>160n</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>L_SOURCEN
+						<value>500n</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>L_SOURCEP
+						<value>600n</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VBN
+						<value>350m</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VBP
+						<value>734.44m</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VCASCN
+						<value>900m</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VCASCP
+						<value>350m</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VINCM
+						<value>500m</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VOCM
+						<value>600m</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>W_CASCN
+						<value>500u*0.35</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>W_CASCP
+						<value>500u*0.35</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>W_INPUT
+						<value>4m</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>W_SOURCEP
+						<value>2.32m*0.4</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>WN_SOURCE
+						<value>7.247m*0.4</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VDD
+						<value>1.2</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>cgg2
+						<value>1f</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_L_BUF_IN
+						<value>100n</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_L_BUF_SOURCE
+						<value>1u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_L_IN
+						<value>2.57u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_L_LOAD
+						<value>3.77u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_L_TAIL
+						<value>1u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_W_BUF_IN
+						<value>3.15u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_W_BUF_SOURCE
+						<value>1.975u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_W_IN
+						<value>34.35u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_W_LOAD
+						<value>6.96u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_W_TAIL
+						<value>48u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_L_IN
+						<value>2.2u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_L_TAIL
+						<value>130n</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_LIN_BUF
+						<value>100n</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_LS_BUF
+						<value>1u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_LSOURCE
+						<value>6u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_W_IN
+						<value>100u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_W_TAIL
+						<value>44.5u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_WIN_BUF
+						<value>675n*1.5</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_WS_BUF
+						<value>650n*1.5</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_WSOURCE
+						<value>5u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUXN_VBN
+						<value>300m</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUXN_VBP
+						<value>600m</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUXN_VBUF
+						<value>0.7</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUXN_VOCM
+						<value>600m</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUXP_VBN
+						<value>520m</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUXP_VBP
+						<value>900m</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUXP_VBUF
+						<value>500m</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUXP_VOCM
+						<value>750m</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<disabledtests>
+					<test>Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</test>
+				</disabledtests>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Tue Dec 10 14:27:07 2024
+</timestamp>
+			<resultsname>/home/cadence/IC_PROJECT/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.181.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.181.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/berkeley_cadence_142708725</localpsfdir>
+			<psfdir>/home/cadence/simulation/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.181</psfdir>
+			<simdir>$AXL_PROJECT_DIR/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.181</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/cadence/IC_PROJECT/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.181.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.181.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.182
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>Gain_Boosted_OTA_behavior</value>
+							</option>
+							<option>lib
+								<value>Gain_Boosted_Cascode</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1_none_Interactive.182</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>Gain_Boosted_OTA_behavior</value>
+							</option>
+							<option>lib
+								<value>Gain_Boosted_Cascode</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+					<test>Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>Gain_Boosted_Cascode_Actual</value>
+							</option>
+							<option>lib
+								<value>Gain_Boosted_Cascode</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1_none_Interactive.182</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>Gain_Boosted_Cascode_Actual</value>
+							</option>
+							<option>lib
+								<value>Gain_Boosted_Cascode</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var>AV_N
+						<value>100</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AV_P
+						<value>100</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>L_CASCN
+						<value>120n</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>L_CASCP
+						<value>120n</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>L_INPUT
+						<value>160n</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>L_SOURCEN
+						<value>500n</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>L_SOURCEP
+						<value>600n</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VBN
+						<value>350m</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VBP
+						<value>732.3347m</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VCASCN
+						<value>900m</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VCASCP
+						<value>350m</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VINCM
+						<value>500m</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VOCM
+						<value>600m</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>W_CASCN
+						<value>500u*0.35</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>W_CASCP
+						<value>500u*0.35</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>W_INPUT
+						<value>4m</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>W_SOURCEP
+						<value>2.32m*0.4</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>WN_SOURCE
+						<value>7.247m*0.4</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VDD
+						<value>1.2</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>cgg2
+						<value>1f</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_L_BUF_IN
+						<value>100n</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_L_BUF_SOURCE
+						<value>1u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_L_IN
+						<value>2.57u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_L_LOAD
+						<value>3.77u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_L_TAIL
+						<value>1u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_W_BUF_IN
+						<value>3.15u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_W_BUF_SOURCE
+						<value>1.975u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_W_IN
+						<value>34.35u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_W_LOAD
+						<value>6.96u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_W_TAIL
+						<value>48u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_L_IN
+						<value>2.2u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_L_TAIL
+						<value>130n</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_LIN_BUF
+						<value>100n</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_LS_BUF
+						<value>1u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_LSOURCE
+						<value>6u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_W_IN
+						<value>100u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_W_TAIL
+						<value>44.5u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_WIN_BUF
+						<value>675n*1.5</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_WS_BUF
+						<value>650n*1.5</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_WSOURCE
+						<value>5u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUXN_VBN
+						<value>300m</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUXN_VBP
+						<value>600m</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUXN_VBUF
+						<value>0.7</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUXN_VOCM
+						<value>600m</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUXP_VBN
+						<value>520m</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUXP_VBP
+						<value>900m</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUXP_VBUF
+						<value>500m</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUXP_VOCM
+						<value>750m</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<disabledtests>
+					<test>Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</test>
+				</disabledtests>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Tue Dec 10 14:30:22 2024
+</timestamp>
+			<resultsname>/home/cadence/IC_PROJECT/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.182.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.182.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/berkeley_cadence_143023663</localpsfdir>
+			<psfdir>/home/cadence/simulation/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.182</psfdir>
+			<simdir>$AXL_PROJECT_DIR/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.182</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/cadence/IC_PROJECT/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.182.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.182.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.183
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>Gain_Boosted_OTA_behavior</value>
+							</option>
+							<option>lib
+								<value>Gain_Boosted_Cascode</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1_none_Interactive.183</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>Gain_Boosted_OTA_behavior</value>
+							</option>
+							<option>lib
+								<value>Gain_Boosted_Cascode</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+					<test>Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>Gain_Boosted_Cascode_Actual</value>
+							</option>
+							<option>lib
+								<value>Gain_Boosted_Cascode</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1_none_Interactive.183</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>Gain_Boosted_Cascode_Actual</value>
+							</option>
+							<option>lib
+								<value>Gain_Boosted_Cascode</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var>AV_N
+						<value>100</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AV_P
+						<value>100</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>L_CASCN
+						<value>120n</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>L_CASCP
+						<value>120n</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>L_INPUT
+						<value>160n</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>L_SOURCEN
+						<value>500n</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>L_SOURCEP
+						<value>600n</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VBN
+						<value>350m</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VBP
+						<value>732.3347m</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VCASCN
+						<value>900m</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VCASCP
+						<value>350m</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VINCM
+						<value>500m</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VOCM
+						<value>600m</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>W_CASCN
+						<value>500u*0.35</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>W_CASCP
+						<value>500u*0.35</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>W_INPUT
+						<value>4m</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>W_SOURCEP
+						<value>2.32m*0.4</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>WN_SOURCE
+						<value>7.247m*0.4</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VDD
+						<value>1.2</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>cgg2
+						<value>1f</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_L_BUF_IN
+						<value>100n</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_L_BUF_SOURCE
+						<value>1u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_L_IN
+						<value>2.57u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_L_LOAD
+						<value>3.77u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_L_TAIL
+						<value>1u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_W_BUF_IN
+						<value>3.15u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_W_BUF_SOURCE
+						<value>1.975u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_W_IN
+						<value>34.35u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_W_LOAD
+						<value>6.96u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_W_TAIL
+						<value>48u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_L_IN
+						<value>2.2u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_L_TAIL
+						<value>130n</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_LIN_BUF
+						<value>100n</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_LS_BUF
+						<value>1u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_LSOURCE
+						<value>6u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_W_IN
+						<value>100u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_W_TAIL
+						<value>44.5u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_WIN_BUF
+						<value>675n*1.5</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_WS_BUF
+						<value>650n*1.5</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_WSOURCE
+						<value>5u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUXN_VBN
+						<value>300m</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUXN_VBP
+						<value>600m</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUXN_VBUF
+						<value>0.7</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUXN_VOCM
+						<value>600m</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUXP_VBN
+						<value>520m</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUXP_VBP
+						<value>900m</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUXP_VBUF
+						<value>500m</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUXP_VOCM
+						<value>750m</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<disabledtests>
+					<test>Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</test>
+				</disabledtests>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Tue Dec 10 14:50:48 2024
+</timestamp>
+			<resultsname>/home/cadence/IC_PROJECT/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.183.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.183.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/berkeley_cadence_145049381</localpsfdir>
+			<psfdir>/home/cadence/simulation/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.183</psfdir>
+			<simdir>$AXL_PROJECT_DIR/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.183</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/cadence/IC_PROJECT/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.183.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.183.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.184
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>Gain_Boosted_OTA_behavior</value>
+							</option>
+							<option>lib
+								<value>Gain_Boosted_Cascode</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1_none_Interactive.184</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>Gain_Boosted_OTA_behavior</value>
+							</option>
+							<option>lib
+								<value>Gain_Boosted_Cascode</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+					<test>Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>Gain_Boosted_Cascode_Actual</value>
+							</option>
+							<option>lib
+								<value>Gain_Boosted_Cascode</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1_none_Interactive.184</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>Gain_Boosted_Cascode_Actual</value>
+							</option>
+							<option>lib
+								<value>Gain_Boosted_Cascode</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var>AV_N
+						<value>100</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AV_P
+						<value>100</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>L_CASCN
+						<value>120n</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>L_CASCP
+						<value>120n</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>L_INPUT
+						<value>160n</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>L_SOURCEN
+						<value>500n</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>L_SOURCEP
+						<value>600n</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VBN
+						<value>350m</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VBP
+						<value>732.3347m</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VCASCN
+						<value>900m</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VCASCP
+						<value>350m</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VINCM
+						<value>500m</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VOCM
+						<value>600m</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>W_CASCN
+						<value>500u*0.35</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>W_CASCP
+						<value>500u*0.35</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>W_INPUT
+						<value>4m</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>W_SOURCEP
+						<value>2.32m*0.4</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>WN_SOURCE
+						<value>7.247m*0.4</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VDD
+						<value>1.2</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>cgg2
+						<value>1f</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_L_BUF_IN
+						<value>100n</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_L_BUF_SOURCE
+						<value>1u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_L_IN
+						<value>2.57u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_L_LOAD
+						<value>3.77u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_L_TAIL
+						<value>1u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_W_BUF_IN
+						<value>3.15u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_W_BUF_SOURCE
+						<value>1.975u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_W_IN
+						<value>34.35u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_W_LOAD
+						<value>6.96u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_W_TAIL
+						<value>48u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_L_IN
+						<value>2.2u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_L_TAIL
+						<value>130n</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_LIN_BUF
+						<value>100n</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_LS_BUF
+						<value>1u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_LSOURCE
+						<value>6u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_W_IN
+						<value>100u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_W_TAIL
+						<value>44.5u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_WIN_BUF
+						<value>675n*1.5</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_WS_BUF
+						<value>650n*1.5</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_WSOURCE
+						<value>5u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUXN_VBN
+						<value>300m</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUXN_VBP
+						<value>600m</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUXN_VBUF
+						<value>0.7</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUXN_VOCM
+						<value>600m</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUXP_VBN
+						<value>520m</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUXP_VBP
+						<value>900m</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUXP_VBUF
+						<value>500m</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUXP_VOCM
+						<value>750m</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<disabledtests>
+					<test>Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</test>
+				</disabledtests>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Tue Dec 10 14:54:40 2024
+</timestamp>
+			<resultsname>/home/cadence/IC_PROJECT/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.184.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.184.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/berkeley_cadence_145441699</localpsfdir>
+			<psfdir>/home/cadence/simulation/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.184</psfdir>
+			<simdir>$AXL_PROJECT_DIR/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.184</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/cadence/IC_PROJECT/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.184.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.184.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.185
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>Gain_Boosted_OTA_behavior</value>
+							</option>
+							<option>lib
+								<value>Gain_Boosted_Cascode</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1_none_Interactive.185</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>Gain_Boosted_OTA_behavior</value>
+							</option>
+							<option>lib
+								<value>Gain_Boosted_Cascode</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+					<test>Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>Gain_Boosted_Cascode_Actual</value>
+							</option>
+							<option>lib
+								<value>Gain_Boosted_Cascode</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1_none_Interactive.185</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>Gain_Boosted_Cascode_Actual</value>
+							</option>
+							<option>lib
+								<value>Gain_Boosted_Cascode</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var>AV_N
+						<value>100</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AV_P
+						<value>100</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>L_CASCN
+						<value>120n</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>L_CASCP
+						<value>120n</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>L_INPUT
+						<value>160n</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>L_SOURCEN
+						<value>500n</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>L_SOURCEP
+						<value>600n</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VBN
+						<value>350m</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VBP
+						<value>732.3347m</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VCASCN
+						<value>900m</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VCASCP
+						<value>350m</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VINCM
+						<value>500m</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VOCM
+						<value>600m</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>W_CASCN
+						<value>500u*0.35</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>W_CASCP
+						<value>500u*0.35</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>W_INPUT
+						<value>4m</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>W_SOURCEP
+						<value>2.32m*0.4</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>WN_SOURCE
+						<value>7.247m*0.4</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VDD
+						<value>1.2</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>cgg2
+						<value>1f</value>
+						<dependentTests>
+							<dependentTest enabled="1">Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_L_BUF_IN
+						<value>100n</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_L_BUF_SOURCE
+						<value>1u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_L_IN
+						<value>2.57u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_L_LOAD
+						<value>3.77u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_L_TAIL
+						<value>1u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_W_BUF_IN
+						<value>3.15u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_W_BUF_SOURCE
+						<value>1.975u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_W_IN
+						<value>34.35u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_W_LOAD
+						<value>6.96u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_W_TAIL
+						<value>48u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_L_IN
+						<value>2.2u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_L_TAIL
+						<value>130n</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_LIN_BUF
+						<value>100n</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_LS_BUF
+						<value>1u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_LSOURCE
+						<value>6u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_W_IN
+						<value>100u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_W_TAIL
+						<value>44.5u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_WIN_BUF
+						<value>675n*1.5</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_WS_BUF
+						<value>650n*1.5</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_WSOURCE
+						<value>5u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUXN_VBN
+						<value>300m</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUXN_VBP
+						<value>600m</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUXN_VBUF
+						<value>0.7</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUXN_VOCM
+						<value>600m</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUXP_VBN
+						<value>520m</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUXP_VBP
+						<value>900m</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUXP_VBUF
+						<value>500m</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUXP_VOCM
+						<value>750m</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<disabledtests>
+					<test>Gain_Boosted_Cascode:Gain_Boosted_OTA_behavior:1</test>
+				</disabledtests>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Tue Dec 10 15:00:12 2024
+</timestamp>
+			<resultsname>/home/cadence/IC_PROJECT/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.185.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.185.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/berkeley_cadence_150014408</localpsfdir>
+			<psfdir>/home/cadence/simulation/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.185</psfdir>
+			<simdir>$AXL_PROJECT_DIR/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.185</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/cadence/IC_PROJECT/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.185.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.185.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+	</history>
+</setupdb>

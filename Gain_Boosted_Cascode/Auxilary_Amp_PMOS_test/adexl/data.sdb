@@ -1,0 +1,2572 @@
+<?xml version="1.0"?>
+<setupdb version="5">data
+	<active>Active Setup
+		<corners>
+			<corner enabled="1">_default</corner>
+		</corners>
+		<currentmode>Single Run, Sweeps and Corners</currentmode>
+		<extensions>
+			<extension>Parasitics
+				<callback>_parSetupDBExtensionCB</callback>
+				<iconvalue></iconvalue>
+				<icontype></icontype>
+			</extension>
+		</extensions>
+		<overwritehistory>0</overwritehistory>
+		<tests>
+			<test>Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1
+				<tool>ADE</tool>
+				<tooloptions>
+					<option>cell
+						<value>Auxilary_Amp_PMOS_test</value>
+					</option>
+					<option>lib
+						<value>Gain_Boosted_Cascode</value>
+					</option>
+					<option>sim
+						<value>spectre</value>
+					</option>
+					<option>view
+						<value>schematic</value>
+					</option>
+					<option>path
+						<value>$AXL_SETUPDB_DIR/test_states</value>
+					</option>
+					<option>state
+						<value>Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1_active</value>
+					</option>
+				</tooloptions>
+				<origoptions>
+					<option>cell
+						<value>Auxilary_Amp_PMOS_test</value>
+					</option>
+					<option>lib
+						<value>Gain_Boosted_Cascode</value>
+					</option>
+					<option>sim
+						<value>spectre</value>
+					</option>
+					<option>view
+						<value>schematic</value>
+					</option>
+				</origoptions>
+			</test>
+		</tests>
+		<vars>
+			<var>AUX_PMOS_L_IN
+				<value>3u</value>
+				<dependentTests>
+					<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>AUX_PMOS_L_TAIL
+				<value>130n</value>
+				<dependentTests>
+					<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>AUX_PMOS_LIN_BUF
+				<value>100n</value>
+				<dependentTests>
+					<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>AUX_PMOS_LS_BUF
+				<value>1u</value>
+				<dependentTests>
+					<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>AUX_PMOS_LSOURCE
+				<value>6u</value>
+				<dependentTests>
+					<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>AUX_PMOS_W_IN
+				<value>100u*0.5*1.5</value>
+				<dependentTests>
+					<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>AUX_PMOS_W_TAIL
+				<value>44.5u*0.5</value>
+				<dependentTests>
+					<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>AUX_PMOS_WIN_BUF
+				<value>675n*1.5</value>
+				<dependentTests>
+					<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>AUX_PMOS_WS_BUF
+				<value>650n*1.5</value>
+				<dependentTests>
+					<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>AUX_PMOS_WSOURCE
+				<value>5u*0.5</value>
+				<dependentTests>
+					<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>VB_BUF
+				<value>0.5</value>
+				<dependentTests>
+					<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>AUX_NMOS_L_BUF_IN
+				<value>100n</value>
+				<dependentTests>
+					<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>AUX_NMOS_L_BUF_SOURCE
+				<value>1u</value>
+				<dependentTests>
+					<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>AUX_NMOS_L_IN
+				<value>2.57u</value>
+				<dependentTests>
+					<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>AUX_NMOS_L_LOAD
+				<value>3.77u</value>
+				<dependentTests>
+					<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>AUX_NMOS_L_TAIL
+				<value>1u</value>
+				<dependentTests>
+					<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>AUX_NMOS_W_BUF_IN
+				<value>3.15u</value>
+				<dependentTests>
+					<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>AUX_NMOS_W_BUF_SOURCE
+				<value>1.975u</value>
+				<dependentTests>
+					<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>AUX_NMOS_W_IN
+				<value>34.35u</value>
+				<dependentTests>
+					<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>AUX_NMOS_W_LOAD
+				<value>6.96u</value>
+				<dependentTests>
+					<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>AUX_NMOS_W_TAIL
+				<value>48u</value>
+				<dependentTests>
+					<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>VBN
+				<value>520m</value>
+				<dependentTests>
+					<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>VBP
+				<value>900m</value>
+				<dependentTests>
+					<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>VICM
+				<value>800m</value>
+				<dependentTests>
+					<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>VOCM
+				<value>750m</value>
+				<dependentTests>
+					<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+				</dependentTests>
+			</var>
+		</vars>
+		<overwritehistoryname>Interactive.0</overwritehistoryname>
+		<plottingoptions>
+			<plottingoption>plottype
+				<value>None</value>
+			</plottingoption>
+			<plottingoption>usewaveformtemplate
+				<value>no</value>
+			</plottingoption>
+			<plottingoption>waveformtemplate
+				<value>                            </value>
+			</plottingoption>
+		</plottingoptions>
+	</active>
+	<history>History
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.3
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>Auxilary_Amp_PMOS_test</value>
+							</option>
+							<option>lib
+								<value>Gain_Boosted_Cascode</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1_none_Interactive.3</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>Auxilary_Amp_PMOS_test</value>
+							</option>
+							<option>lib
+								<value>Gain_Boosted_Cascode</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var>AUX_PMOS_L_IN
+						<value>2.2u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_L_TAIL
+						<value>130n</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_LIN_BUF
+						<value>100n</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_LS_BUF
+						<value>1u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_LSOURCE
+						<value>6u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_W_IN
+						<value>100u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_W_TAIL
+						<value>44.5u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_WIN_BUF
+						<value>675n*1.5</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_WS_BUF
+						<value>650n*1.5</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_WSOURCE
+						<value>5u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VB_BUF
+						<value>0.7</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_L_BUF_IN
+						<value>100n</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_L_BUF_SOURCE
+						<value>1u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_L_IN
+						<value>2.57u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_L_LOAD
+						<value>3.77u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_L_TAIL
+						<value>1u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_W_BUF_IN
+						<value>3.15u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_W_BUF_SOURCE
+						<value>1.975u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_W_IN
+						<value>34.35u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_W_LOAD
+						<value>3.77u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_W_TAIL
+						<value>48u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VBN
+						<value>300m</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VBP
+						<value>600m</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VICM
+						<value>400m</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VOCM
+						<value>600m</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value>                            </value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Mon Dec  9 13:23:06 2024
+</timestamp>
+			<resultsname>/home/cadence/IC_PROJECT/Gain_Boosted_Cascode/Auxilary_Amp_PMOS_test/adexl/results/data/Interactive.3.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.3.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/berkeley_cadence_132307160</localpsfdir>
+			<psfdir>/home/cadence/simulation/Gain_Boosted_Cascode/Auxilary_Amp_PMOS_test/adexl/results/data/Interactive.3</psfdir>
+			<simdir>$AXL_PROJECT_DIR/Gain_Boosted_Cascode/Auxilary_Amp_PMOS_test/adexl/results/data/Interactive.3</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/cadence/IC_PROJECT/Gain_Boosted_Cascode/Auxilary_Amp_PMOS_test/adexl/results/data/Interactive.3.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.3.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.4
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>Auxilary_Amp_PMOS_test</value>
+							</option>
+							<option>lib
+								<value>Gain_Boosted_Cascode</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1_none_Interactive.4</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>Auxilary_Amp_PMOS_test</value>
+							</option>
+							<option>lib
+								<value>Gain_Boosted_Cascode</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var>AUX_PMOS_L_IN
+						<value>2.2u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_L_TAIL
+						<value>130n</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_LIN_BUF
+						<value>100n</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_LS_BUF
+						<value>1u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_LSOURCE
+						<value>6u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_W_IN
+						<value>100u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_W_TAIL
+						<value>44.5u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_WIN_BUF
+						<value>675n*1.5</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_WS_BUF
+						<value>650n*1.5</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_WSOURCE
+						<value>5u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VB_BUF
+						<value>0.7</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_L_BUF_IN
+						<value>100n</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_L_BUF_SOURCE
+						<value>1u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_L_IN
+						<value>2.57u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_L_LOAD
+						<value>3.77u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_L_TAIL
+						<value>1u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_W_BUF_IN
+						<value>3.15u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_W_BUF_SOURCE
+						<value>1.975u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_W_IN
+						<value>34.35u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_W_LOAD
+						<value>3.77u*2</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_W_TAIL
+						<value>48u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VBN
+						<value>300m</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VBP
+						<value>600m</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VICM
+						<value>400m</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VOCM
+						<value>600m</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value>                            </value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Mon Dec  9 13:37:53 2024
+</timestamp>
+			<resultsname>/home/cadence/IC_PROJECT/Gain_Boosted_Cascode/Auxilary_Amp_PMOS_test/adexl/results/data/Interactive.4.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.4.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/berkeley_cadence_133753936</localpsfdir>
+			<psfdir>/home/cadence/simulation/Gain_Boosted_Cascode/Auxilary_Amp_PMOS_test/adexl/results/data/Interactive.4</psfdir>
+			<simdir>$AXL_PROJECT_DIR/Gain_Boosted_Cascode/Auxilary_Amp_PMOS_test/adexl/results/data/Interactive.4</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/cadence/IC_PROJECT/Gain_Boosted_Cascode/Auxilary_Amp_PMOS_test/adexl/results/data/Interactive.4.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.4.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.5
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>Auxilary_Amp_PMOS_test</value>
+							</option>
+							<option>lib
+								<value>Gain_Boosted_Cascode</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1_none_Interactive.5</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>Auxilary_Amp_PMOS_test</value>
+							</option>
+							<option>lib
+								<value>Gain_Boosted_Cascode</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var>AUX_PMOS_L_IN
+						<value>2.2u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_L_TAIL
+						<value>130n</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_LIN_BUF
+						<value>100n</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_LS_BUF
+						<value>1u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_LSOURCE
+						<value>6u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_W_IN
+						<value>100u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_W_TAIL
+						<value>44.5u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_WIN_BUF
+						<value>675n*1.5</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_WS_BUF
+						<value>650n*1.5</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_WSOURCE
+						<value>5u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VB_BUF
+						<value>0.7</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_L_BUF_IN
+						<value>100n</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_L_BUF_SOURCE
+						<value>1u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_L_IN
+						<value>2.57u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_L_LOAD
+						<value>3.77u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_L_TAIL
+						<value>1u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_W_BUF_IN
+						<value>3.15u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_W_BUF_SOURCE
+						<value>1.975u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_W_IN
+						<value>34.35u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_W_LOAD
+						<value>3.77u*2</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_W_TAIL
+						<value>48u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VBN
+						<value>300m</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VBP
+						<value>600m</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VICM
+						<value>400m</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VOCM
+						<value>600m</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value>                            </value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Mon Dec  9 13:41:15 2024
+</timestamp>
+			<resultsname>/home/cadence/IC_PROJECT/Gain_Boosted_Cascode/Auxilary_Amp_PMOS_test/adexl/results/data/Interactive.5.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.5.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/berkeley_cadence_134115592</localpsfdir>
+			<psfdir>/home/cadence/simulation/Gain_Boosted_Cascode/Auxilary_Amp_PMOS_test/adexl/results/data/Interactive.5</psfdir>
+			<simdir>$AXL_PROJECT_DIR/Gain_Boosted_Cascode/Auxilary_Amp_PMOS_test/adexl/results/data/Interactive.5</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/cadence/IC_PROJECT/Gain_Boosted_Cascode/Auxilary_Amp_PMOS_test/adexl/results/data/Interactive.5.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.5.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.6
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>Auxilary_Amp_PMOS_test</value>
+							</option>
+							<option>lib
+								<value>Gain_Boosted_Cascode</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1_none_Interactive.6</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>Auxilary_Amp_PMOS_test</value>
+							</option>
+							<option>lib
+								<value>Gain_Boosted_Cascode</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var>AUX_PMOS_L_IN
+						<value>2.2u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_L_TAIL
+						<value>130n</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_LIN_BUF
+						<value>100n</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_LS_BUF
+						<value>1u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_LSOURCE
+						<value>6u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_W_IN
+						<value>100u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_W_TAIL
+						<value>44.5u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_WIN_BUF
+						<value>675n*1.5</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_WS_BUF
+						<value>650n*1.5</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_WSOURCE
+						<value>5u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VB_BUF
+						<value>0.7</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_L_BUF_IN
+						<value>100n</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_L_BUF_SOURCE
+						<value>1u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_L_IN
+						<value>2.57u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_L_LOAD
+						<value>3.77u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_L_TAIL
+						<value>1u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_W_BUF_IN
+						<value>3.15u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_W_BUF_SOURCE
+						<value>1.975u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_W_IN
+						<value>34.35u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_W_LOAD
+						<value>6.96u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_W_TAIL
+						<value>48u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VBN
+						<value>300m</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VBP
+						<value>600m</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VICM
+						<value>400m</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VOCM
+						<value>600m</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value>                            </value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Mon Dec  9 13:42:22 2024
+</timestamp>
+			<resultsname>/home/cadence/IC_PROJECT/Gain_Boosted_Cascode/Auxilary_Amp_PMOS_test/adexl/results/data/Interactive.6.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.6.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/berkeley_cadence_134222735</localpsfdir>
+			<psfdir>/home/cadence/simulation/Gain_Boosted_Cascode/Auxilary_Amp_PMOS_test/adexl/results/data/Interactive.6</psfdir>
+			<simdir>$AXL_PROJECT_DIR/Gain_Boosted_Cascode/Auxilary_Amp_PMOS_test/adexl/results/data/Interactive.6</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/cadence/IC_PROJECT/Gain_Boosted_Cascode/Auxilary_Amp_PMOS_test/adexl/results/data/Interactive.6.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.6.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.7
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>Auxilary_Amp_PMOS_test</value>
+							</option>
+							<option>lib
+								<value>Gain_Boosted_Cascode</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1_none_Interactive.7</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>Auxilary_Amp_PMOS_test</value>
+							</option>
+							<option>lib
+								<value>Gain_Boosted_Cascode</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var>AUX_PMOS_L_IN
+						<value>2.2u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_L_TAIL
+						<value>130n</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_LIN_BUF
+						<value>100n</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_LS_BUF
+						<value>1u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_LSOURCE
+						<value>6u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_W_IN
+						<value>100u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_W_TAIL
+						<value>44.5u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_WIN_BUF
+						<value>675n*1.5</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_WS_BUF
+						<value>650n*1.5</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_WSOURCE
+						<value>5u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VB_BUF
+						<value>0.5</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_L_BUF_IN
+						<value>100n</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_L_BUF_SOURCE
+						<value>1u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_L_IN
+						<value>2.57u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_L_LOAD
+						<value>3.77u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_L_TAIL
+						<value>1u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_W_BUF_IN
+						<value>3.15u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_W_BUF_SOURCE
+						<value>1.975u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_W_IN
+						<value>34.35u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_W_LOAD
+						<value>6.96u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_W_TAIL
+						<value>48u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VBN
+						<value>520m</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VBP
+						<value>900m</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VICM
+						<value>800m</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VOCM
+						<value>750m</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value>                            </value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Mon Dec  9 15:11:06 2024
+</timestamp>
+			<resultsname>/home/cadence/IC_PROJECT/Gain_Boosted_Cascode/Auxilary_Amp_PMOS_test/adexl/results/data/Interactive.7.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.7.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/berkeley_cadence_151107408</localpsfdir>
+			<psfdir>/home/cadence/simulation/Gain_Boosted_Cascode/Auxilary_Amp_PMOS_test/adexl/results/data/Interactive.7</psfdir>
+			<simdir>$AXL_PROJECT_DIR/Gain_Boosted_Cascode/Auxilary_Amp_PMOS_test/adexl/results/data/Interactive.7</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/cadence/IC_PROJECT/Gain_Boosted_Cascode/Auxilary_Amp_PMOS_test/adexl/results/data/Interactive.7.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.7.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.8
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>Auxilary_Amp_PMOS_test</value>
+							</option>
+							<option>lib
+								<value>Gain_Boosted_Cascode</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1_none_Interactive.8</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>Auxilary_Amp_PMOS_test</value>
+							</option>
+							<option>lib
+								<value>Gain_Boosted_Cascode</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var>AUX_PMOS_L_IN
+						<value>2.2u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_L_TAIL
+						<value>130n</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_LIN_BUF
+						<value>100n</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_LS_BUF
+						<value>1u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_LSOURCE
+						<value>6u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_W_IN
+						<value>100u*0.5</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_W_TAIL
+						<value>44.5u*0.5</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_WIN_BUF
+						<value>675n*1.5</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_WS_BUF
+						<value>650n*1.5</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_WSOURCE
+						<value>5u*0.5</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VB_BUF
+						<value>0.5</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_L_BUF_IN
+						<value>100n</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_L_BUF_SOURCE
+						<value>1u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_L_IN
+						<value>2.57u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_L_LOAD
+						<value>3.77u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_L_TAIL
+						<value>1u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_W_BUF_IN
+						<value>3.15u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_W_BUF_SOURCE
+						<value>1.975u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_W_IN
+						<value>34.35u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_W_LOAD
+						<value>6.96u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_W_TAIL
+						<value>48u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VBN
+						<value>520m</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VBP
+						<value>900m</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VICM
+						<value>800m</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VOCM
+						<value>750m</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value>                            </value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Mon Dec  9 15:12:48 2024
+</timestamp>
+			<resultsname>/home/cadence/IC_PROJECT/Gain_Boosted_Cascode/Auxilary_Amp_PMOS_test/adexl/results/data/Interactive.8.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.8.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/berkeley_cadence_151248447</localpsfdir>
+			<psfdir>/home/cadence/simulation/Gain_Boosted_Cascode/Auxilary_Amp_PMOS_test/adexl/results/data/Interactive.8</psfdir>
+			<simdir>$AXL_PROJECT_DIR/Gain_Boosted_Cascode/Auxilary_Amp_PMOS_test/adexl/results/data/Interactive.8</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/cadence/IC_PROJECT/Gain_Boosted_Cascode/Auxilary_Amp_PMOS_test/adexl/results/data/Interactive.8.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.8.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.9
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>Auxilary_Amp_PMOS_test</value>
+							</option>
+							<option>lib
+								<value>Gain_Boosted_Cascode</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1_none_Interactive.9</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>Auxilary_Amp_PMOS_test</value>
+							</option>
+							<option>lib
+								<value>Gain_Boosted_Cascode</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var>AUX_PMOS_L_IN
+						<value>2.2u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_L_TAIL
+						<value>130n</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_LIN_BUF
+						<value>100n</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_LS_BUF
+						<value>1u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_LSOURCE
+						<value>6u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_W_IN
+						<value>100u*0.5</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_W_TAIL
+						<value>44.5u*0.5</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_WIN_BUF
+						<value>675n*2</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_WS_BUF
+						<value>650n*2</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_WSOURCE
+						<value>5u*0.5</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VB_BUF
+						<value>0.5</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_L_BUF_IN
+						<value>100n</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_L_BUF_SOURCE
+						<value>1u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_L_IN
+						<value>2.57u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_L_LOAD
+						<value>3.77u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_L_TAIL
+						<value>1u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_W_BUF_IN
+						<value>3.15u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_W_BUF_SOURCE
+						<value>1.975u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_W_IN
+						<value>34.35u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_W_LOAD
+						<value>6.96u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_W_TAIL
+						<value>48u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VBN
+						<value>520m</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VBP
+						<value>900m</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VICM
+						<value>800m</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VOCM
+						<value>750m</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value>                            </value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Mon Dec  9 15:13:55 2024
+</timestamp>
+			<resultsname>/home/cadence/IC_PROJECT/Gain_Boosted_Cascode/Auxilary_Amp_PMOS_test/adexl/results/data/Interactive.9.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.9.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/berkeley_cadence_151356228</localpsfdir>
+			<psfdir>/home/cadence/simulation/Gain_Boosted_Cascode/Auxilary_Amp_PMOS_test/adexl/results/data/Interactive.9</psfdir>
+			<simdir>$AXL_PROJECT_DIR/Gain_Boosted_Cascode/Auxilary_Amp_PMOS_test/adexl/results/data/Interactive.9</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/cadence/IC_PROJECT/Gain_Boosted_Cascode/Auxilary_Amp_PMOS_test/adexl/results/data/Interactive.9.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.9.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.10
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>Auxilary_Amp_PMOS_test</value>
+							</option>
+							<option>lib
+								<value>Gain_Boosted_Cascode</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1_none_Interactive.10</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>Auxilary_Amp_PMOS_test</value>
+							</option>
+							<option>lib
+								<value>Gain_Boosted_Cascode</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var>AUX_PMOS_L_IN
+						<value>2.5u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_L_TAIL
+						<value>130n</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_LIN_BUF
+						<value>100n</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_LS_BUF
+						<value>1u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_LSOURCE
+						<value>6u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_W_IN
+						<value>100u*0.5</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_W_TAIL
+						<value>44.5u*0.5</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_WIN_BUF
+						<value>675n*1.5</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_WS_BUF
+						<value>650n*1.5</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_WSOURCE
+						<value>5u*0.5</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VB_BUF
+						<value>0.5</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_L_BUF_IN
+						<value>100n</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_L_BUF_SOURCE
+						<value>1u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_L_IN
+						<value>2.57u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_L_LOAD
+						<value>3.77u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_L_TAIL
+						<value>1u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_W_BUF_IN
+						<value>3.15u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_W_BUF_SOURCE
+						<value>1.975u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_W_IN
+						<value>34.35u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_W_LOAD
+						<value>6.96u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_W_TAIL
+						<value>48u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VBN
+						<value>520m</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VBP
+						<value>900m</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VICM
+						<value>800m</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VOCM
+						<value>750m</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value>                            </value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Mon Dec  9 15:14:58 2024
+</timestamp>
+			<resultsname>/home/cadence/IC_PROJECT/Gain_Boosted_Cascode/Auxilary_Amp_PMOS_test/adexl/results/data/Interactive.10.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.10.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/berkeley_cadence_151459434</localpsfdir>
+			<psfdir>/home/cadence/simulation/Gain_Boosted_Cascode/Auxilary_Amp_PMOS_test/adexl/results/data/Interactive.10</psfdir>
+			<simdir>$AXL_PROJECT_DIR/Gain_Boosted_Cascode/Auxilary_Amp_PMOS_test/adexl/results/data/Interactive.10</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/cadence/IC_PROJECT/Gain_Boosted_Cascode/Auxilary_Amp_PMOS_test/adexl/results/data/Interactive.10.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.10.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.11
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>Auxilary_Amp_PMOS_test</value>
+							</option>
+							<option>lib
+								<value>Gain_Boosted_Cascode</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1_none_Interactive.11</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>Auxilary_Amp_PMOS_test</value>
+							</option>
+							<option>lib
+								<value>Gain_Boosted_Cascode</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var>AUX_PMOS_L_IN
+						<value>3u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_L_TAIL
+						<value>130n</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_LIN_BUF
+						<value>100n</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_LS_BUF
+						<value>1u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_LSOURCE
+						<value>6u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_W_IN
+						<value>100u*0.5*1.5</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_W_TAIL
+						<value>44.5u*0.5</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_WIN_BUF
+						<value>675n*1.5</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_WS_BUF
+						<value>650n*1.5</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_WSOURCE
+						<value>5u*0.5</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VB_BUF
+						<value>0.5</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_L_BUF_IN
+						<value>100n</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_L_BUF_SOURCE
+						<value>1u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_L_IN
+						<value>2.57u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_L_LOAD
+						<value>3.77u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_L_TAIL
+						<value>1u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_W_BUF_IN
+						<value>3.15u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_W_BUF_SOURCE
+						<value>1.975u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_W_IN
+						<value>34.35u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_W_LOAD
+						<value>6.96u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_W_TAIL
+						<value>48u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VBN
+						<value>520m</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VBP
+						<value>900m</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VICM
+						<value>800m</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VOCM
+						<value>750m</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value>                            </value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Mon Dec  9 15:16:11 2024
+</timestamp>
+			<resultsname>/home/cadence/IC_PROJECT/Gain_Boosted_Cascode/Auxilary_Amp_PMOS_test/adexl/results/data/Interactive.11.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.11.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/berkeley_cadence_151612042</localpsfdir>
+			<psfdir>/home/cadence/simulation/Gain_Boosted_Cascode/Auxilary_Amp_PMOS_test/adexl/results/data/Interactive.11</psfdir>
+			<simdir>$AXL_PROJECT_DIR/Gain_Boosted_Cascode/Auxilary_Amp_PMOS_test/adexl/results/data/Interactive.11</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/cadence/IC_PROJECT/Gain_Boosted_Cascode/Auxilary_Amp_PMOS_test/adexl/results/data/Interactive.11.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.11.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.12
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>Auxilary_Amp_PMOS_test</value>
+							</option>
+							<option>lib
+								<value>Gain_Boosted_Cascode</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1_none_Interactive.12</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>Auxilary_Amp_PMOS_test</value>
+							</option>
+							<option>lib
+								<value>Gain_Boosted_Cascode</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var>AUX_PMOS_L_IN
+						<value>3u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_L_TAIL
+						<value>130n</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_LIN_BUF
+						<value>100n</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_LS_BUF
+						<value>1u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_LSOURCE
+						<value>6u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_W_IN
+						<value>100u*0.5*1.5</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_W_TAIL
+						<value>44.5u*0.5</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_WIN_BUF
+						<value>675n*1.5</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_WS_BUF
+						<value>650n*1.5</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_PMOS_WSOURCE
+						<value>5u*0.5</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VB_BUF
+						<value>0.5</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_L_BUF_IN
+						<value>100n</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_L_BUF_SOURCE
+						<value>1u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_L_IN
+						<value>2.57u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_L_LOAD
+						<value>3.77u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_L_TAIL
+						<value>1u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_W_BUF_IN
+						<value>3.15u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_W_BUF_SOURCE
+						<value>1.975u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_W_IN
+						<value>34.35u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_W_LOAD
+						<value>6.96u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AUX_NMOS_W_TAIL
+						<value>48u</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VBN
+						<value>520m</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VBP
+						<value>900m</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VICM
+						<value>800m</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VOCM
+						<value>750m</value>
+						<dependentTests>
+							<dependentTest omitted="0">Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value>                            </value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Mon Dec  9 15:18:48 2024
+</timestamp>
+			<resultsname>/home/cadence/IC_PROJECT/Gain_Boosted_Cascode/Auxilary_Amp_PMOS_test/adexl/results/data/Interactive.12.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.12.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/berkeley_cadence_151849428</localpsfdir>
+			<psfdir>/home/cadence/simulation/Gain_Boosted_Cascode/Auxilary_Amp_PMOS_test/adexl/results/data/Interactive.12</psfdir>
+			<simdir>$AXL_PROJECT_DIR/Gain_Boosted_Cascode/Auxilary_Amp_PMOS_test/adexl/results/data/Interactive.12</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/cadence/IC_PROJECT/Gain_Boosted_Cascode/Auxilary_Amp_PMOS_test/adexl/results/data/Interactive.12.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.12.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+	</history>
+</setupdb>

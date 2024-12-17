@@ -1,0 +1,39 @@
+Starting Single Run, Sweeps and Corners...
+
+Current time: Mon Dec  9 13:42:26 2024 
+Best design point: 1
+Design specs: 
+	Gain_Boosted_Cascode:Auxilary_Amp_PMOS_test:1	corner	Nominal - 
+	bandwidth((VF("/VOUT+") - VF("/VOUT-")) 3 "low")		7.694M
+Design parameters: 
+	AUX_PMOS_L_IN		2.2u
+	AUX_PMOS_L_TAIL		130n
+	AUX_PMOS_LIN_BUF		100n
+	AUX_PMOS_LS_BUF		1u
+	AUX_PMOS_LSOURCE		6u
+	AUX_PMOS_W_IN		100u
+	AUX_PMOS_W_TAIL		44.5u
+	AUX_PMOS_WIN_BUF		1.013u
+	AUX_PMOS_WS_BUF		975n
+	AUX_PMOS_WSOURCE		5u
+	VB_BUF		700m
+	AUX_NMOS_L_BUF_IN		100n
+	AUX_NMOS_L_BUF_SOURCE		1u
+	AUX_NMOS_L_IN		2.57u
+	AUX_NMOS_L_LOAD		3.77u
+	AUX_NMOS_L_TAIL		1u
+	AUX_NMOS_W_BUF_IN		3.15u
+	AUX_NMOS_W_BUF_SOURCE		1.975u
+	AUX_NMOS_W_IN		34.35u
+	AUX_NMOS_W_LOAD		6.96u
+	AUX_NMOS_W_TAIL		48u
+	VBN		300m
+	VBP		600m
+	VICM		400m
+	VOCM		600m
+
+Interactive.6
+Number of points completed: 1
+Number of simulation errors: 0
+Interactive.6 completed. 
+Current time: Mon Dec  9 13:42:41 2024 
