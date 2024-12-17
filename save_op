@@ -1,2 +1,0 @@
-simulator lang = spectre
-save *:oppoint sigtype=dev
