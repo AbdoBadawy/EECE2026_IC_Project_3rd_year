@@ -1,138 +1,2403 @@
-*Info*    Exporting services from client ... 
-
-*Info*    Client has finished starting ... 
-
-
-
-*Info*    Configuring the session ...
-
-	Library      = Gain_Boosted_Cascode
-	Cell         = Gain_Boosted_Cascode_Actual
-	View         = schematic
-	Simulator    = spectre
-	State Path   = $AXL_SETUPDB_DIR/test_states
-	State Name   = Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1_none_Interactive.184
-	Results DB   = /home/cadence/IC_PROJECT/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.184.rdb
-	Results Dir  = /home/cadence/simulation/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.184/1/Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1
-	Results Loc  = /home/cadence/simulation/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data
-	Project Dir  = /home/cadence/simulation
-	Setup DB loc = /home/cadence/IC_PROJECT/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl
-	File Encoding = 0
-
-
-*Info*    Spectre controlMode is set "batch".
-
-
-
-
-
-
-*Info*    Run start for Point ID (4 1) on testbench [
-          Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1 ].
-
-Resetting statistical vars
-
-*Info*    Setting parameter values ...
-
-Setting var AUXN_VBN = "300m"
-Setting var AUXN_VBP = "600m"
-Setting var AUXN_VBUF = "0.7"
-Setting var AUXN_VOCM = "600m"
-Setting var AUXP_VBN = "520m"
-Setting var AUXP_VBP = "900m"
-Setting var AUXP_VBUF = "500m"
-Setting var AUXP_VOCM = "750m"
-Setting var AUX_NMOS_L_BUF_IN = "100n"
-Setting var AUX_NMOS_L_BUF_SOURCE = "1u"
-Setting var AUX_NMOS_L_IN = "2.57u"
-Setting var AUX_NMOS_L_LOAD = "3.77u"
-Setting var AUX_NMOS_L_TAIL = "1u"
-Setting var AUX_NMOS_W_BUF_IN = "3.15u"
-Setting var AUX_NMOS_W_BUF_SOURCE = "1.975u"
-Setting var AUX_NMOS_W_IN = "34.35u"
-Setting var AUX_NMOS_W_LOAD = "6.96u"
-Setting var AUX_NMOS_W_TAIL = "48u"
-Setting var AUX_PMOS_LIN_BUF = "100n"
-Setting var AUX_PMOS_LSOURCE = "6u"
-Setting var AUX_PMOS_LS_BUF = "1u"
-Setting var AUX_PMOS_L_IN = "2.2u"
-Setting var AUX_PMOS_L_TAIL = "130n"
-Setting var AUX_PMOS_WIN_BUF = "1.0125e-6"
-Setting var AUX_PMOS_WSOURCE = "5u"
-Setting var AUX_PMOS_WS_BUF = "975e-9"
-Setting var AUX_PMOS_W_IN = "100u"
-Setting var AUX_PMOS_W_TAIL = "44.5u"
-Setting var AV_N = "100"
-Setting var AV_P = "100"
-Setting var L_CASCN = "120n"
-Setting var L_CASCP = "120n"
-Setting var L_INPUT = "160n"
-Setting var L_SOURCEN = "500n"
-Setting var L_SOURCEP = "600n"
-Setting var VBN = "350m"
-Setting var VBP = "732.3347m"
-Setting var VCASCN = "900m"
-Setting var VCASCP = "350m"
-Setting var VDD = "1.2"
-Setting var VINCM = "500m"
-Setting var VOCM = "600m"
-Setting var WN_SOURCE = "0.0028988"
-Setting var W_CASCN = "175e-6"
-Setting var W_CASCP = "175e-6"
-Setting var W_INPUT = "4m"
-Setting var W_SOURCEP = "928e-6"
-Setting var cgg2 = "1f"
-Setting temp(T) = 27
-
-*Info*    Netlist Directory =
-          /home/cadence/simulation/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.184/1/Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1/netlist
-
-
-*Info*    Data Directory    =
-          /home/cadence/simulation/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.184/1/Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1
-
-
-*Info*    Creating Netlist for Point ID (4 1)
-
-generate netlist...
-Begin Incremental Netlisting Dec 10 14:54:55 2024
-End netlisting Dec 10 14:54:55 2024
-
-Netlisting Statistics:
-	Number of components:   31
-
-	Elapsed time:          0.0s
-Errors: 0	Warnings: 0
-      ...successful.
-compose simulator input file...
-      ...successful.
-
-*Info*    Running simulation on testbench [
-          Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1 ] for
-          Point ID (4 1).
-
-Delete psf data in /home/cadence/simulation/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.184/1/Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1/psf.
-compose simulator input file...
-      ...successful.
-start simulator if needed...
-      ...successful.
-simulate...
-To view the simulator output, right-click on the test name, result 
-name, or any value in the "Results" tab of the Outputs section and 
-choose "Output Log" menu option.
-INFO (ADE-3071): Simulation completed successfully.
-reading simulation data...
-      ...successful.
-*Info*    Client has finished evaluating ... 
-
-
-*Info*    Run complete for Point ID (4 1) on testbench [
-          Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1 ].
-
-
-
-
-
-Simulation design variables differ from those on the cellView,
-they have been saved in the file "/tmp/saved-design-variables".
-To save future changes, copy variables to cellView before exiting.
+\# Program start time UTC 2024.12.17 19:54:43.821
+\# Local time Tuesday 17 December 2024, 2:54 pm
+\o Program:		@(#)$CDS: virtuoso version 6.1.7-64b 11/09/2015 12:45 (sjfnl165) $
+\o Hierarchy:		/usr/local/cadence/IC617/tools.lnx86/dfII/
+\o Sub version:		sub-version  IC6.1.7-64b.78  (64-bit addresses)
+\# Command line:	/usr/local/cadence/IC617/tools.lnx86/dfII/bin/64bit/virtuoso -noautostart -mpssession virtuoso12694 -mpshost berkeley -davinciService DaVinciService_12694_1734463657 -log /home/cadence/my_new_project/logs_cadence/logs0/Job9.log -licenseLockFileName /home/cadence/my_new_project/.tmp_cadence/.berkeley_12694 -nograph -nostdin -axlChildIdFlag 9
+\# Host name (type):	berkeley (x86_64)
+\# Operating system:	Linux 3.16.0-4-amd64 #1 SMP Debian 3.16.36-1+deb8u2 (2016-10-19)
+\# Linux /etc/issue:	Debian GNU/Linux 8 \n \l
+\# X display name (WxH):	berkeley:80 (1024x868)
+\# Available geometry:			TL(0:0) BR(1023:867)
+\# X server:			RealVNC Ltd (VNC nograph server, PID 21052)
+\# Depth of Visual (Root):	16 (16)
+\# Number of Planes Used:	16
+\# X version:		11.0 (vendor release 3370)
+\# X resource pool:	base 0x800000, mask 0x3fffff (4194303), shift 0
+\# 			current id 0x0, current max 0x3ffffa (4194298)
+\# Max data seg size:	     unlimited
+\# Max process size:	     unlimited
+\# Initial sbrk value:	        364 MB
+\# Available memory:	      9,516 MB
+\# System memory:	     11,541 MB
+\# Maximum memory size:	     11,257 MB
+\# Max mem available:	      9,596 MB
+\# Initial memory used:	         80 MB
+\#        process size:	        890 MB
+\# Qt version:		4.8.5
+\# Window Manager:	other
+\# User Name:		cadence
+\o Working Directory:	berkeley:/home/cadence/my_new_project
+\# Process Id:		21058
+\o 
+\o COPYRIGHT © 1992-2015  CADENCE DESIGN SYSTEMS INC.  ALL RIGHTS RESERVED.
+\o           © 1992-2015  UNIX SYSTEMS Laboratories INC.,
+\o                          Reproduced with permission.
+\o 
+\o This Cadence Design Systems program and online documentation are
+\o proprietary/confidential information and may be disclosed/used only
+\o as authorized in a license agreement controlling such use and disclosure.
+\o 
+\o           RESTRICTED RIGHTS NOTICE (SHORT FORM)
+\o Use/reproduction/disclosure is subject to restriction
+\o set forth at FAR 1252.227-19 or its equivalent.
+\o Loading geView.cxt 
+\o Loading menuBuilder.cxt 
+\o Loading schView.cxt 
+\o Loading selectSv.cxt 
+\o Loading wireEdit.cxt 
+\o Loading pte2.cxt 
+\o Loading xlUI.cxt 
+\o Loading auCore.cxt 
+\o Loading vhdl.cxt 
+\o Loading seismic.cxt 
+\o Loading ci.cxt 
+\o Loading ams.cxt 
+\o Loading oasis.cxt 
+\o Loading analog.cxt 
+\o Loading asimenv.cxt 
+\o Loading socket.cxt 
+\o Loading dal.cxt 
+\o Loading awv.cxt 
+\o Loading par.cxt 
+\o Loading alvs.cxt 
+\o Loading caa.cxt 
+\o Loading adexl.cxt 
+\o *Info*    Exporting services from client ... 
+\o 
+\o END OF USER CUSTOMIZATION
+\o //
+\o //  Calibre Skill Interface * (v2014.1_17.12) *
+\o //
+\o //                 Copyright Mentor Graphics Corporation 2005
+\o //                             All Rights Reserved.
+\o //         THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+\o //            WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION
+\o //              OR ITS LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+\o //
+\o //
+\o Sonnet:  The Sonnet directory is "/usr/local/sonnet"
+\# Memory report: using         208 MB, process size 1,150 MB at UTC 2024.12.17 19:54:45.260
+\o //  Could not initialize Calibre layout-server socket on at berkeley.localdomain:5000. Trying to find free socket ...
+\o //  Calibre layout-server initialized successfully at socket 5001, host berkeley.localdomain.
+\w *WARNING* (DB-220704): The Pcell super master: MentorObserverLib/MentorObserver_master/layout is not a SKILL super master.
+\w                        The usage of non-SKILL Pcells in Virtuoso is not a supported feature.
+\w *WARNING* (DB-270000): dbOpenCellViewByType: Locking of follower DMFile is not permitted.
+\o Starting Calibre server...
+\o Calibre server connected, Client version = 1.18.1 Server version = 1.18.1
+\o //  Calibre v2014.1_17.12    Thu Feb 27 15:53:54 PST 2014
+\o //
+\o //        Copyright Mentor Graphics Corporation 1996-2014
+\o //                       All Rights Reserved.
+\o //   THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+\o //      WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION
+\o //        OR ITS LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+\o //
+\o //  Mentor Graphics software executing under x86-64 Linux
+\o //
+\o //   This software is in pre-production form and is considered to be 
+\o //   beta code that is subject to the terms of the current Mentor 
+\o //   Graphics End-User License Agreement or your signed agreement 
+\o //   with Mentor Graphics that contains beta terms, whichever applies.
+\o // 
+\o Calibre server launched successfully
+\o //  Calibre RealTime embedded client initialized successfully at berkeley.localdomain:5001
+\o //  Calibre RealTime: Initialization complete
+\o * -------------------------------- Sonnet Cadence Virtuoso Interface --------------------------------
+\o * VERSION exe: 16.52
+\o * VERSION cxt: 16.52
+\o * initializing...
+\o * sonnet cadence environment variables are loaded and registered...
+\o * sonnet application of type maskLayoutSonnet is registered in maskLayout...
+\o * bindkeys are inherited from maskLayout...
+\o * all menus including user menus are inherited from maskLayout...
+\# Available memory:          9,382 MB at UTC 2024.12.17 19:54:54.084
+\# Memory report: Maximum memory size now 9,589 MB at UTC 2024.12.17 19:54:54.084
+\o * all forms are created ...
+\o * symbolic link "sonnet" created in "/home/cadence/doc"...
+\o * sonnet online help is available...
+\o * --------------------------- End Sonnet Cadence Virtuoso Interface Setup ---------------------------
+\o Sonnet:  The Sonnet context file "/usr/local/sonnet/sonnet_virtuoso_dk/install/context/sonnet_virtuoso.cxt" was loaded and initialized.
+\o * ------------------------------------ Sonnet Symbol Model Utility ----------------------------------
+\o * VERSION il: DECORATED_VERSION
+\o * initializing...
+\o * sonnet application of type schematicSymbolSonnet is registered in schematicSymbol...
+\o * ------------------------------- End Sonnet Symbol Model Utility Setup -----------------------------
+\o *Info*    Client has finished starting ... 
+\o 
+\p > 
+\a _treeSetOpcGUI(t)
+\r t
+\o 
+\o 
+\o *Info*    Configuring the session ...
+\o 
+\o 	Library      = Gain_Boosted_Cascode
+\o 	Cell         = Gain_Boosted_Cascode_Actual
+\o 	View         = schematic
+\o 	Simulator    = spectre
+\o 	State Path   = $AXL_SETUPDB_DIR/test_states
+\o 	State Name   = Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1_none_Interactive.188
+\o 	Results DB   = /home/cadence/my_new_project/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.188.rdb
+\o 	Results Dir  = /home/cadence/simulation/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.188/1/Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1
+\o 	Results Loc  = /home/cadence/simulation/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data
+\o 	Project Dir  = /home/cadence/simulation
+\o 	Setup DB loc = /home/cadence/my_new_project/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl
+\o 	File Encoding = 0
+\o 
+\o 
+\o Loading simui.cxt 
+\o Loading viva.cxt 
+\o *Info*    Spectre controlMode is set "batch".
+\o 
+\o Loading spectrei.cxt 
+\o Loading devCheck.cxt 
+\o Loading relXpert.cxt 
+\o Initializing from libInit.il for library tsmcN65...
+\o    --  /home/cadence/tsmc65nm/tsmcN65/../skill/pcode1.cxt
+\o    --  /home/cadence/tsmc65nm/tsmcN65/../skill/pcode2.cxt
+\o    --  tsmcPdkParamTable.il
+\o    --  tsmcN65_updateCDFs.il
+\o    --  tsmc_esti.ile
+\o    --  /home/cadence/tsmc65nm/tsmcN65/../skill/tsmcN65gp_v1d0c.cxt
+\o    --  /home/cadence/tsmc65nm/tsmcN65/../skill/tsmcN65_newAMS.cxt
+\o    --  /home/cadence/tsmc65nm/tsmcN65/../skill/tsmcN65_newRTMOM.cxt
+\o    --  /home/cadence/tsmc65nm/tsmcN65/../skill/tsmcN65GP_v1d0.cxt
+\o    --  tif_tcf_crn65gp_v1.0a.cxt
+\o    --  tsmcN65Tool.cxt
+\o    --  tsmcN65.cxt
+\o    --  /home/cadence/tsmc65nm/tsmcN65/../skill/tsmcN65GP_v1d0.cxt
+\w *WARNING* (loadContext): context //home/cadence/tsmc65nm/tsmcN65/../skill/64bit/tsmcN65GP_v1d0.cxt already loaded
+\o    --  /home/cadence/tsmc65nm/tsmcN65/../skill/tsmcN65_newRTMOM.cxt
+\# Memory report: using         366 MB, process size 1,311 MB at UTC 2024.12.17 19:54:57.023
+\w *WARNING* (loadContext): context //home/cadence/tsmc65nm/tsmcN65/../skill/64bit/tsmcN65_newRTMOM.cxt already loaded
+\o    --  /home/cadence/tsmc65nm/tsmcN65/../skill/tsmcN65_newAMS.cxt
+\w *WARNING* (loadContext): context //home/cadence/tsmc65nm/tsmcN65/../skill/64bit/tsmcN65_newAMS.cxt already loaded
+\o Loading PDK Display File '/home/cadence/tsmc65nm/tsmcN65/../display.drf'
+\o Loading hspiceD.cxt 
+\o Loading spectreinl.cxt 
+\o Loading msgHandler.cxt 
+\o Loading UltraSim.cxt 
+\o Loading AMSOSS.cxt 
+\o Loading AMS.cxt 
+\o WARNING (ADE-5033): Cannot find the environment variable 'sweeptype' for tool 'ams.hbsp'.
+\o         Its internal default value will be used.
+\o WARNING (ADE-5034): Unable to access the default environment variables in the simulator's
+\o         global .cdsenv file ('<your_install_dir>/tools/dfII/etc/tools/ams/.cdsenv')
+\o         because the file is missing or out-of-date. Till this problem exists, internal
+\o         default values will be used for these environment variables during this session.
+\o WARNING (ADE-5033): Cannot find the environment variable 'rangeType' for tool 'ams.hbsp'.
+\o         Its internal default value will be used.
+\o WARNING (ADE-5033): Cannot find the environment variable 'noisetypeUI' for tool 'ams.hbnoise'.
+\o         Its internal default value will be used.
+\o WARNING (ADE-5033): Cannot find the environment variable 'MultiEna' for tool 'ams.hbnoise'.
+\o         Its internal default value will be used.
+\o WARNING (ADE-5033): Cannot find the environment variable 'rangeType' for tool 'ams.hbnoise'.
+\o         Its internal default value will be used.
+\o WARNING (ADE-5033): Cannot find the environment variable 'sbsm' for tool 'ams.hbnoise'.
+\o         Its internal default value will be used.
+\o WARNING (ADE-5033): Cannot find the environment variable 'outType' for tool 'ams.hbnoise'.
+\o         Its internal default value will be used.
+\o WARNING (ADE-5033): Cannot find the environment variable 'inType' for tool 'ams.hbnoise'.
+\o         Its internal default value will be used.
+\o WARNING (ADE-5033): Cannot find the environment variable 'refsbSelect' for tool 'ams.hbnoise'.
+\o         Its internal default value will be used.
+\o WARNING (ADE-5033): Cannot find the environment variable 'donoise' for tool 'ams.hbnoise'.
+\o         Its internal default value will be used.
+\o WARNING (ADE-5033): Cannot find the environment variable 'special' for tool 'ams.hbac'.
+\o         Its internal default value will be used.
+\o WARNING (ADE-5033): Cannot find the environment variable 'rangeType' for tool 'ams.hbac'.
+\o         Its internal default value will be used.
+\o WARNING (ADE-5033): Cannot find the environment variable 'sbsm' for tool 'ams.hbac'.
+\o         Its internal default value will be used.
+\o WARNING (ADE-5033): Cannot find the environment variable 'dynParamB' for tool 'ams.hb'.
+\o         Its internal default value will be used.
+\o WARNING (ADE-5033): Cannot find the environment variable 'tones' for tool 'ams.hb'.
+\o         Its internal default value will be used.
+\o WARNING (ADE-5033): Cannot find the environment variable 'oscana' for tool 'ams.hb'.
+\o         Its internal default value will be used.
+\o WARNING (ADE-5033): Cannot find the environment variable 'HBTonesNum' for tool 'ams.hb'.
+\o         Its internal default value will be used.
+\o WARNING (ADE-5033): Cannot find the environment variable 'multiDividerMode' for tool 'ams.hb'.
+\o         Its internal default value will be used.
+\o WARNING (ADE-5033): Cannot find the environment variable 'harmonicsCyc' for tool 'ams.hb'.
+\o         Its internal default value will be used.
+\o WARNING (ADE-5033): Cannot find the environment variable 'harmonics' for tool 'ams.hb'.
+\o         Its internal default value will be used.
+\o WARNING (ADE-5033): Cannot find the environment variable 'sigpartB' for tool 'ams.hb'.
+\o         Its internal default value will be used.
+\o WARNING (ADE-5033): Cannot find the environment variable 'hbhomotopy' for tool 'ams.hb'.
+\o         Its internal default value will be used.
+\o WARNING (ADE-5033): Cannot find the environment variable 'sweepB' for tool 'ams.hb'.
+\o         Its internal default value will be used.
+\o WARNING (ADE-5033): Cannot find the environment variable 'sweep' for tool 'ams.hb'.
+\o         Its internal default value will be used.
+\o WARNING (ADE-5033): Cannot find the environment variable 'sweep2' for tool 'ams.hb'.
+\o         Its internal default value will be used.
+\o WARNING (ADE-5033): Cannot find the environment variable 'sweep3' for tool 'ams.hb'.
+\o         Its internal default value will be used.
+\o WARNING (ADE-5033): Cannot find the environment variable 'loadpullB' for tool 'ams.hb'.
+\o         Its internal default value will be used.
+\o WARNING (ADE-5033): Cannot find the environment variable 'lsspB' for tool 'ams.hb'.
+\o         Its internal default value will be used.
+\o WARNING (ADE-5033): Cannot find the environment variable 'compressionB' for tool 'ams.hb'.
+\o         Its internal default value will be used.
+\o WARNING (ADE-5033): Cannot find the environment variable 'sweeptype' for tool 'ams.qpsp'.
+\o         Its internal default value will be used.
+\o WARNING (ADE-5033): Cannot find the environment variable 'rangeType' for tool 'ams.qpsp'.
+\o         Its internal default value will be used.
+\o WARNING (ADE-5033): Cannot find the environment variable 'rangeType' for tool 'ams.qpxf'.
+\o         Its internal default value will be used.
+\o WARNING (ADE-5033): Cannot find the environment variable 'sbsm' for tool 'ams.qpxf'.
+\o         Its internal default value will be used.
+\o WARNING (ADE-5033): Cannot find the environment variable 'outType' for tool 'ams.qpxf'.
+\o         Its internal default value will be used.
+\o WARNING (ADE-5033): Cannot find the environment variable 'MultiEna' for tool 'ams.qpnoise'.
+\o         Its internal default value will be used.
+\o WARNING (ADE-5033): Cannot find the environment variable 'rangeType' for tool 'ams.qpnoise'.
+\o         Its internal default value will be used.
+\o WARNING (ADE-5033): Cannot find the environment variable 'sbsm' for tool 'ams.qpnoise'.
+\o         Its internal default value will be used.
+\o WARNING (ADE-5033): Cannot find the environment variable 'outType' for tool 'ams.qpnoise'.
+\o         Its internal default value will be used.
+\o WARNING (ADE-5033): Cannot find the environment variable 'inType' for tool 'ams.qpnoise'.
+\o         Its internal default value will be used.
+\o WARNING (ADE-5033): Cannot find the environment variable 'refsbSelect' for tool 'ams.qpnoise'.
+\o         Its internal default value will be used.
+\o WARNING (ADE-5033): Cannot find the environment variable 'rangeType' for tool 'ams.qpac'.
+\o         Its internal default value will be used.
+\o WARNING (ADE-5033): Cannot find the environment variable 'sbsm' for tool 'ams.qpac'.
+\o         Its internal default value will be used.
+\o WARNING (ADE-5033): Cannot find the environment variable 'sweeptype' for tool 'ams.psp'.
+\o         Its internal default value will be used.
+\o WARNING (ADE-5033): Cannot find the environment variable 'rangeType' for tool 'ams.psp'.
+\o         Its internal default value will be used.
+\o WARNING (ADE-5033): Cannot find the environment variable 'special' for tool 'ams.pxf'.
+\o         Its internal default value will be used.
+\o WARNING (ADE-5033): Cannot find the environment variable 'outType' for tool 'ams.pxf'.
+\o         Its internal default value will be used.
+\o WARNING (ADE-5033): Cannot find the environment variable 'rangeType' for tool 'ams.pxf'.
+\o         Its internal default value will be used.
+\o WARNING (ADE-5033): Cannot find the environment variable 'harmonics' for tool 'ams.pxf'.
+\o         Its internal default value will be used.
+\o WARNING (ADE-5033): Cannot find the environment variable 'noisetypeUI' for tool 'ams.pnoise'.
+\o         Its internal default value will be used.
+\o WARNING (ADE-5033): Cannot find the environment variable 'MultiEna' for tool 'ams.pnoise'.
+\o         Its internal default value will be used.
+\o WARNING (ADE-5033): Cannot find the environment variable 'rangeType' for tool 'ams.pnoise'.
+\o         Its internal default value will be used.
+\o WARNING (ADE-5033): Cannot find the environment variable 'harmonics' for tool 'ams.pnoise'.
+\o         Its internal default value will be used.
+\o WARNING (ADE-5033): Cannot find the environment variable 'pnoisemethod' for tool 'ams.pnoise'.
+\o         Its internal default value will be used.
+\o WARNING (ADE-5033): Cannot find the environment variable 'outType' for tool 'ams.pnoise'.
+\o         Its internal default value will be used.
+\o WARNING (ADE-5033): Cannot find the environment variable 'inType' for tool 'ams.pnoise'.
+\o         Its internal default value will be used.
+\o WARNING (ADE-5033): Cannot find the environment variable 'refsbSelect' for tool 'ams.pnoise'.
+\o         Its internal default value will be used.
+\o WARNING (ADE-5033): Cannot find the environment variable 'rangeType' for tool 'ams.pstb'.
+\o         Its internal default value will be used.
+\o WARNING (ADE-5033): Cannot find the environment variable 'special' for tool 'ams.pac'.
+\o         Its internal default value will be used.
+\o WARNING (ADE-5033): Cannot find the environment variable 'rangeType' for tool 'ams.pac'.
+\o         Its internal default value will be used.
+\o WARNING (ADE-5033): Cannot find the environment variable 'harmonics' for tool 'ams.pac'.
+\o         Its internal default value will be used.
+\o WARNING (ADE-5033): Cannot find the environment variable 'engine' for tool 'ams.pss'.
+\o         Its internal default value will be used.
+\o WARNING (ADE-5033): Cannot find the environment variable 'harmonics' for tool 'ams.pss'.
+\o         Its internal default value will be used.
+\o WARNING (ADE-5033): Cannot find the environment variable 'hbhomotopy' for tool 'ams.pss'.
+\o         Its internal default value will be used.
+\o WARNING (ADE-5033): Cannot find the environment variable 'dynParamB' for tool 'ams.pss'.
+\o         Its internal default value will be used.
+\o WARNING (ADE-5033): Cannot find the environment variable 'oscana' for tool 'ams.pss'.
+\o         Its internal default value will be used.
+\o WARNING (ADE-5033): Cannot find the environment variable 'sweepB' for tool 'ams.pss'.
+\o         Its internal default value will be used.
+\o WARNING (ADE-5033): Cannot find the environment variable 'sweep' for tool 'ams.pss'.
+\o         Its internal default value will be used.
+\o WARNING (ADE-5033): Cannot find the environment variable 'sweep2' for tool 'ams.pss'.
+\o         Its internal default value will be used.
+\o WARNING (ADE-5033): Cannot find the environment variable 'sweep3' for tool 'ams.pss'.
+\o         Its internal default value will be used.
+\o WARNING (ADE-5033): Cannot find the environment variable 'loadpullB' for tool 'ams.pss'.
+\o         Its internal default value will be used.
+\o WARNING (ADE-5033): Cannot find the environment variable 'sweep' for tool 'ams.sp'.
+\o         Its internal default value will be used.
+\o WARNING (ADE-5033): Cannot find the environment variable 'rangeType' for tool 'ams.sp'.
+\o         Its internal default value will be used.
+\o WARNING (ADE-5033): Cannot find the environment variable 'donoise' for tool 'ams.sp'.
+\o         Its internal default value will be used.
+\o WARNING (ADE-5033): Cannot find the environment variable 'sweep' for tool 'ams.xf'.
+\o         Its internal default value will be used.
+\o WARNING (ADE-5033): Cannot find the environment variable 'rangeType' for tool 'ams.xf'.
+\o         Its internal default value will be used.
+\o WARNING (ADE-5033): Cannot find the environment variable 'outType' for tool 'ams.xf'.
+\o         Its internal default value will be used.
+\o WARNING (ADE-5033): Cannot find the environment variable 'sweep' for tool 'ams.dc'.
+\o         Its internal default value will be used.
+\o WARNING (ADE-5033): Cannot find the environment variable 'sweep' for tool 'ams.stb'.
+\o         Its internal default value will be used.
+\o WARNING (ADE-5033): Cannot find the environment variable 'rangeType' for tool 'ams.stb'.
+\o         Its internal default value will be used.
+\o WARNING (ADE-5033): Cannot find the environment variable 'method' for tool 'ams.dcmatch'.
+\o         Its internal default value will be used.
+\o WARNING (ADE-5033): Cannot find the environment variable 'outType' for tool 'ams.dcmatch'.
+\o         Its internal default value will be used.
+\o WARNING (ADE-5033): Cannot find the environment variable 'sweep' for tool 'ams.dcmatch'.
+\o         Its internal default value will be used.
+\o WARNING (ADE-5033): Cannot find the environment variable 'outType' for tool 'ams.pz'.
+\o         Its internal default value will be used.
+\o WARNING (ADE-5033): Cannot find the environment variable 'inType' for tool 'ams.pz'.
+\o         Its internal default value will be used.
+\o WARNING (ADE-5033): Cannot find the environment variable 'sweep' for tool 'ams.pz'.
+\o         Its internal default value will be used.
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (2 1) on testbench [
+\o           Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var AUXN_VBN = "300m"
+\o Setting var AUXN_VBP = "600m"
+\o Setting var AUXN_VBUF = "0.7"
+\o Setting var AUXN_VOCM = "600m"
+\o Setting var AUXP_VBN = "520m"
+\o Setting var AUXP_VBP = "900m"
+\o Setting var AUXP_VBUF = "500m"
+\o Setting var AUXP_VOCM = "750m"
+\o Setting var AUX_NMOS_L_BUF_IN = "100n"
+\o Setting var AUX_NMOS_L_BUF_SOURCE = "1u"
+\o Setting var AUX_NMOS_L_IN = "2.57u"
+\o Setting var AUX_NMOS_L_LOAD = "3.77u"
+\o Setting var AUX_NMOS_L_TAIL = "1u"
+\o Setting var AUX_NMOS_W_BUF_IN = "3.15u"
+\o Setting var AUX_NMOS_W_BUF_SOURCE = "1.975u"
+\o Setting var AUX_NMOS_W_IN = "34.35u"
+\o Setting var AUX_NMOS_W_LOAD = "6.96u"
+\o Setting var AUX_NMOS_W_TAIL = "48u"
+\o Setting var AUX_PMOS_LIN_BUF = "100n"
+\o Setting var AUX_PMOS_LSOURCE = "6u"
+\o Setting var AUX_PMOS_LS_BUF = "1u"
+\o Setting var AUX_PMOS_L_IN = "2.2u"
+\o Setting var AUX_PMOS_L_TAIL = "130n"
+\o Setting var AUX_PMOS_WIN_BUF = "1.0125e-6"
+\o Setting var AUX_PMOS_WSOURCE = "5u"
+\o Setting var AUX_PMOS_WS_BUF = "975e-9"
+\o Setting var AUX_PMOS_W_IN = "100u"
+\o Setting var AUX_PMOS_W_TAIL = "44.5u"
+\o Setting var AV_N = "100"
+\o Setting var AV_P = "100"
+\o Setting var L_CASCN = "120n"
+\o Setting var L_CASCP = "120n"
+\o Setting var L_INPUT = "160n"
+\o Setting var L_SOURCEN = "500n"
+\o Setting var L_SOURCEP = "600n"
+\o Setting var VBN = "350m"
+\o Setting var VBP = "732.3347m"
+\o Setting var VCASCN = "900m"
+\o Setting var VCASCP = "350m"
+\o Setting var VDD = "1.2"
+\o Setting var VINCM = "500m"
+\o Setting var VOCM = "600m"
+\o Setting var WN_SOURCE = "0.0028988"
+\o Setting var W_CASCN = "175e-6"
+\o Setting var W_CASCP = "175e-6"
+\o Setting var W_INPUT = "4m"
+\o Setting var W_SOURCEP = "928e-6"
+\o Setting var cgg2 = "1f"
+\o Setting temp(T) = 27
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/cadence/simulation/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.188/1/Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/cadence/simulation/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.188/1/Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (2 1)
+\o 
+\o generate netlist...
+\o Loading seCore.cxt 
+\o Begin Incremental Netlisting Dec 17 14:54:58 2024
+\o End netlisting Dec 17 14:54:58 2024
+\o Loading monte.cxt 
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1 ] for
+\o           Point ID (2 1).
+\o 
+\o Delete psf data in /home/cadence/simulation/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.188/1/Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o Loading paraplot.cxt 
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (2 1) on testbench [
+\o           Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (2 2) on testbench [
+\o           Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDD = "1.08"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/cadence/simulation/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.188/2/Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/cadence/simulation/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.188/2/Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (2 2)
+\o 
+\o generate netlist...
+\o Begin Incremental Netlisting Dec 17 14:55:04 2024
+\o End netlisting Dec 17 14:55:04 2024
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1 ] for
+\o           Point ID (2 2).
+\o 
+\o Delete psf data in /home/cadence/simulation/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.188/2/Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (2 2) on testbench [
+\o           Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (2 3) on testbench [
+\o           Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDD = "1.2"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/cadence/simulation/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.188/3/Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/cadence/simulation/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.188/3/Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (2 3)
+\o 
+\o generate netlist...
+\o Begin Incremental Netlisting Dec 17 14:55:06 2024
+\o End netlisting Dec 17 14:55:06 2024
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1 ] for
+\o           Point ID (2 3).
+\o 
+\o Delete psf data in /home/cadence/simulation/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.188/3/Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (2 3) on testbench [
+\o           Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (2 4) on testbench [
+\o           Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDD = "1.32"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/cadence/simulation/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.188/4/Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/cadence/simulation/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.188/4/Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (2 4)
+\o 
+\o generate netlist...
+\o Begin Incremental Netlisting Dec 17 14:55:07 2024
+\o End netlisting Dec 17 14:55:07 2024
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1 ] for
+\o           Point ID (2 4).
+\o 
+\o Delete psf data in /home/cadence/simulation/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.188/4/Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (2 4) on testbench [
+\o           Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (2 5) on testbench [
+\o           Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDD = "1.08"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/cadence/simulation/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.188/5/Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/cadence/simulation/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.188/5/Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (2 5)
+\o 
+\o generate netlist...
+\o Begin Incremental Netlisting Dec 17 14:55:09 2024
+\o End netlisting Dec 17 14:55:09 2024
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1 ] for
+\o           Point ID (2 5).
+\o 
+\o Delete psf data in /home/cadence/simulation/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.188/5/Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (2 5) on testbench [
+\o           Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (2 6) on testbench [
+\o           Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDD = "1.2"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/cadence/simulation/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.188/6/Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/cadence/simulation/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.188/6/Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (2 6)
+\o 
+\o generate netlist...
+\o Begin Incremental Netlisting Dec 17 14:55:11 2024
+\o End netlisting Dec 17 14:55:11 2024
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1 ] for
+\o           Point ID (2 6).
+\o 
+\o Delete psf data in /home/cadence/simulation/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.188/6/Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (2 6) on testbench [
+\o           Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (2 7) on testbench [
+\o           Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDD = "1.32"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/cadence/simulation/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.188/7/Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/cadence/simulation/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.188/7/Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (2 7)
+\o 
+\o generate netlist...
+\o Begin Incremental Netlisting Dec 17 14:55:12 2024
+\o End netlisting Dec 17 14:55:12 2024
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1 ] for
+\o           Point ID (2 7).
+\o 
+\o Delete psf data in /home/cadence/simulation/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.188/7/Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (2 7) on testbench [
+\o           Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (2 8) on testbench [
+\o           Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDD = "1.08"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/cadence/simulation/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.188/8/Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/cadence/simulation/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.188/8/Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (2 8)
+\o 
+\o generate netlist...
+\o Begin Incremental Netlisting Dec 17 14:55:14 2024
+\o End netlisting Dec 17 14:55:14 2024
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1 ] for
+\o           Point ID (2 8).
+\o 
+\o Delete psf data in /home/cadence/simulation/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.188/8/Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (2 8) on testbench [
+\o           Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (2 9) on testbench [
+\o           Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDD = "1.2"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/cadence/simulation/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.188/9/Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/cadence/simulation/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.188/9/Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (2 9)
+\o 
+\o generate netlist...
+\o Begin Incremental Netlisting Dec 17 14:55:16 2024
+\o End netlisting Dec 17 14:55:16 2024
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1 ] for
+\o           Point ID (2 9).
+\o 
+\o Delete psf data in /home/cadence/simulation/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.188/9/Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (2 9) on testbench [
+\o           Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (2 10) on testbench [
+\o           Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDD = "1.32"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/cadence/simulation/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.188/10/Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/cadence/simulation/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.188/10/Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (2 10)
+\o 
+\o generate netlist...
+\o Begin Incremental Netlisting Dec 17 14:55:17 2024
+\o End netlisting Dec 17 14:55:17 2024
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1 ] for
+\o           Point ID (2 10).
+\o 
+\o Delete psf data in /home/cadence/simulation/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.188/10/Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (2 10) on testbench [
+\o           Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (2 11) on testbench [
+\o           Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDD = "1.08"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/cadence/simulation/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.188/11/Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/cadence/simulation/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.188/11/Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (2 11)
+\o 
+\o generate netlist...
+\o Begin Incremental Netlisting Dec 17 14:55:18 2024
+\o End netlisting Dec 17 14:55:18 2024
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1 ] for
+\o           Point ID (2 11).
+\o 
+\o Delete psf data in /home/cadence/simulation/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.188/11/Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (2 11) on testbench [
+\o           Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (2 12) on testbench [
+\o           Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDD = "1.2"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/cadence/simulation/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.188/12/Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/cadence/simulation/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.188/12/Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (2 12)
+\o 
+\o generate netlist...
+\o Begin Incremental Netlisting Dec 17 14:55:20 2024
+\o End netlisting Dec 17 14:55:20 2024
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1 ] for
+\o           Point ID (2 12).
+\o 
+\o Delete psf data in /home/cadence/simulation/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.188/12/Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (2 12) on testbench [
+\o           Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (2 13) on testbench [
+\o           Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDD = "1.32"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/cadence/simulation/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.188/13/Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/cadence/simulation/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.188/13/Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (2 13)
+\o 
+\o generate netlist...
+\o Begin Incremental Netlisting Dec 17 14:55:22 2024
+\o End netlisting Dec 17 14:55:22 2024
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1 ] for
+\o           Point ID (2 13).
+\o 
+\o Delete psf data in /home/cadence/simulation/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.188/13/Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (2 13) on testbench [
+\o           Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (2 14) on testbench [
+\o           Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDD = "1.08"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/cadence/simulation/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.188/14/Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/cadence/simulation/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.188/14/Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (2 14)
+\o 
+\o generate netlist...
+\o Begin Incremental Netlisting Dec 17 14:55:23 2024
+\o End netlisting Dec 17 14:55:23 2024
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1 ] for
+\o           Point ID (2 14).
+\o 
+\o Delete psf data in /home/cadence/simulation/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.188/14/Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (2 14) on testbench [
+\o           Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (2 15) on testbench [
+\o           Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDD = "1.2"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/cadence/simulation/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.188/15/Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/cadence/simulation/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.188/15/Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (2 15)
+\o 
+\o generate netlist...
+\o Begin Incremental Netlisting Dec 17 14:55:25 2024
+\o End netlisting Dec 17 14:55:25 2024
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1 ] for
+\o           Point ID (2 15).
+\o 
+\o Delete psf data in /home/cadence/simulation/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.188/15/Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (2 15) on testbench [
+\o           Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (2 16) on testbench [
+\o           Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDD = "1.32"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/cadence/simulation/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.188/16/Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/cadence/simulation/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.188/16/Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (2 16)
+\o 
+\o generate netlist...
+\o Begin Incremental Netlisting Dec 17 14:55:27 2024
+\o End netlisting Dec 17 14:55:27 2024
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1 ] for
+\o           Point ID (2 16).
+\o 
+\o Delete psf data in /home/cadence/simulation/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.188/16/Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (2 16) on testbench [
+\o           Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o Simulation design variables differ from those on the cellView,
+\o they have been saved in the file "/tmp/saved-design-variables".
+\o To save future changes, copy variables to cellView before exiting.
+\o 
+\o 
+\o *Info*    Configuring the session ...
+\o 
+\o 	Library      = Gain_Boosted_Cascode
+\o 	Cell         = Gain_Boosted_Cascode_Actual
+\o 	View         = schematic
+\o 	Simulator    = spectre
+\o 	State Path   = $AXL_SETUPDB_DIR/test_states
+\o 	State Name   = Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1_none_Interactive.191
+\o 	Results DB   = /home/cadence/my_new_project/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.191.rdb
+\o 	Results Dir  = /home/cadence/simulation/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.191/1/Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1
+\o 	Results Loc  = /home/cadence/simulation/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data
+\o 	Project Dir  = /home/cadence/simulation
+\o 	Setup DB loc = /home/cadence/my_new_project/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl
+\o 	File Encoding = 0
+\o 
+\o 
+\o *Info*    Spectre controlMode is set "batch".
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (5 1) on testbench [
+\o           Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var AUXN_VBN = "300m"
+\o Setting var AUXN_VBP = "600m"
+\o Setting var AUXN_VBUF = "0.7"
+\o Setting var AUXN_VOCM = "600m"
+\o Setting var AUXP_VBN = "520m"
+\o Setting var AUXP_VBP = "900m"
+\o Setting var AUXP_VBUF = "500m"
+\o Setting var AUXP_VOCM = "750m"
+\o Setting var AUX_NMOS_L_BUF_IN = "100n"
+\o Setting var AUX_NMOS_L_BUF_SOURCE = "1u"
+\o Setting var AUX_NMOS_L_IN = "2.57u"
+\o Setting var AUX_NMOS_L_LOAD = "3.77u"
+\o Setting var AUX_NMOS_L_TAIL = "1u"
+\o Setting var AUX_NMOS_W_BUF_IN = "3.15u"
+\o Setting var AUX_NMOS_W_BUF_SOURCE = "1.975u"
+\o Setting var AUX_NMOS_W_IN = "34.35u"
+\o Setting var AUX_NMOS_W_LOAD = "6.96u"
+\o Setting var AUX_NMOS_W_TAIL = "48u"
+\o Setting var AUX_PMOS_LIN_BUF = "100n"
+\o Setting var AUX_PMOS_LSOURCE = "6u"
+\o Setting var AUX_PMOS_LS_BUF = "1u"
+\o Setting var AUX_PMOS_L_IN = "2.2u"
+\o Setting var AUX_PMOS_L_TAIL = "130n"
+\o Setting var AUX_PMOS_WIN_BUF = "1.0125e-6"
+\o Setting var AUX_PMOS_WSOURCE = "5u"
+\o Setting var AUX_PMOS_WS_BUF = "975e-9"
+\o Setting var AUX_PMOS_W_IN = "100u"
+\o Setting var AUX_PMOS_W_TAIL = "44.5u"
+\o Setting var AV_N = "100"
+\o Setting var AV_P = "100"
+\o Setting var L_CASCN = "120n"
+\o Setting var L_CASCP = "120n"
+\o Setting var L_INPUT = "160n"
+\o Setting var L_SOURCEN = "500n"
+\o Setting var L_SOURCEP = "600n"
+\o Setting var VBN = "350m"
+\o Setting var VBP = "732.3347m"
+\o Setting var VCASCN = "900m"
+\o Setting var VCASCP = "350m"
+\o Setting var VDD = "1.2"
+\o Setting var VINCM = "500m"
+\o Setting var VOCM = "600m"
+\o Setting var WN_SOURCE = "0.0028988"
+\o Setting var W_CASCN = "175e-6"
+\o Setting var W_CASCP = "175e-6"
+\o Setting var W_INPUT = "4m"
+\o Setting var W_SOURCEP = "928e-6"
+\o Setting var cgg2 = "1f"
+\o Setting temp(T) = 27
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/cadence/simulation/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.191/1/Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/cadence/simulation/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.191/1/Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (5 1)
+\o 
+\o generate netlist...
+\o Begin Incremental Netlisting Dec 17 14:58:01 2024
+\o End netlisting Dec 17 14:58:01 2024
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1 ] for
+\o           Point ID (5 1).
+\o 
+\o Delete psf data in /home/cadence/simulation/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.191/1/Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (5 1) on testbench [
+\o           Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (5 2) on testbench [
+\o           Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDD = "1.08"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/cadence/simulation/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.191/2/Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/cadence/simulation/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.191/2/Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (5 2)
+\o 
+\o generate netlist...
+\o Begin Incremental Netlisting Dec 17 14:58:04 2024
+\o End netlisting Dec 17 14:58:04 2024
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1 ] for
+\o           Point ID (5 2).
+\o 
+\o Delete psf data in /home/cadence/simulation/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.191/2/Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (5 2) on testbench [
+\o           Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (5 3) on testbench [
+\o           Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDD = "1.2"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/cadence/simulation/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.191/3/Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/cadence/simulation/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.191/3/Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (5 3)
+\o 
+\o generate netlist...
+\o Begin Incremental Netlisting Dec 17 14:58:06 2024
+\o End netlisting Dec 17 14:58:06 2024
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1 ] for
+\o           Point ID (5 3).
+\o 
+\o Delete psf data in /home/cadence/simulation/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.191/3/Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (5 3) on testbench [
+\o           Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (5 4) on testbench [
+\o           Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDD = "1.32"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/cadence/simulation/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.191/4/Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/cadence/simulation/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.191/4/Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (5 4)
+\o 
+\o generate netlist...
+\o Begin Incremental Netlisting Dec 17 14:58:08 2024
+\o End netlisting Dec 17 14:58:08 2024
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1 ] for
+\o           Point ID (5 4).
+\o 
+\o Delete psf data in /home/cadence/simulation/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.191/4/Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (5 4) on testbench [
+\o           Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (5 5) on testbench [
+\o           Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDD = "1.08"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/cadence/simulation/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.191/5/Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/cadence/simulation/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.191/5/Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (5 5)
+\o 
+\o generate netlist...
+\o Begin Incremental Netlisting Dec 17 14:58:09 2024
+\o End netlisting Dec 17 14:58:09 2024
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1 ] for
+\o           Point ID (5 5).
+\o 
+\o Delete psf data in /home/cadence/simulation/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.191/5/Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (5 5) on testbench [
+\o           Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (5 6) on testbench [
+\o           Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDD = "1.2"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/cadence/simulation/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.191/6/Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/cadence/simulation/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.191/6/Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (5 6)
+\o 
+\o generate netlist...
+\o Begin Incremental Netlisting Dec 17 14:58:11 2024
+\o End netlisting Dec 17 14:58:11 2024
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1 ] for
+\o           Point ID (5 6).
+\o 
+\o Delete psf data in /home/cadence/simulation/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.191/6/Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (5 6) on testbench [
+\o           Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (5 7) on testbench [
+\o           Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDD = "1.32"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/cadence/simulation/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.191/7/Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/cadence/simulation/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.191/7/Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (5 7)
+\o 
+\o generate netlist...
+\o Begin Incremental Netlisting Dec 17 14:58:12 2024
+\o End netlisting Dec 17 14:58:13 2024
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   1.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1 ] for
+\o           Point ID (5 7).
+\o 
+\o Delete psf data in /home/cadence/simulation/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.191/7/Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (5 7) on testbench [
+\o           Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (5 8) on testbench [
+\o           Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDD = "1.08"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/cadence/simulation/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.191/8/Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/cadence/simulation/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.191/8/Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (5 8)
+\o 
+\o generate netlist...
+\o Begin Incremental Netlisting Dec 17 14:58:14 2024
+\o End netlisting Dec 17 14:58:14 2024
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1 ] for
+\o           Point ID (5 8).
+\o 
+\o Delete psf data in /home/cadence/simulation/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.191/8/Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (5 8) on testbench [
+\o           Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (5 9) on testbench [
+\o           Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDD = "1.2"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/cadence/simulation/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.191/9/Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/cadence/simulation/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.191/9/Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (5 9)
+\o 
+\o generate netlist...
+\o Begin Incremental Netlisting Dec 17 14:58:16 2024
+\o End netlisting Dec 17 14:58:16 2024
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1 ] for
+\o           Point ID (5 9).
+\o 
+\o Delete psf data in /home/cadence/simulation/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.191/9/Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (5 9) on testbench [
+\o           Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (5 10) on testbench [
+\o           Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDD = "1.32"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/cadence/simulation/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.191/10/Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/cadence/simulation/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.191/10/Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (5 10)
+\o 
+\o generate netlist...
+\o Begin Incremental Netlisting Dec 17 14:58:17 2024
+\o End netlisting Dec 17 14:58:17 2024
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1 ] for
+\o           Point ID (5 10).
+\o 
+\o Delete psf data in /home/cadence/simulation/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.191/10/Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (5 10) on testbench [
+\o           Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (5 11) on testbench [
+\o           Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDD = "1.08"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/cadence/simulation/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.191/11/Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/cadence/simulation/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.191/11/Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (5 11)
+\o 
+\o generate netlist...
+\o Begin Incremental Netlisting Dec 17 14:58:19 2024
+\o End netlisting Dec 17 14:58:19 2024
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1 ] for
+\o           Point ID (5 11).
+\o 
+\o Delete psf data in /home/cadence/simulation/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.191/11/Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (5 11) on testbench [
+\o           Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (5 12) on testbench [
+\o           Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDD = "1.2"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/cadence/simulation/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.191/12/Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/cadence/simulation/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.191/12/Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (5 12)
+\o 
+\o generate netlist...
+\o Begin Incremental Netlisting Dec 17 14:58:20 2024
+\o End netlisting Dec 17 14:58:21 2024
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   1.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1 ] for
+\o           Point ID (5 12).
+\o 
+\o Delete psf data in /home/cadence/simulation/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.191/12/Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (5 12) on testbench [
+\o           Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (5 13) on testbench [
+\o           Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDD = "1.32"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/cadence/simulation/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.191/13/Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/cadence/simulation/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.191/13/Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (5 13)
+\o 
+\o generate netlist...
+\o Begin Incremental Netlisting Dec 17 14:58:22 2024
+\o End netlisting Dec 17 14:58:22 2024
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1 ] for
+\o           Point ID (5 13).
+\o 
+\o Delete psf data in /home/cadence/simulation/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.191/13/Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (5 13) on testbench [
+\o           Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (5 14) on testbench [
+\o           Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDD = "1.08"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/cadence/simulation/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.191/14/Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/cadence/simulation/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.191/14/Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (5 14)
+\o 
+\o generate netlist...
+\o Begin Incremental Netlisting Dec 17 14:58:24 2024
+\o End netlisting Dec 17 14:58:24 2024
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1 ] for
+\o           Point ID (5 14).
+\o 
+\o Delete psf data in /home/cadence/simulation/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.191/14/Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (5 14) on testbench [
+\o           Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (5 15) on testbench [
+\o           Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDD = "1.2"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/cadence/simulation/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.191/15/Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/cadence/simulation/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.191/15/Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (5 15)
+\o 
+\o generate netlist...
+\o Begin Incremental Netlisting Dec 17 14:58:26 2024
+\o End netlisting Dec 17 14:58:26 2024
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1 ] for
+\o           Point ID (5 15).
+\o 
+\o Delete psf data in /home/cadence/simulation/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.191/15/Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (5 15) on testbench [
+\o           Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (5 16) on testbench [
+\o           Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDD = "1.32"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/cadence/simulation/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.191/16/Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/cadence/simulation/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.191/16/Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (5 16)
+\o 
+\o generate netlist...
+\o Begin Incremental Netlisting Dec 17 14:58:27 2024
+\o End netlisting Dec 17 14:58:27 2024
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1 ] for
+\o           Point ID (5 16).
+\o 
+\o Delete psf data in /home/cadence/simulation/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.191/16/Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (5 16) on testbench [
+\o           Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o Job 9 timed out after no activity in 300 seconds.
+\o Simulation design variables differ from those on the cellView,
+\o they have been saved in the file "/tmp/saved-design-variables".
+\o To save future changes, copy variables to cellView before exiting.
+\p > 

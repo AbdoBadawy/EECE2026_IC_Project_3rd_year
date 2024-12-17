@@ -11,12 +11,12 @@
 	View         = schematic
 	Simulator    = spectre
 	State Path   = $AXL_SETUPDB_DIR/test_states
-	State Name   = IC___PROLECT:the_circuit:1_none_Interactive.88
-	Results DB   = /home/cadence/EECE2026_IC_Project_3rd_year-main/IC___PROLECT/the_circuit/adexl/results/data/Interactive.88.rdb
-	Results Dir  = /home/cadence/simulation/IC___PROLECT/the_circuit/adexl/results/data/Interactive.88/1/IC___PROLECT:the_circuit:1
+	State Name   = IC___PROLECT:the_circuit:1_none_Interactive.90
+	Results DB   = /home/cadence/my_new_project/IC___PROLECT/the_circuit/adexl/results/data/Interactive.90.rdb
+	Results Dir  = /home/cadence/simulation/IC___PROLECT/the_circuit/adexl/results/data/Interactive.90/1/IC___PROLECT:the_circuit:1
 	Results Loc  = /home/cadence/simulation/IC___PROLECT/the_circuit/adexl/results/data
 	Project Dir  = /home/cadence/simulation
-	Setup DB loc = /home/cadence/EECE2026_IC_Project_3rd_year-main/IC___PROLECT/the_circuit/adexl
+	Setup DB loc = /home/cadence/my_new_project/IC___PROLECT/the_circuit/adexl
 	File Encoding = 0
 
 
@@ -50,11 +50,11 @@ Setting temp(T) = 27
 Setting var vcc = "12"
 
 *Info*    Netlist Directory =
-          /home/cadence/simulation/IC___PROLECT/the_circuit/adexl/results/data/Interactive.88/1/IC___PROLECT:the_circuit:1/netlist
+          /home/cadence/simulation/IC___PROLECT/the_circuit/adexl/results/data/Interactive.90/1/IC___PROLECT:the_circuit:1/netlist
 
 
 *Info*    Data Directory    =
-          /home/cadence/simulation/IC___PROLECT/the_circuit/adexl/results/data/Interactive.88/1/IC___PROLECT:the_circuit:1
+          /home/cadence/simulation/IC___PROLECT/the_circuit/adexl/results/data/Interactive.90/1/IC___PROLECT:the_circuit:1
 
 
 *Info*    Creating Netlist for Point ID (0 1)
@@ -62,11 +62,11 @@ Setting var vcc = "12"
 generate netlist...
 Loading seCore.cxt 
 Initializing the control file using cp:
-    cp /usr/local/cadence/IC617/tools.lnx86/dfII/etc/si/control.spectre /home/cadence/simulation/IC___PROLECT/the_circuit/adexl/results/data/Interactive.88/1/IC___PROLECT:the_circuit:1/netlist/control
+    cp /usr/local/cadence/IC617/tools.lnx86/dfII/etc/si/control.spectre /home/cadence/simulation/IC___PROLECT/the_circuit/adexl/results/data/Interactive.90/1/IC___PROLECT:the_circuit:1/netlist/control
 Copying Spectre source file 'spectre.inp'
 Copying Spectre command file 'spectre.sim'
-Begin Incremental Netlisting Dec 17 14:08:18 2024
-End netlisting Dec 17 14:08:18 2024
+Begin Incremental Netlisting Dec 17 14:27:44 2024
+End netlisting Dec 17 14:27:44 2024
 Loading monte.cxt 
 
 Netlisting Statistics:
@@ -81,7 +81,7 @@ compose simulator input file...
 *Info*    Running simulation on testbench [
           IC___PROLECT:the_circuit:1 ] for Point ID (0 1).
 
-Delete psf data in /home/cadence/simulation/IC___PROLECT/the_circuit/adexl/results/data/Interactive.88/1/IC___PROLECT:the_circuit:1/psf.
+Delete psf data in /home/cadence/simulation/IC___PROLECT/the_circuit/adexl/results/data/Interactive.90/1/IC___PROLECT:the_circuit:1/psf.
 compose simulator input file...
       ...successful.
 start simulator if needed...
@@ -90,96 +90,14 @@ simulate...
 To view the simulator output, right-click on the test name, result 
 name, or any value in the "Results" tab of the Outputs section and 
 choose "Output Log" menu option.
-INFO (ADE-3067): Errors encountered during simulation. For more information, right-click
-        on a test name in the 'Results' tab of the Outputs pane and choose 'Output Log'
-        to view the simulation run log.
-
-*Error*   Error ID  = 5011
-*Error*   Error Msg = Simulator failed to complete the simulation.
-
-          Error found by spectre during circuit read-in.
-Error found
-          by spectre during circuit read-in.
-ERROR (SFE-868):
-          "input.scs" 10: Unable to open input file
-          `/home/cadence/Desktop/SaveOP.scs'.
+INFO (ADE-3071): Simulation completed successfully.
+reading simulation data...
+      ...successful.
+*Info*    Client has finished evaluating ... 
 
 
-
-
-
-
-
-
-
-
-*Info*    Run start for Point ID (0 1) on testbench [
+*Info*    Run complete for Point ID (0 1) on testbench [
           IC___PROLECT:the_circuit:1 ].
-
-Resetting statistical vars
-
-*Info*    Setting parameter values ...
-
-Setting var C3 = "100p"
-Setting var C4 = "10n"
-Setting var C6 = "100p"
-Setting var Gop = "10000"
-Setting var R1 = "10k"
-Setting var R2 = "10k"
-Setting var R3 = "480"
-Setting var R4 = "5k"
-Setting var R5 = "500"
-Setting var R6 = "157.6"
-Setting var Rop = "15.915k"
-Setting var cop = "10p"
-Setting temp(T) = 27
-Setting var vcc = "12"
-
-*Info*    Netlist Directory =
-          /home/cadence/simulation/IC___PROLECT/the_circuit/adexl/results/data/Interactive.88/1/IC___PROLECT:the_circuit:1/netlist
-
-
-*Info*    Data Directory    =
-          /home/cadence/simulation/IC___PROLECT/the_circuit/adexl/results/data/Interactive.88/1/IC___PROLECT:the_circuit:1
-
-
-*Info*    Creating Netlist for Point ID (0 1)
-
-generate netlist...
-Begin Incremental Netlisting Dec 17 14:08:28 2024
-End netlisting Dec 17 14:08:28 2024
-
-	The netlist is up to date.
-	Time taken to compare the design with netlist:   0.0s
-      ...successful.
-compose simulator input file...
-      ...successful.
-
-*Info*    Running simulation on testbench [
-          IC___PROLECT:the_circuit:1 ] for Point ID (0 1).
-
-Delete psf data in /home/cadence/simulation/IC___PROLECT/the_circuit/adexl/results/data/Interactive.88/1/IC___PROLECT:the_circuit:1/psf.
-compose simulator input file...
-      ...successful.
-start simulator if needed...
-      ...successful.
-simulate...
-To view the simulator output, right-click on the test name, result 
-name, or any value in the "Results" tab of the Outputs section and 
-choose "Output Log" menu option.
-INFO (ADE-3067): Errors encountered during simulation. For more information, right-click
-        on a test name in the 'Results' tab of the Outputs pane and choose 'Output Log'
-        to view the simulation run log.
-
-*Error*   Error ID  = 5011
-*Error*   Error Msg = Simulator failed to complete the simulation.
-
-          Error found by spectre during circuit read-in.
-Error found
-          by spectre during circuit read-in.
-ERROR (SFE-868):
-          "input.scs" 10: Unable to open input file
-          `/home/cadence/Desktop/SaveOP.scs'.
 
 
 

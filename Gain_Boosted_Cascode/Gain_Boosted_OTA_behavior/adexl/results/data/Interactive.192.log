@@ -1,0 +1,198 @@
+Starting Single Run, Sweeps and Corners...
+
+Current time: Tue Dec 17 15:08:33 2024 
+Best design point: 1
+Design specs: 
+	Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1	corner	C0_0 - 
+	ymax(dB20((VF("/VOUT+") - VF("/VOUT-"))))		89.63
+	bandwidth((VF("/VOUT+") - VF("/VOUT-")) 3 "low")		1.022M
+	Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1	corner	C0_1 - 
+	ymax(dB20((VF("/VOUT+") - VF("/VOUT-"))))		90.3
+	bandwidth((VF("/VOUT+") - VF("/VOUT-")) 3 "low")		1.558M
+	Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1	corner	C0_2 - 
+	ymax(dB20((VF("/VOUT+") - VF("/VOUT-"))))		66.11
+	bandwidth((VF("/VOUT+") - VF("/VOUT-")) 3 "low")		6.599M
+	Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1	corner	C0_3 - 
+	ymax(dB20((VF("/VOUT+") - VF("/VOUT-"))))		88.9
+	bandwidth((VF("/VOUT+") - VF("/VOUT-")) 3 "low")		1.356M
+	Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1	corner	C0_4 - 
+	ymax(dB20((VF("/VOUT+") - VF("/VOUT-"))))		88.55
+	bandwidth((VF("/VOUT+") - VF("/VOUT-")) 3 "low")		2.15M
+	Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1	corner	C0_5 - 
+	ymax(dB20((VF("/VOUT+") - VF("/VOUT-"))))		72.03
+	bandwidth((VF("/VOUT+") - VF("/VOUT-")) 3 "low")		7.898M
+	Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1	corner	C0_6 - 
+	ymax(dB20((VF("/VOUT+") - VF("/VOUT-"))))		82.5
+	bandwidth((VF("/VOUT+") - VF("/VOUT-")) 3 "low")		2.331M
+	Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1	corner	C0_7 - 
+	ymax(dB20((VF("/VOUT+") - VF("/VOUT-"))))		82.28
+	bandwidth((VF("/VOUT+") - VF("/VOUT-")) 3 "low")		3.436M
+	Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1	corner	C0_8 - 
+	ymax(dB20((VF("/VOUT+") - VF("/VOUT-"))))		72.66
+	bandwidth((VF("/VOUT+") - VF("/VOUT-")) 3 "low")		7.895M
+	Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1	corner	C0_9 - 
+	ymax(dB20((VF("/VOUT+") - VF("/VOUT-"))))		80.2
+	bandwidth((VF("/VOUT+") - VF("/VOUT-")) 3 "low")		443.4k
+	Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1	corner	C0_10 - 
+	ymax(dB20((VF("/VOUT+") - VF("/VOUT-"))))		89.87
+	bandwidth((VF("/VOUT+") - VF("/VOUT-")) 3 "low")		412.2k
+	Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1	corner	C0_11 - 
+	ymax(dB20((VF("/VOUT+") - VF("/VOUT-"))))		84.12
+	bandwidth((VF("/VOUT+") - VF("/VOUT-")) 3 "low")		1.194M
+	Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1	corner	C0_12 - 
+	ymax(dB20((VF("/VOUT+") - VF("/VOUT-"))))		84.29
+	bandwidth((VF("/VOUT+") - VF("/VOUT-")) 3 "low")		409.7k
+	Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1	corner	C0_13 - 
+	ymax(dB20((VF("/VOUT+") - VF("/VOUT-"))))		89.86
+	bandwidth((VF("/VOUT+") - VF("/VOUT-")) 3 "low")		540k
+	Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1	corner	C0_14 - 
+	ymax(dB20((VF("/VOUT+") - VF("/VOUT-"))))		85.69
+	bandwidth((VF("/VOUT+") - VF("/VOUT-")) 3 "low")		1.389M
+	Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1	corner	C0_15 - 
+	ymax(dB20((VF("/VOUT+") - VF("/VOUT-"))))		77.8
+	bandwidth((VF("/VOUT+") - VF("/VOUT-")) 3 "low")		798.1k
+	Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1	corner	C0_16 - 
+	ymax(dB20((VF("/VOUT+") - VF("/VOUT-"))))		84.27
+	bandwidth((VF("/VOUT+") - VF("/VOUT-")) 3 "low")		942.4k
+	Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1	corner	C0_17 - 
+	ymax(dB20((VF("/VOUT+") - VF("/VOUT-"))))		80.6
+	bandwidth((VF("/VOUT+") - VF("/VOUT-")) 3 "low")		2.17M
+	Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1	corner	C0_18 - 
+	ymax(dB20((VF("/VOUT+") - VF("/VOUT-"))))		85.98
+	bandwidth((VF("/VOUT+") - VF("/VOUT-")) 3 "low")		638.8k
+	Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1	corner	C0_19 - 
+	ymax(dB20((VF("/VOUT+") - VF("/VOUT-"))))		91.54
+	bandwidth((VF("/VOUT+") - VF("/VOUT-")) 3 "low")		733k
+	Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1	corner	C0_20 - 
+	ymax(dB20((VF("/VOUT+") - VF("/VOUT-"))))		76.47
+	bandwidth((VF("/VOUT+") - VF("/VOUT-")) 3 "low")		3.098M
+	Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1	corner	C0_21 - 
+	ymax(dB20((VF("/VOUT+") - VF("/VOUT-"))))		87.61
+	bandwidth((VF("/VOUT+") - VF("/VOUT-")) 3 "low")		709.5k
+	Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1	corner	C0_22 - 
+	ymax(dB20((VF("/VOUT+") - VF("/VOUT-"))))		90.12
+	bandwidth((VF("/VOUT+") - VF("/VOUT-")) 3 "low")		1.027M
+	Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1	corner	C0_23 - 
+	ymax(dB20((VF("/VOUT+") - VF("/VOUT-"))))		81.45
+	bandwidth((VF("/VOUT+") - VF("/VOUT-")) 3 "low")		3.078M
+	Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1	corner	C0_24 - 
+	ymax(dB20((VF("/VOUT+") - VF("/VOUT-"))))		81.38
+	bandwidth((VF("/VOUT+") - VF("/VOUT-")) 3 "low")		1.299M
+	Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1	corner	C0_25 - 
+	ymax(dB20((VF("/VOUT+") - VF("/VOUT-"))))		84.38
+	bandwidth((VF("/VOUT+") - VF("/VOUT-")) 3 "low")		1.731M
+	Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1	corner	C0_26 - 
+	ymax(dB20((VF("/VOUT+") - VF("/VOUT-"))))		77.51
+	bandwidth((VF("/VOUT+") - VF("/VOUT-")) 3 "low")		4.058M
+	Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1	corner	C0_27 - 
+	ymax(dB20((VF("/VOUT+") - VF("/VOUT-"))))		88.17
+	bandwidth((VF("/VOUT+") - VF("/VOUT-")) 3 "low")		791.7k
+	Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1	corner	C0_28 - 
+	ymax(dB20((VF("/VOUT+") - VF("/VOUT-"))))		91.72
+	bandwidth((VF("/VOUT+") - VF("/VOUT-")) 3 "low")		989k
+	Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1	corner	C0_29 - 
+	ymax(dB20((VF("/VOUT+") - VF("/VOUT-"))))		73.72
+	bandwidth((VF("/VOUT+") - VF("/VOUT-")) 3 "low")		4.104M
+	Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1	corner	C0_30 - 
+	ymax(dB20((VF("/VOUT+") - VF("/VOUT-"))))		88.06
+	bandwidth((VF("/VOUT+") - VF("/VOUT-")) 3 "low")		1.024M
+	Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1	corner	C0_31 - 
+	ymax(dB20((VF("/VOUT+") - VF("/VOUT-"))))		89.74
+	bandwidth((VF("/VOUT+") - VF("/VOUT-")) 3 "low")		1.501M
+	Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1	corner	C0_32 - 
+	ymax(dB20((VF("/VOUT+") - VF("/VOUT-"))))		80.04
+	bandwidth((VF("/VOUT+") - VF("/VOUT-")) 3 "low")		4.341M
+	Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1	corner	C0_33 - 
+	ymax(dB20((VF("/VOUT+") - VF("/VOUT-"))))		79.76
+	bandwidth((VF("/VOUT+") - VF("/VOUT-")) 3 "low")		2.048M
+	Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1	corner	C0_34 - 
+	ymax(dB20((VF("/VOUT+") - VF("/VOUT-"))))		83.8
+	bandwidth((VF("/VOUT+") - VF("/VOUT-")) 3 "low")		2.422M
+	Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1	corner	C0_35 - 
+	ymax(dB20((VF("/VOUT+") - VF("/VOUT-"))))		77.69
+	bandwidth((VF("/VOUT+") - VF("/VOUT-")) 3 "low")		4.797M
+	Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1	corner	C0_36 - 
+	ymax(dB20((VF("/VOUT+") - VF("/VOUT-"))))		82.1
+	bandwidth((VF("/VOUT+") - VF("/VOUT-")) 3 "low")		536.8k
+	Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1	corner	C0_37 - 
+	ymax(dB20((VF("/VOUT+") - VF("/VOUT-"))))		87.83
+	bandwidth((VF("/VOUT+") - VF("/VOUT-")) 3 "low")		663.2k
+	Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1	corner	C0_38 - 
+	ymax(dB20((VF("/VOUT+") - VF("/VOUT-"))))		76.05
+	bandwidth((VF("/VOUT+") - VF("/VOUT-")) 3 "low")		2.462M
+	Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1	corner	C0_39 - 
+	ymax(dB20((VF("/VOUT+") - VF("/VOUT-"))))		84.28
+	bandwidth((VF("/VOUT+") - VF("/VOUT-")) 3 "low")		604.4k
+	Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1	corner	C0_40 - 
+	ymax(dB20((VF("/VOUT+") - VF("/VOUT-"))))		87.41
+	bandwidth((VF("/VOUT+") - VF("/VOUT-")) 3 "low")		898.6k
+	Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1	corner	C0_41 - 
+	ymax(dB20((VF("/VOUT+") - VF("/VOUT-"))))		79.27
+	bandwidth((VF("/VOUT+") - VF("/VOUT-")) 3 "low")		2.79M
+	Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1	corner	C0_42 - 
+	ymax(dB20((VF("/VOUT+") - VF("/VOUT-"))))		78.62
+	bandwidth((VF("/VOUT+") - VF("/VOUT-")) 3 "low")		1.075M
+	Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1	corner	C0_43 - 
+	ymax(dB20((VF("/VOUT+") - VF("/VOUT-"))))		81.27
+	bandwidth((VF("/VOUT+") - VF("/VOUT-")) 3 "low")		1.623M
+	Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1	corner	C0_44 - 
+	ymax(dB20((VF("/VOUT+") - VF("/VOUT-"))))		74.13
+	bandwidth((VF("/VOUT+") - VF("/VOUT-")) 3 "low")		4.317M
+	Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1	corner	Nominal - 
+	ymax(dB20((VF("/VOUT+") - VF("/VOUT-"))))		90.12
+	bandwidth((VF("/VOUT+") - VF("/VOUT-")) 3 "low")		1.027M
+Design parameters: 
+	AV_N		100
+	AV_P		100
+	L_CASCN		120n
+	L_CASCP		120n
+	L_INPUT		160n
+	L_SOURCEN		500n
+	L_SOURCEP		600n
+	VBN		350m
+	VBP		732.3m
+	VCASCN		900m
+	VCASCP		350m
+	VINCM		500m
+	VOCM		600m
+	W_CASCN		175u
+	W_CASCP		175u
+	W_INPUT		4m
+	W_SOURCEP		928u
+	WN_SOURCE		2.899m
+	VDD		1.2
+	cgg2		1f
+	AUX_NMOS_L_BUF_IN		100n
+	AUX_NMOS_L_BUF_SOURCE		1u
+	AUX_NMOS_L_IN		2.57u
+	AUX_NMOS_L_LOAD		3.77u
+	AUX_NMOS_L_TAIL		1u
+	AUX_NMOS_W_BUF_IN		3.15u
+	AUX_NMOS_W_BUF_SOURCE		1.975u
+	AUX_NMOS_W_IN		34.35u
+	AUX_NMOS_W_LOAD		6.96u
+	AUX_NMOS_W_TAIL		48u
+	AUX_PMOS_L_IN		2.2u
+	AUX_PMOS_L_TAIL		130n
+	AUX_PMOS_LIN_BUF		100n
+	AUX_PMOS_LS_BUF		1u
+	AUX_PMOS_LSOURCE		6u
+	AUX_PMOS_W_IN		100u
+	AUX_PMOS_W_TAIL		44.5u
+	AUX_PMOS_WIN_BUF		1.013u
+	AUX_PMOS_WS_BUF		975n
+	AUX_PMOS_WSOURCE		5u
+	AUXN_VBN		300m
+	AUXN_VBP		600m
+	AUXN_VBUF		700m
+	AUXN_VOCM		600m
+	AUXP_VBN		520m
+	AUXP_VBP		900m
+	AUXP_VBUF		500m
+	AUXP_VOCM		750m
+
+Interactive.192
+Number of points completed: 1
+Number of simulation errors: 0
+Interactive.192 completed. 
+Current time: Tue Dec 17 15:10:09 2024 

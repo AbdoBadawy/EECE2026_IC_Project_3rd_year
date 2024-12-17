@@ -11,12 +11,12 @@
 	View         = schematic
 	Simulator    = spectre
 	State Path   = $AXL_SETUPDB_DIR/test_states
-	State Name   = Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1_none_Interactive.183
-	Results DB   = /home/cadence/IC_PROJECT/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.183.rdb
-	Results Dir  = /home/cadence/simulation/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.183/1/Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1
+	State Name   = Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1_none_Interactive.187
+	Results DB   = /home/cadence/my_new_project/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.187.rdb
+	Results Dir  = /home/cadence/simulation/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.187/1/Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1
 	Results Loc  = /home/cadence/simulation/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data
 	Project Dir  = /home/cadence/simulation
-	Setup DB loc = /home/cadence/IC_PROJECT/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl
+	Setup DB loc = /home/cadence/my_new_project/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl
 	File Encoding = 0
 
 
@@ -27,7 +27,7 @@
 
 
 
-*Info*    Run start for Point ID (3 1) on testbench [
+*Info*    Run start for Point ID (1 1) on testbench [
           Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1 ].
 
 Resetting statistical vars
@@ -85,33 +85,30 @@ Setting var cgg2 = "1f"
 Setting temp(T) = 27
 
 *Info*    Netlist Directory =
-          /home/cadence/simulation/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.183/1/Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1/netlist
+          /home/cadence/simulation/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.187/1/Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1/netlist
 
 
 *Info*    Data Directory    =
-          /home/cadence/simulation/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.183/1/Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1
+          /home/cadence/simulation/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.187/1/Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1
 
 
-*Info*    Creating Netlist for Point ID (3 1)
+*Info*    Creating Netlist for Point ID (1 1)
 
 generate netlist...
-Begin Incremental Netlisting Dec 10 14:51:03 2024
-End netlisting Dec 10 14:51:03 2024
+Begin Incremental Netlisting Dec 17 14:30:25 2024
+End netlisting Dec 17 14:30:25 2024
 
-Netlisting Statistics:
-	Number of components:   31
-
-	Elapsed time:          0.0s
-Errors: 0	Warnings: 0
+	The netlist is up to date.
+	Time taken to compare the design with netlist:   0.0s
       ...successful.
 compose simulator input file...
       ...successful.
 
 *Info*    Running simulation on testbench [
           Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1 ] for
-          Point ID (3 1).
+          Point ID (1 1).
 
-Delete psf data in /home/cadence/simulation/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.183/1/Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1/psf.
+Delete psf data in /home/cadence/simulation/Gain_Boosted_Cascode/Gain_Boosted_OTA_behavior/adexl/results/data/Interactive.187/1/Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1/psf.
 compose simulator input file...
       ...successful.
 start simulator if needed...
@@ -126,7 +123,7 @@ reading simulation data...
 *Info*    Client has finished evaluating ... 
 
 
-*Info*    Run complete for Point ID (3 1) on testbench [
+*Info*    Run complete for Point ID (1 1) on testbench [
           Gain_Boosted_Cascode:Gain_Boosted_Cascode_Actual:1 ].
 
 
